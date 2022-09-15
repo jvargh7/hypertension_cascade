@@ -19,16 +19,17 @@ nfhs5_svystdz <- svystandardize(nfhs5_svydesign,by=~age_category,over = ~educati
                                 population = pop_age)
 rm(nfhs5_svydesign);gc();
 
-n5_sy <- svysummary(nfhs5_svystdz,
+national_summary <- svysummary(nfhs5_svystdz,
                     # c_vars = continuous_vars,
                     p_vars = proportion_vars,
                     # g_vars = grouped_vars,
-                    id_vars = id_vars
+                    # id_vars = id_vars
 ) %>%
   mutate_at(vars(estimate,lci,uci),~round(.,1)) %>%
   mutate(est_ci = paste0(estimate," (",
                          lci,", ",uci,")"));
 
+write_csv(national_summary,"age_standardized/hcz01_age standardized national total.csv")
   
 nfhs5_svysummary <- map_dfr(group_vars,
                                      function(g_v){
@@ -71,3 +72,6 @@ nfhs5_svysummary <- map_dfr(group_vars,
 
 
 write_csv(nfhs5_svysummary,path = "age_standardized/hcz01_age standardized care cascade.csv")
+
+
+

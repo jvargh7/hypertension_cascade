@@ -1,0 +1,19 @@
+residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata
+Rural,htn_diagnosed,31.4,30.8,32,Proportion,"31.4 (30.8, 32)",160931,,NA
+Rural,htn_treated,9.8,9.6,10.1,Proportion,"9.8 (9.6, 10.1)",160931,,NA
+Rural,htn_controlled,5,4.8,5.1,Proportion,"5 (4.8, 5.1)",160931,,NA
+Urban,htn_diagnosed,31.9,30.9,32.9,Proportion,"31.9 (30.9, 32.9)",60293,,NA
+Urban,htn_treated,13.7,13.2,14.2,Proportion,"13.7 (13.2, 14.2)",60293,,NA
+Urban,htn_controlled,6.3,6,6.6,Proportion,"6.3 (6, 6.6)",60293,,NA
+Rural,htn_diagnosed,41.9,41.2,42.7,Proportion,"41.9 (41.2, 42.7)",78409,sex,Female
+Rural,htn_treated,12.8,12.5,13.2,Proportion,"12.8 (12.5, 13.2)",78409,sex,Female
+Rural,htn_controlled,6.9,6.6,7.2,Proportion,"6.9 (6.6, 7.2)",78409,sex,Female
+Rural,htn_diagnosed,21,20.4,21.5,Proportion,"21 (20.4, 21.5)",82522,sex,Male
+Rural,htn_treated,6.8,6.6,7.1,Proportion,"6.8 (6.6, 7.1)",82522,sex,Male
+Rural,htn_controlled,3,2.8,3.2,Proportion,"3 (2.8, 3.2)",82522,sex,Male
+Urban,htn_diagnosed,42,40.7,43.3,Proportion,"42 (40.7, 43.3)",28387,sex,Female
+Urban,htn_treated,17.5,16.7,18.2,Proportion,"17.5 (16.7, 18.2)",28387,sex,Female
+Urban,htn_controlled,8.6,8.1,9.1,Proportion,"8.6 (8.1, 9.1)",28387,sex,Female
+Urban,htn_diagnosed,22.7,21.8,23.7,Proportion,"22.7 (21.8, 23.7)",31906,sex,Male
+Urban,htn_treated,10.2,9.7,10.8,Proportion,"10.2 (9.7, 10.8)",31906,sex,Male
+Urban,htn_controlled,4.2,3.8,4.5,Proportion,"4.2 (3.8, 4.5)",31906,sex,Male

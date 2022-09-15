@@ -9,6 +9,20 @@ source("preprocessing/hcpre03_nfhs5 total svydesign.R")
 proportion_vars <- c("htn_screened","htn_disease","htn_diagnosed","htn_treated","htn_controlled")
 
 
+national_summary <- svysummary(nfhs5_svydesign,
+                               # c_vars = continuous_vars,
+                               p_vars = proportion_vars,
+                               # g_vars = grouped_vars,
+                               # id_vars = id_vars
+) %>%
+  mutate_at(vars(estimate,lci,uci),~round(.,1)) %>%
+  mutate(est_ci = paste0(estimate," (",
+                         lci,", ",uci,")"));
+
+write_csv(national_summary,"analysis/hca02_national total.csv")
+
+
+
 # https://stackoverflow.com/questions/40536067/how-to-adjust-future-global-maxsize
 # https://furrr.futureverse.org/articles/progress.html
 require(furrr)

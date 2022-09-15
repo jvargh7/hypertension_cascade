@@ -1,0 +1,16 @@
+variable,estimate,lci,uci,type,est_ci,n,stratification,strata
+htn_screened,59.3,59,59.7,Proportion,"59.3 (59, 59.7)",1149382,,NA
+htn_disease,18.8,18.6,19,Proportion,"18.8 (18.6, 19)",1149382,,NA
+htn_diagnosed,5.9,5.8,6.1,Proportion,"5.9 (5.8, 6.1)",1149382,,NA
+htn_treated,2.1,2.1,2.1,Proportion,"2.1 (2.1, 2.1)",1149382,,NA
+htn_controlled,1,1,1,Proportion,"1 (1, 1)",1149382,,NA
+htn_screened,67.6,67.2,67.9,Proportion,"67.6 (67.2, 67.9)",611082,sex,Female
+htn_disease,17.2,17,17.4,Proportion,"17.2 (17, 17.4)",611082,sex,Female
+htn_diagnosed,7.2,7.1,7.4,Proportion,"7.2 (7.1, 7.4)",611082,sex,Female
+htn_treated,2.5,2.4,2.5,Proportion,"2.5 (2.4, 2.5)",611082,sex,Female
+htn_controlled,1.3,1.2,1.3,Proportion,"1.3 (1.2, 1.3)",611082,sex,Female
+htn_screened,49.8,49.4,50.3,Proportion,"49.8 (49.4, 50.3)",538300,sex,Male
+htn_disease,20.6,20.4,20.8,Proportion,"20.6 (20.4, 20.8)",538300,sex,Male
+htn_diagnosed,4.5,4.3,4.6,Proportion,"4.5 (4.3, 4.6)",538300,sex,Male
+htn_treated,1.7,1.6,1.7,Proportion,"1.7 (1.6, 1.7)",538300,sex,Male
+htn_controlled,0.7,0.7,0.7,Proportion,"0.7 (0.7, 0.7)",538300,sex,Male

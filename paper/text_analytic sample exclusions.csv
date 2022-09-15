@@ -1,0 +1,9 @@
+sex,residence,is.na(htn_free),is.na(diagnosed_bp),is.na(sbp),n
+Female,Rural,FALSE,FALSE,FALSE,670912
+Female,Rural,TRUE,FALSE,TRUE,46527
+Female,Urban,FALSE,FALSE,FALSE,218595
+Female,Urban,TRUE,FALSE,TRUE,23434
+Male,Rural,FALSE,FALSE,FALSE,602692
+Male,Rural,TRUE,FALSE,TRUE,90762
+Male,Urban,FALSE,FALSE,FALSE,198910
+Male,Urban,TRUE,FALSE,TRUE,43465

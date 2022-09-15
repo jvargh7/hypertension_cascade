@@ -5,8 +5,8 @@ nfhs5pop_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 ia
                         mutate(sex = "Male")) %>%
   mutate(residence = case_when(residence == 1 ~ "Urban",
                                residence == 2 ~ "Rural"),
-         status = case_when(is.na(dm_free) ~ "Excluded",
-                            !is.na(dm_free) ~ "Analytic")) %>% 
+         status = case_when(is.na(htn_free) ~ "Excluded",
+                            !is.na(htn_free) ~ "Analytic")) %>% 
   left_join(sdist %>% 
               dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
             by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 

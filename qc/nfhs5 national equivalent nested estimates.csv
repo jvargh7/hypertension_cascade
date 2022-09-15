@@ -1,0 +1,10 @@
+variable,estimate,lci,uci,type,est_ci,n,stratification,strata
+htn_diagnosed,38.7,38.3,39.1,Proportion,"38.7 (38.3, 39.1)",481721,,NA
+htn_treated,22.6,22.3,22.8,Proportion,"22.6 (22.3, 22.8)",481721,,NA
+htn_controlled,9.4,9.2,9.5,Proportion,"9.4 (9.2, 9.5)",481721,,NA
+htn_diagnosed,45.6,45.1,46,Proportion,"45.6 (45.1, 46)",244681,sex,Female
+htn_treated,26.4,26.1,26.7,Proportion,"26.4 (26.1, 26.7)",244681,sex,Female
+htn_controlled,11.2,11,11.4,Proportion,"11.2 (11, 11.4)",244681,sex,Female
+htn_diagnosed,31.3,30.8,31.7,Proportion,"31.3 (30.8, 31.7)",237040,sex,Male
+htn_treated,18.5,18.2,18.8,Proportion,"18.5 (18.2, 18.8)",237040,sex,Male
+htn_controlled,7.4,7.2,7.6,Proportion,"7.4 (7.2, 7.6)",237040,sex,Male
