@@ -1,0 +1,141 @@
+residence,strata,variable,estimate,lci,uci,type,group,est_ci,n,stratification
+Rural,Female,bmi,2219,2216.2,2221.7,Continuous,NA,"2219 (2216.2, 2221.7)",458265,sex
+Rural,Female,age,41.5,41.5,41.6,Continuous,NA,"41.5 (41.5, 41.6)",670912,sex
+Rural,Male,bmi,2239.5,2234.1,2244.9,Continuous,NA,"2239.5 (2234.1, 2244.9)",65592,sex
+Rural,Male,age,42.3,42.2,42.3,Continuous,NA,"42.3 (42.2, 42.3)",602692,sex
+Urban,Female,bmi,2393.6,2388,2399.2,Continuous,NA,"2393.6 (2388, 2399.2)",151238,sex
+Urban,Female,age,41.8,41.7,41.9,Continuous,NA,"41.8 (41.7, 41.9)",218595,sex
+Urban,Male,bmi,2369.1,2357.4,2380.9,Continuous,NA,"2369.1 (2357.4, 2380.9)",22556,sex
+Urban,Male,age,41.8,41.6,41.9,Continuous,NA,"41.8 (41.6, 41.9)",198910,sex
+Rural,Female,highwc,38.9,38.6,39.3,Proportion,NA,"38.9 (38.6, 39.3)",458664,sex
+Rural,Female,htn,26.8,26.6,27,Proportion,NA,"26.8 (26.6, 27)",670912,sex
+Rural,Female,highbp,20.6,20.4,20.7,Proportion,NA,"20.6 (20.4, 20.7)",670912,sex
+Rural,Female,diaghtn,45.8,45.2,46.5,Proportion,NA,"45.8 (45.2, 46.5)",74381,sex
+Rural,Female,htn_screened,66.9,66.5,67.3,Proportion,NA,"66.9 (66.5, 67.3)",670912,sex
+Rural,Female,htn_disease,26.8,26.6,27,Proportion,NA,"26.8 (26.6, 27)",670912,sex
+Rural,Female,htn_diagnosed,11.6,11.4,11.8,Proportion,NA,"11.6 (11.4, 11.8)",670912,sex
+Rural,Female,htn_treated,6.1,6,6.2,Proportion,NA,"6.1 (6, 6.2)",670912,sex
+Rural,Female,htn_controlled,2.5,2.5,2.6,Proportion,NA,"2.5 (2.5, 2.6)",670912,sex
+Rural,Male,highwc,12.4,11.9,12.8,Proportion,NA,"12.4 (11.9, 12.8)",65683,sex
+Rural,Male,htn,27.9,27.7,28.2,Proportion,NA,"27.9 (27.7, 28.2)",602692,sex
+Rural,Male,highbp,24.1,23.8,24.3,Proportion,NA,"24.1 (23.8, 24.3)",602692,sex
+Rural,Male,diaghtn,52.7,52,53.4,Proportion,NA,"52.7 (52, 53.4)",48847,sex
+Rural,Male,htn_screened,52.6,52.2,53.1,Proportion,NA,"52.6 (52.2, 53.1)",602692,sex
+Rural,Male,htn_disease,27.9,27.7,28.2,Proportion,NA,"27.9 (27.7, 28.2)",602692,sex
+Rural,Male,htn_diagnosed,8.1,8,8.3,Proportion,NA,"8.1 (8, 8.3)",602692,sex
+Rural,Male,htn_treated,4.3,4.2,4.4,Proportion,NA,"4.3 (4.2, 4.4)",602692,sex
+Rural,Male,htn_controlled,1.7,1.7,1.8,Proportion,NA,"1.7 (1.7, 1.8)",602692,sex
+Urban,Female,highwc,53.7,53,54.3,Proportion,NA,"53.7 (53, 54.3)",151281,sex
+Urban,Female,htn,29.7,29.3,30.1,Proportion,NA,"29.7 (29.3, 30.1)",218595,sex
+Urban,Female,highbp,22.1,21.8,22.5,Proportion,NA,"22.1 (21.8, 22.5)",218595,sex
+Urban,Female,diaghtn,49.4,48.4,50.4,Proportion,NA,"49.4 (48.4, 50.4)",32963,sex
+Urban,Female,htn_screened,77.3,76.6,78,Proportion,NA,"77.3 (76.6, 78)",218595,sex
+Urban,Female,htn_disease,29.7,29.3,30.1,Proportion,NA,"29.7 (29.3, 30.1)",218595,sex
+Urban,Female,htn_diagnosed,15,14.6,15.3,Proportion,NA,"15 (14.6, 15.3)",218595,sex
+Urban,Female,htn_treated,10,9.8,10.3,Proportion,NA,"10 (9.8, 10.3)",218595,sex
+Urban,Female,htn_controlled,4.3,4.2,4.5,Proportion,NA,"4.3 (4.2, 4.5)",218595,sex
+Urban,Male,highwc,19.6,18.6,20.7,Proportion,NA,"19.6 (18.6, 20.7)",22573,sex
+Urban,Male,htn,31.7,31.3,32.2,Proportion,NA,"31.7 (31.3, 32.2)",198910,sex
+Urban,Male,highbp,26.7,26.3,27.2,Proportion,NA,"26.7 (26.3, 27.2)",198910,sex
+Urban,Male,diaghtn,55.6,54.4,56.8,Proportion,NA,"55.6 (54.4, 56.8)",23137,sex
+Urban,Male,htn_screened,65,64.2,65.8,Proportion,NA,"65 (64.2, 65.8)",198910,sex
+Urban,Male,htn_disease,31.7,31.3,32.2,Proportion,NA,"31.7 (31.3, 32.2)",198910,sex
+Urban,Male,htn_diagnosed,11.2,10.9,11.5,Proportion,NA,"11.2 (10.9, 11.5)",198910,sex
+Urban,Male,htn_treated,7.6,7.3,7.8,Proportion,NA,"7.6 (7.3, 7.8)",198910,sex
+Urban,Male,htn_controlled,3.1,2.9,3.2,Proportion,NA,"3.1 (2.9, 3.2)",198910,sex
+Rural,Female,age_category,50.3,50.2,50.5,Grouped,18-39,"50.3 (50.2, 50.5)",670912,sex
+Rural,Female,age_category,38.9,38.8,39.1,Grouped,40-64,"38.9 (38.8, 39.1)",670912,sex
+Rural,Female,age_category,10.7,10.6,10.9,Grouped,65 plus,"10.7 (10.6, 10.9)",670912,sex
+Rural,Male,age_category,48.8,48.6,49.1,Grouped,18-39,"48.8 (48.6, 49.1)",602692,sex
+Rural,Male,age_category,38.5,38.3,38.7,Grouped,40-64,"38.5 (38.3, 38.7)",602692,sex
+Rural,Male,age_category,12.7,12.5,12.8,Grouped,65 plus,"12.7 (12.5, 12.8)",602692,sex
+Urban,Female,age_category,49.5,49.1,49.9,Grouped,18-39,"49.5 (49.1, 49.9)",218595,sex
+Urban,Female,age_category,40.3,40,40.5,Grouped,40-64,"40.3 (40, 40.5)",218595,sex
+Urban,Female,age_category,10.2,10,10.5,Grouped,65 plus,"10.2 (10, 10.5)",218595,sex
+Urban,Male,age_category,49.6,49.3,50,Grouped,18-39,"49.6 (49.3, 50)",198910,sex
+Urban,Male,age_category,39.2,38.9,39.5,Grouped,40-64,"39.2 (38.9, 39.5)",198910,sex
+Urban,Male,age_category,11.1,10.9,11.4,Grouped,65 plus,"11.1 (10.9, 11.4)",198910,sex
+Rural,Female,education,8,7.9,8.2,Grouped,Higher,"8 (7.9, 8.2)",670912,sex
+Rural,Female,education,44,43.7,44.3,Grouped,No education,"44 (43.7, 44.3)",670912,sex
+Rural,Female,education,14.4,14.3,14.6,Grouped,Primary,"14.4 (14.3, 14.6)",670912,sex
+Rural,Female,education,33.5,33.3,33.8,Grouped,Secondary,"33.5 (33.3, 33.8)",670912,sex
+Rural,Male,education,13,12.7,13.4,Grouped,Higher,"13 (12.7, 13.4)",602692,sex
+Rural,Male,education,21.2,21,21.5,Grouped,No education,"21.2 (21, 21.5)",602692,sex
+Rural,Male,education,16.9,16.7,17,Grouped,Primary,"16.9 (16.7, 17)",602692,sex
+Rural,Male,education,48.9,48.6,49.2,Grouped,Secondary,"48.9 (48.6, 49.2)",602692,sex
+Urban,Female,education,21.8,21.3,22.3,Grouped,Higher,"21.8 (21.3, 22.3)",218595,sex
+Urban,Female,education,22.3,21.8,22.8,Grouped,No education,"22.3 (21.8, 22.8)",218595,sex
+Urban,Female,education,12.6,12.3,12.8,Grouped,Primary,"12.6 (12.3, 12.8)",218595,sex
+Urban,Female,education,43.3,42.9,43.7,Grouped,Secondary,"43.3 (42.9, 43.7)",218595,sex
+Urban,Male,education,28.3,27.7,28.9,Grouped,Higher,"28.3 (27.7, 28.9)",198910,sex
+Urban,Male,education,9.5,9.2,9.8,Grouped,No education,"9.5 (9.2, 9.8)",198910,sex
+Urban,Male,education,11.4,11.1,11.7,Grouped,Primary,"11.4 (11.1, 11.7)",198910,sex
+Urban,Male,education,50.8,50.3,51.3,Grouped,Secondary,"50.8 (50.3, 51.3)",198910,sex
+Rural,Female,caste,23.3,22.9,23.8,Grouped,General,"23.3 (22.9, 23.8)",670912,sex
+Rural,Female,caste,42.2,41.7,42.7,Grouped,OBC,"42.2 (41.7, 42.7)",670912,sex
+Rural,Female,caste,22.7,22.3,23.1,Grouped,Schedule Caste,"22.7 (22.3, 23.1)",670912,sex
+Rural,Female,caste,11.8,11.4,12.1,Grouped,Schedule Tribe,"11.8 (11.4, 12.1)",670912,sex
+Rural,Male,caste,23.6,23,24.1,Grouped,General,"23.6 (23, 24.1)",602692,sex
+Rural,Male,caste,41.7,41.2,42.1,Grouped,OBC,"41.7 (41.2, 42.1)",602692,sex
+Rural,Male,caste,22.6,22.2,23,Grouped,Schedule Caste,"22.6 (22.2, 23)",602692,sex
+Rural,Male,caste,12.2,11.9,12.6,Grouped,Schedule Tribe,"12.2 (11.9, 12.6)",602692,sex
+Urban,Female,caste,35.1,34.2,36,Grouped,General,"35.1 (34.2, 36)",218595,sex
+Urban,Female,caste,41.8,40.9,42.7,Grouped,OBC,"41.8 (40.9, 42.7)",218595,sex
+Urban,Female,caste,19,18.3,19.8,Grouped,Schedule Caste,"19 (18.3, 19.8)",218595,sex
+Urban,Female,caste,4.1,3.8,4.4,Grouped,Schedule Tribe,"4.1 (3.8, 4.4)",218595,sex
+Urban,Male,caste,35,34.1,35.9,Grouped,General,"35 (34.1, 35.9)",198910,sex
+Urban,Male,caste,41.9,41,42.8,Grouped,OBC,"41.9 (41, 42.8)",198910,sex
+Urban,Male,caste,18.9,18.2,19.7,Grouped,Schedule Caste,"18.9 (18.2, 19.7)",198910,sex
+Urban,Male,caste,4.1,3.8,4.4,Grouped,Schedule Tribe,"4.1 (3.8, 4.4)",198910,sex
+Rural,Female,religion,84.2,83.7,84.6,Grouped,Hindu,"84.2 (83.7, 84.6)",670912,sex
+Rural,Female,religion,10.6,10.1,11,Grouped,Muslim,"10.6 (10.1, 11)",670912,sex
+Rural,Female,religion,5.2,5,5.4,Grouped,Other,"5.2 (5, 5.4)",670912,sex
+Rural,Male,religion,84.5,84,84.9,Grouped,Hindu,"84.5 (84, 84.9)",602692,sex
+Rural,Male,religion,10.2,9.8,10.7,Grouped,Muslim,"10.2 (9.8, 10.7)",602692,sex
+Rural,Male,religion,5.3,5.1,5.5,Grouped,Other,"5.3 (5.1, 5.5)",602692,sex
+Urban,Female,religion,78.3,77.3,79.2,Grouped,Hindu,"78.3 (77.3, 79.2)",218595,sex
+Urban,Female,religion,15.6,14.7,16.5,Grouped,Muslim,"15.6 (14.7, 16.5)",218595,sex
+Urban,Female,religion,6.1,5.8,6.5,Grouped,Other,"6.1 (5.8, 6.5)",218595,sex
+Urban,Male,religion,79,78.1,79.9,Grouped,Hindu,"79 (78.1, 79.9)",198910,sex
+Urban,Male,religion,15.2,14.3,16.1,Grouped,Muslim,"15.2 (14.3, 16.1)",198910,sex
+Urban,Male,religion,5.8,5.4,6.2,Grouped,Other,"5.8 (5.4, 6.2)",198910,sex
+Rural,Female,wealthq_ur,18.2,17.9,18.6,Grouped,1,"18.2 (17.9, 18.6)",670912,sex
+Rural,Female,wealthq_ur,19.3,19.1,19.5,Grouped,2,"19.3 (19.1, 19.5)",670912,sex
+Rural,Female,wealthq_ur,20.3,20.1,20.5,Grouped,3,"20.3 (20.1, 20.5)",670912,sex
+Rural,Female,wealthq_ur,20.9,20.6,21.1,Grouped,4,"20.9 (20.6, 21.1)",670912,sex
+Rural,Female,wealthq_ur,21.3,20.9,21.7,Grouped,5,"21.3 (20.9, 21.7)",670912,sex
+Rural,Male,wealthq_ur,17.3,17,17.6,Grouped,1,"17.3 (17, 17.6)",602692,sex
+Rural,Male,wealthq_ur,18.9,18.6,19.2,Grouped,2,"18.9 (18.6, 19.2)",602692,sex
+Rural,Male,wealthq_ur,20.4,20.2,20.7,Grouped,3,"20.4 (20.2, 20.7)",602692,sex
+Rural,Male,wealthq_ur,21.6,21.3,21.9,Grouped,4,"21.6 (21.3, 21.9)",602692,sex
+Rural,Male,wealthq_ur,21.8,21.5,22.2,Grouped,5,"21.8 (21.5, 22.2)",602692,sex
+Urban,Female,wealthq_ur,19.4,18.6,20.1,Grouped,1,"19.4 (18.6, 20.1)",218595,sex
+Urban,Female,wealthq_ur,20.2,19.7,20.7,Grouped,2,"20.2 (19.7, 20.7)",218595,sex
+Urban,Female,wealthq_ur,20.3,19.9,20.8,Grouped,3,"20.3 (19.9, 20.8)",218595,sex
+Urban,Female,wealthq_ur,20.3,19.8,20.8,Grouped,4,"20.3 (19.8, 20.8)",218595,sex
+Urban,Female,wealthq_ur,19.9,19.2,20.6,Grouped,5,"19.9 (19.2, 20.6)",218595,sex
+Urban,Male,wealthq_ur,19.4,18.6,20.1,Grouped,1,"19.4 (18.6, 20.1)",198910,sex
+Urban,Male,wealthq_ur,20.2,19.7,20.7,Grouped,2,"20.2 (19.7, 20.7)",198910,sex
+Urban,Male,wealthq_ur,20.3,19.9,20.8,Grouped,3,"20.3 (19.9, 20.8)",198910,sex
+Urban,Male,wealthq_ur,20.3,19.8,20.8,Grouped,4,"20.3 (19.8, 20.8)",198910,sex
+Urban,Male,wealthq_ur,19.7,19,20.5,Grouped,5,"19.7 (19, 20.5)",198910,sex
+Rural,Female,bmi_category,12.5,12.3,12.6,Grouped,Underweight,"12.5 (12.3, 12.6)",458265,sex
+Rural,Female,bmi_category,41,40.8,41.2,Grouped,Normal,"41 (40.8, 41.2)",458265,sex
+Rural,Female,bmi_category,11.3,11.1,11.4,Grouped,Overweight,"11.3 (11.1, 11.4)",458265,sex
+Rural,Female,bmi_category,3.3,3.3,3.4,Grouped,Obese,"3.3 (3.3, 3.4)",458265,sex
+Rural,Female,bmi_category,31.9,31.8,32.1,Grouped,NA,"31.9 (31.8, 32.1)",458265,sex
+Rural,Male,bmi_category,1.5,1.4,1.5,Grouped,Underweight,"1.5 (1.4, 1.5)",65592,sex
+Rural,Male,bmi_category,7.1,6.9,7.3,Grouped,Normal,"7.1 (6.9, 7.3)",65592,sex
+Rural,Male,bmi_category,2,1.9,2,Grouped,Overweight,"2 (1.9, 2)",65592,sex
+Rural,Male,bmi_category,0.4,0.3,0.4,Grouped,Obese,"0.4 (0.3, 0.4)",65592,sex
+Rural,Male,bmi_category,89.1,88.8,89.4,Grouped,NA,"89.1 (88.8, 89.4)",65592,sex
+Urban,Female,bmi_category,7.3,7.1,7.5,Grouped,Underweight,"7.3 (7.1, 7.5)",151238,sex
+Urban,Female,bmi_category,36.9,36.5,37.4,Grouped,Normal,"36.9 (36.5, 37.4)",151238,sex
+Urban,Female,bmi_category,16.6,16.4,16.9,Grouped,Overweight,"16.6 (16.4, 16.9)",151238,sex
+Urban,Female,bmi_category,7.6,7.4,7.8,Grouped,Obese,"7.6 (7.4, 7.8)",151238,sex
+Urban,Female,bmi_category,31.5,31.2,31.9,Grouped,NA,"31.5 (31.2, 31.9)",151238,sex
+Urban,Male,bmi_category,1,0.9,1.1,Grouped,Underweight,"1 (0.9, 1.1)",22556,sex
+Urban,Male,bmi_category,6.4,6,6.7,Grouped,Normal,"6.4 (6, 6.7)",22556,sex
+Urban,Male,bmi_category,2.9,2.7,3.1,Grouped,Overweight,"2.9 (2.7, 3.1)",22556,sex
+Urban,Male,bmi_category,0.7,0.6,0.8,Grouped,Obese,"0.7 (0.6, 0.8)",22556,sex
+Urban,Male,bmi_category,89,88.4,89.5,Grouped,NA,"89 (88.4, 89.5)",22556,sex
