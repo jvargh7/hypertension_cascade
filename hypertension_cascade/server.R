@@ -123,7 +123,7 @@ shinyServer(function(input, output,session) {
   
   breaks <- reactive({
     if(input$varinput1 == "Hypertension"){
-      c(0,5,10,15,25,40)
+      seq(0,60,by=15)
       
     }
     else{seq(0,100,by=20)}

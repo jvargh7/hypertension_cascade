@@ -5,41 +5,13 @@ source("C:/code/external/functions/survey/svysummary.R")
 proportion_vars <- c("htn_screened","htn_disease","htn_diagnosed","htn_treated","htn_controlled")
 
 
-lasipop_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_women.RDS")) %>% 
-                          mutate(sex = "Female"),
-                        readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_men.RDS")) %>% 
-                          mutate(sex = "Male")) %>%
-  dplyr::filter(!is.na(htn_free),age >= 45) %>%
-  mutate(residence = case_when(residence == 1 ~ "Urban",
-                               residence == 2 ~ "Rural")) %>% 
-  left_join(sdist %>% 
-              dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
-            by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE) %>% 
-  mutate(htn_disease_cat = case_when(is.na(htn_disease) ~ "Missing",
-                                     htn_disease == 1 ~ "Yes",
-                                     htn_disease == 0 ~ "No"))
-
-lasipop_design <- lasipop_df %>% 
-  as_survey_design(.data = .,
-                   ids = psu,strata = state,
-                   weight = sampleweight,
-                   nest = TRUE,
-                   variance = "YG",pps = "brewer")
-
-lasipop_htn_design <- lasipop_df %>% 
-  dplyr::filter(htn_disease == 1) %>% 
-  as_survey_design(.data = .,
-                   ids = psu,strata = state,
-                   weight = sampleweight,
-                   nest = TRUE,
-                   variance = "YG",pps = "brewer")
+source("qc/lasiqc01_total svydesign.R")
 
 
 lasi_national <- map_dfr(group_vars,
                          function(g_v){
                            id_vars = c(g_v);
-                           n5_sy <- svysummary(lasipop_design,
+                           n5_sy <- svysummary(lasi_design,
                                                # c_vars = continuous_vars,
                                                p_vars = proportion_vars,
                                                # g_vars = grouped_vars,
@@ -50,7 +22,7 @@ lasi_national <- map_dfr(group_vars,
                                                     lci,", ",uci,")"));
                            
                            # Count of non-NA values at intersection of id_vars and each variable in proportion_vars
-                           n5_ct <- lasipop_df %>% 
+                           n5_ct <- lasi_df %>% 
                              group_by_at(vars(one_of(id_vars))) %>% 
                              summarize_at(vars(one_of(c(
                                # continuous_vars,
@@ -78,7 +50,7 @@ lasi_national <- map_dfr(group_vars,
 lasi_regional <- map_dfr(group_vars,
                          function(g_v){
                            id_vars = c("residence",g_v);
-                           n5_sy <- svysummary(lasipop_design,
+                           n5_sy <- svysummary(lasi_design,
                                                # c_vars = continuous_vars,
                                                p_vars = proportion_vars,
                                                # g_vars = grouped_vars,
@@ -89,7 +61,7 @@ lasi_regional <- map_dfr(group_vars,
                                                     lci,", ",uci,")"));
                            
                            # Count of non-NA values at intersection of id_vars and each variable in proportion_vars
-                           n5_ct <- lasipop_df %>% 
+                           n5_ct <- lasi_df %>% 
                              group_by_at(vars(one_of(id_vars))) %>% 
                              summarize_at(vars(one_of(c(
                                # continuous_vars,
@@ -117,7 +89,7 @@ lasi_regional <- map_dfr(group_vars,
 lasi_htn_national <- map_dfr(group_vars,
                             function(g_v){
                               id_vars = c(g_v);
-                              n5_sy <- svysummary(lasipop_htn_design,
+                              n5_sy <- svysummary(lasi_htn_design,
                                                   # c_vars = continuous_vars,
                                                   p_vars = proportion_vars[3:5],
                                                   # g_vars = grouped_vars,
@@ -128,7 +100,7 @@ lasi_htn_national <- map_dfr(group_vars,
                                                        lci,", ",uci,")"));
                               
                               # Count of non-NA values at intersection of id_vars and each variable in proportion_vars
-                              n5_ct <- lasipop_df %>% 
+                              n5_ct <- lasi_df %>% 
                                 dplyr::filter(htn_disease == 1) %>% 
                                 group_by_at(vars(one_of(id_vars))) %>% 
                                 summarize_at(vars(one_of(c(
@@ -157,7 +129,7 @@ lasi_htn_national <- map_dfr(group_vars,
 lasi_htn_regional <- map_dfr(group_vars,
                             function(g_v){
                               id_vars = c("residence",g_v);
-                              n5_sy <- svysummary(lasipop_htn_design,
+                              n5_sy <- svysummary(lasi_htn_design,
                                                   # c_vars = continuous_vars,
                                                   p_vars = proportion_vars[3:5],
                                                   # g_vars = grouped_vars,
@@ -168,7 +140,7 @@ lasi_htn_regional <- map_dfr(group_vars,
                                                        lci,", ",uci,")"));
                               
                               # Count of non-NA values at intersection of id_vars and each variable in proportion_vars
-                              n5_ct <- lasipop_df %>% 
+                              n5_ct <- lasi_df %>% 
                                 dplyr::filter(htn_disease == 1) %>% 
                                 group_by_at(vars(one_of(id_vars))) %>% 
                                 summarize_at(vars(one_of(c(
@@ -195,7 +167,7 @@ lasi_htn_regional <- map_dfr(group_vars,
                             })
 
 
-write_csv(lasi_national,"qc/lasi national equivalent estimates.csv")
-write_csv(lasi_regional,"qc/lasi regional equivalent estimates.csv")
-write_csv(lasi_htn_national,"qc/lasi national equivalent nested estimates.csv")
-write_csv(lasi_htn_regional,"qc/lasi regional equivalent nested estimates.csv")
+write_csv(lasi_national,"qc/lasiqc03_national equivalent estimates.csv")
+write_csv(lasi_regional,"qc/lasiqc03_regional equivalent estimates.csv")
+write_csv(lasi_htn_national,"qc/lasiqc03_national equivalent nested estimates.csv")
+write_csv(lasi_htn_regional,"qc/lasiqc03_regional equivalent nested estimates.csv")

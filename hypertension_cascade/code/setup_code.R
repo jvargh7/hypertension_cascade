@@ -239,17 +239,19 @@ districtz_nested <- bind_rows(
 saveRDS(districtz_nested,file="hypertension_cascade/data/districtz_nested.RDS")
 
 # Copying functions --------
-
-file.copy("C:/code/external/nfhs_cascade/functions/cascade_plot.R",to = "hypertension_cascade/code/cascade_plot.R")
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/code/tmap plots.R",to = "hypertension_cascade/code/tmap plots.R")
-
-# Copying data -----------
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/data/maps.xlsx",to = "hypertension_cascade/data/maps.xlsx")
-
-
-# Copying logos -------------
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/gdrc.png",to = "hypertension_cascade/www/gdrc.png")
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 1.jpg",to = "hypertension_cascade/www/Logo 1.jpg")
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 2.jpg",to = "hypertension_cascade/www/Logo 2.jpg")
-file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 3.jpg",to = "hypertension_cascade/www/Logo 3.jpg")
-
+# if(Sys.info["user"]=="JVARGH7"){
+#   file.copy("C:/code/external/nfhs_cascade/functions/cascade_plot.R",to = "hypertension_cascade/code/cascade_plot.R")
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/code/tmap plots.R",to = "hypertension_cascade/code/tmap plots.R")
+#   
+#   # Copying data -----------
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/data/maps.xlsx",to = "hypertension_cascade/data/maps.xlsx")
+#   
+#   
+#   # Copying logos -------------
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/gdrc.png",to = "hypertension_cascade/www/gdrc.png")
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 1.jpg",to = "hypertension_cascade/www/Logo 1.jpg")
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 2.jpg",to = "hypertension_cascade/www/Logo 2.jpg")
+#   file.copy("C:/code/external/nfhs_cascade/diabetes_cascade/www/Logo 3.jpg",to = "hypertension_cascade/www/Logo 3.jpg")
+#   
+#   
+# }

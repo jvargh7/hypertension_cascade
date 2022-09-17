@@ -1,0 +1,70 @@
+strata,variable,estimate,lci,uci,type,group,est_ci,n,stratification
+Analytic,bmi,22.7,22.7,22.8,Continuous,NA,"22.7 (22.7, 22.8)",689215,status
+Analytic,age,32.3,32.2,32.3,Continuous,NA,"32.3 (32.2, 32.3)",1149382,status
+Excluded,bmi,22.8,22.5,23.1,Continuous,NA,"22.8 (22.5, 23.1)",2062,status
+Excluded,age,31,30.9,31,Continuous,NA,"31 (30.9, 31)",151934,status
+Analytic,highwc,40.2,39.9,40.5,Proportion,NA,"40.2 (39.9, 40.5)",689749,status
+Analytic,htn,18.8,18.6,19,Proportion,NA,"18.8 (18.6, 19)",1149382,status
+Analytic,highbp,15,14.8,15.1,Proportion,NA,"15 (14.8, 15.1)",1149382,status
+Analytic,diaghtn,35.5,34.8,36.2,Proportion,NA,"35.5 (34.8, 36.2)",68439,status
+Analytic,htn_screened,59.3,59,59.7,Proportion,NA,"59.3 (59, 59.7)",1149382,status
+Analytic,htn_disease,18.8,18.6,19,Proportion,NA,"18.8 (18.6, 19)",1149382,status
+Analytic,htn_diagnosed,5.9,5.8,6.1,Proportion,NA,"5.9 (5.8, 6.1)",1149382,status
+Analytic,htn_treated,2.1,2.1,2.1,Proportion,NA,"2.1 (2.1, 2.1)",1149382,status
+Analytic,htn_controlled,1,1,1,Proportion,NA,"1 (1, 1)",1149382,status
+Excluded,highwc,41.6,38.5,44.6,Proportion,NA,"41.6 (38.5, 44.6)",1872,status
+Excluded,htn_screened,0,0,0,Proportion,NA,"0 (0, 0)",151934,status
+Analytic,residence,67.6,66.8,68.4,Grouped,Rural,"67.6 (66.8, 68.4)",1149382,status
+Analytic,residence,32.4,31.6,33.2,Grouped,Urban,"32.4 (31.6, 33.2)",1149382,status
+Excluded,residence,56.3,54.8,57.7,Grouped,Rural,"56.3 (54.8, 57.7)",151934,status
+Excluded,residence,43.7,42.3,45.2,Grouped,Urban,"43.7 (42.3, 45.2)",151934,status
+Analytic,sex,53.6,53.4,53.7,Grouped,Female,"53.6 (53.4, 53.7)",1149382,status
+Analytic,sex,46.4,46.3,46.6,Grouped,Male,"46.4 (46.3, 46.6)",1149382,status
+Excluded,sex,33.6,33.2,34,Grouped,Female,"33.6 (33.2, 34)",151934,status
+Excluded,sex,66.4,66,66.8,Grouped,Male,"66.4 (66, 66.8)",151934,status
+Analytic,age_category,73.3,73.2,73.5,Grouped,18-39,"73.3 (73.2, 73.5)",1149382,status
+Analytic,age_category,26.7,26.5,26.8,Grouped,40-64,"26.7 (26.5, 26.8)",1149382,status
+Excluded,age_category,77.8,77.5,78.2,Grouped,18-39,"77.8 (77.5, 78.2)",151934,status
+Excluded,age_category,22.2,21.8,22.5,Grouped,40-64,"22.2 (21.8, 22.5)",151934,status
+Analytic,education,19.1,18.8,19.4,Grouped,Higher,"19.1 (18.8, 19.4)",1149382,status
+Analytic,education,18.4,18.2,18.6,Grouped,No education,"18.4 (18.2, 18.6)",1149382,status
+Analytic,education,12.5,12.3,12.6,Grouped,Primary,"12.5 (12.3, 12.6)",1149382,status
+Analytic,education,50,49.8,50.2,Grouped,Secondary,"50 (49.8, 50.2)",1149382,status
+Excluded,education,26.2,25.4,26.9,Grouped,Higher,"26.2 (25.4, 26.9)",151934,status
+Excluded,education,13.9,13.6,14.3,Grouped,No education,"13.9 (13.6, 14.3)",151934,status
+Excluded,education,10.2,9.9,10.5,Grouped,Primary,"10.2 (9.9, 10.5)",151934,status
+Excluded,education,49.7,49.2,50.3,Grouped,Secondary,"49.7 (49.2, 50.3)",151934,status
+Analytic,caste,26.3,25.8,26.7,Grouped,General,"26.3 (25.8, 26.7)",1149382,status
+Analytic,caste,41.6,41.2,42,Grouped,OBC,"41.6 (41.2, 42)",1149382,status
+Analytic,caste,22.3,21.9,22.7,Grouped,Schedule Caste,"22.3 (21.9, 22.7)",1149382,status
+Analytic,caste,9.9,9.6,10.1,Grouped,Schedule Tribe,"9.9 (9.6, 10.1)",1149382,status
+Excluded,caste,31.4,30.5,32.4,Grouped,General,"31.4 (30.5, 32.4)",151934,status
+Excluded,caste,40.9,40.1,41.7,Grouped,OBC,"40.9 (40.1, 41.7)",151934,status
+Excluded,caste,20.6,19.9,21.2,Grouped,Schedule Caste,"20.6 (19.9, 21.2)",151934,status
+Excluded,caste,7.1,6.7,7.4,Grouped,Schedule Tribe,"7.1 (6.7, 7.4)",151934,status
+Analytic,religion,82,81.5,82.4,Grouped,Hindu,"82 (81.5, 82.4)",1149382,status
+Analytic,religion,12.8,12.4,13.2,Grouped,Muslim,"12.8 (12.4, 13.2)",1149382,status
+Analytic,religion,5.2,5.1,5.4,Grouped,Other,"5.2 (5.1, 5.4)",1149382,status
+Excluded,religion,77.4,76.5,78.3,Grouped,Hindu,"77.4 (76.5, 78.3)",151934,status
+Excluded,religion,16.1,15.3,17,Grouped,Muslim,"16.1 (15.3, 17)",151934,status
+Excluded,religion,6.5,6,6.9,Grouped,Other,"6.5 (6, 6.9)",151934,status
+Analytic,wealthq_ur,18.3,18,18.7,Grouped,1,"18.3 (18, 18.7)",1149382,status
+Analytic,wealthq_ur,19.9,19.7,20.2,Grouped,2,"19.9 (19.7, 20.2)",1149382,status
+Analytic,wealthq_ur,20.7,20.4,20.9,Grouped,3,"20.7 (20.4, 20.9)",1149382,status
+Analytic,wealthq_ur,20.9,20.7,21.1,Grouped,4,"20.9 (20.7, 21.1)",1149382,status
+Analytic,wealthq_ur,20.2,19.8,20.5,Grouped,5,"20.2 (19.8, 20.5)",1149382,status
+Excluded,wealthq_ur,16.1,15.5,16.6,Grouped,1,"16.1 (15.5, 16.6)",151934,status
+Excluded,wealthq_ur,17.8,17.3,18.3,Grouped,2,"17.8 (17.3, 18.3)",151934,status
+Excluded,wealthq_ur,18.8,18.3,19.2,Grouped,3,"18.8 (18.3, 19.2)",151934,status
+Excluded,wealthq_ur,21.1,20.6,21.6,Grouped,4,"21.1 (20.6, 21.6)",151934,status
+Excluded,wealthq_ur,26.2,25.4,27,Grouped,5,"26.2 (25.4, 27)",151934,status
+Analytic,bmi_category,9.3,9.2,9.4,Grouped,Underweight,"9.3 (9.2, 9.4)",689215,status
+Analytic,bmi_category,35.4,35.2,35.6,Grouped,Normal,"35.4 (35.2, 35.6)",689215,status
+Analytic,bmi_category,11.6,11.4,11.7,Grouped,Overweight,"11.6 (11.4, 11.7)",689215,status
+Analytic,bmi_category,4,3.9,4,Grouped,Obese,"4 (3.9, 4)",689215,status
+Analytic,bmi_category,39.7,39.5,39.9,Grouped,NA,"39.7 (39.5, 39.9)",689215,status
+Excluded,bmi_category,0.2,0.2,0.2,Grouped,Underweight,"0.2 (0.2, 0.2)",2062,status
+Excluded,bmi_category,0.7,0.7,0.8,Grouped,Normal,"0.7 (0.7, 0.8)",2062,status
+Excluded,bmi_category,0.2,0.2,0.3,Grouped,Overweight,"0.2 (0.2, 0.3)",2062,status
+Excluded,bmi_category,0.1,0.1,0.1,Grouped,Obese,"0.1 (0.1, 0.1)",2062,status
+Excluded,bmi_category,98.7,98.6,98.8,Grouped,NA,"98.7 (98.6, 98.8)",2062,status
