@@ -26,6 +26,26 @@ Analytic,age_category,73.3,73.2,73.5,Grouped,18-39,"73.3 (73.2, 73.5)",1149382,s
 Analytic,age_category,26.7,26.5,26.8,Grouped,40-64,"26.7 (26.5, 26.8)",1149382,status
 Excluded,age_category,77.8,77.5,78.2,Grouped,18-39,"77.8 (77.5, 78.2)",151934,status
 Excluded,age_category,22.2,21.8,22.5,Grouped,40-64,"22.2 (21.8, 22.5)",151934,status
+Analytic,age_category10,42.3,42.2,42.5,Grouped,"[18,30)","42.3 (42.2, 42.5)",1149382,status
+Analytic,age_category10,31,30.8,31.1,Grouped,"[30,40)","31 (30.8, 31.1)",1149382,status
+Analytic,age_category10,26.7,26.5,26.8,Grouped,"[40,50)","26.7 (26.5, 26.8)",1149382,status
+Excluded,age_category10,48.6,48.1,49,Grouped,"[18,30)","48.6 (48.1, 49)",151934,status
+Excluded,age_category10,29.3,28.8,29.7,Grouped,"[30,40)","29.3 (28.8, 29.7)",151934,status
+Excluded,age_category10,22.2,21.8,22.5,Grouped,"[40,50)","22.2 (21.8, 22.5)",151934,status
+Analytic,age_category5,7.7,7.6,7.7,Grouped,"[15,20)","7.7 (7.6, 7.7)",1149382,status
+Analytic,age_category5,17.4,17.2,17.5,Grouped,"[20,25)","17.4 (17.2, 17.5)",1149382,status
+Analytic,age_category5,17.3,17.2,17.4,Grouped,"[25,30)","17.3 (17.2, 17.4)",1149382,status
+Analytic,age_category5,15.6,15.5,15.7,Grouped,"[30,35)","15.6 (15.5, 15.7)",1149382,status
+Analytic,age_category5,15.4,15.3,15.5,Grouped,"[35,40)","15.4 (15.3, 15.5)",1149382,status
+Analytic,age_category5,13.1,13,13.2,Grouped,"[40,45)","13.1 (13, 13.2)",1149382,status
+Analytic,age_category5,13.6,13.5,13.7,Grouped,"[45,50)","13.6 (13.5, 13.7)",1149382,status
+Excluded,age_category5,8.7,8.5,8.9,Grouped,"[15,20)","8.7 (8.5, 8.9)",151934,status
+Excluded,age_category5,20.6,20.3,20.9,Grouped,"[20,25)","20.6 (20.3, 20.9)",151934,status
+Excluded,age_category5,19.3,19,19.6,Grouped,"[25,30)","19.3 (19, 19.6)",151934,status
+Excluded,age_category5,15.5,15.1,15.8,Grouped,"[30,35)","15.5 (15.1, 15.8)",151934,status
+Excluded,age_category5,13.8,13.6,14.1,Grouped,"[35,40)","13.8 (13.6, 14.1)",151934,status
+Excluded,age_category5,11.2,11,11.5,Grouped,"[40,45)","11.2 (11, 11.5)",151934,status
+Excluded,age_category5,10.9,10.7,11.2,Grouped,"[45,50)","10.9 (10.7, 11.2)",151934,status
 Analytic,education,19.1,18.8,19.4,Grouped,Higher,"19.1 (18.8, 19.4)",1149382,status
 Analytic,education,18.4,18.2,18.6,Grouped,No education,"18.4 (18.2, 18.6)",1149382,status
 Analytic,education,12.5,12.3,12.6,Grouped,Primary,"12.5 (12.3, 12.6)",1149382,status

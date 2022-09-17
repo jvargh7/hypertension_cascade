@@ -52,3 +52,7 @@ nfhs5_out %>%
   write_csv(.,file = "qc/nfhs5qc02_equivalent population characteristics.csv")
 
 
+nfhs5_out %>% 
+  dplyr::select(strata,variable,group,est_ci) %>% 
+  pivot_wider(names_from=c("strata"),values_from="est_ci") %>% 
+  write_csv(.,"qc/nfhs5qc_total population characteristics.csv")

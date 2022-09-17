@@ -26,6 +26,38 @@ Analytic,age_category,72.7,72.5,72.9,Grouped,40-64,"72.7 (72.5, 72.9)",696765,st
 Analytic,age_category,27.3,27.1,27.5,Grouped,65 plus,"27.3 (27.1, 27.5)",696765,status
 Excluded,age_category,74.8,74.3,75.3,Grouped,40-64,"74.8 (74.3, 75.3)",68395,status
 Excluded,age_category,25.2,24.7,25.7,Grouped,65 plus,"25.2 (24.7, 25.7)",68395,status
+Analytic,age_category10,22.1,22,22.3,Grouped,"[40,50)","22.1 (22, 22.3)",696765,status
+Analytic,age_category10,34.6,34.4,34.8,Grouped,"[50,60)","34.6 (34.4, 34.8)",696765,status
+Analytic,age_category10,27.5,27.4,27.7,Grouped,"[60,70)","27.5 (27.4, 27.7)",696765,status
+Analytic,age_category10,11.5,11.3,11.6,Grouped,"[70,80)","11.5 (11.3, 11.6)",696765,status
+Analytic,age_category10,4.3,4.2,4.4,Grouped,"[80,100]","4.3 (4.2, 4.4)",696765,status
+Excluded,age_category10,23.8,23.3,24.3,Grouped,"[40,50)","23.8 (23.3, 24.3)",68395,status
+Excluded,age_category10,36.2,35.6,36.7,Grouped,"[50,60)","36.2 (35.6, 36.7)",68395,status
+Excluded,age_category10,25.1,24.6,25.5,Grouped,"[60,70)","25.1 (24.6, 25.5)",68395,status
+Excluded,age_category10,10.3,9.9,10.6,Grouped,"[70,80)","10.3 (9.9, 10.6)",68395,status
+Excluded,age_category10,4.7,4.5,5,Grouped,"[80,100]","4.7 (4.5, 5)",68395,status
+Analytic,age_category5,22.1,22,22.3,Grouped,"[45,50)","22.1 (22, 22.3)",696765,status
+Analytic,age_category5,17.6,17.5,17.7,Grouped,"[50,55)","17.6 (17.5, 17.7)",696765,status
+Analytic,age_category5,17,16.9,17.1,Grouped,"[55,60)","17 (16.9, 17.1)",696765,status
+Analytic,age_category5,16,15.9,16.1,Grouped,"[60,65)","16 (15.9, 16.1)",696765,status
+Analytic,age_category5,11.5,11.4,11.6,Grouped,"[65,70)","11.5 (11.4, 11.6)",696765,status
+Analytic,age_category5,7.6,7.5,7.7,Grouped,"[70,75)","7.6 (7.5, 7.7)",696765,status
+Analytic,age_category5,3.9,3.8,3.9,Grouped,"[75,80)","3.9 (3.8, 3.9)",696765,status
+Analytic,age_category5,2.4,2.4,2.5,Grouped,"[80,85)","2.4 (2.4, 2.5)",696765,status
+Analytic,age_category5,1.1,1.1,1.1,Grouped,"[85,90)","1.1 (1.1, 1.1)",696765,status
+Analytic,age_category5,0.5,0.5,0.5,Grouped,"[90,95)","0.5 (0.5, 0.5)",696765,status
+Analytic,age_category5,0.3,0.3,0.3,Grouped,"[95,100]","0.3 (0.3, 0.3)",696765,status
+Excluded,age_category5,23.8,23.3,24.3,Grouped,"[45,50)","23.8 (23.3, 24.3)",68395,status
+Excluded,age_category5,19.2,18.8,19.7,Grouped,"[50,55)","19.2 (18.8, 19.7)",68395,status
+Excluded,age_category5,16.9,16.5,17.4,Grouped,"[55,60)","16.9 (16.5, 17.4)",68395,status
+Excluded,age_category5,14.9,14.5,15.2,Grouped,"[60,65)","14.9 (14.5, 15.2)",68395,status
+Excluded,age_category5,10.2,9.9,10.5,Grouped,"[65,70)","10.2 (9.9, 10.5)",68395,status
+Excluded,age_category5,6.6,6.4,6.9,Grouped,"[70,75)","6.6 (6.4, 6.9)",68395,status
+Excluded,age_category5,3.6,3.4,3.8,Grouped,"[75,80)","3.6 (3.4, 3.8)",68395,status
+Excluded,age_category5,2.5,2.3,2.7,Grouped,"[80,85)","2.5 (2.3, 2.7)",68395,status
+Excluded,age_category5,1.1,1,1.2,Grouped,"[85,90)","1.1 (1, 1.2)",68395,status
+Excluded,age_category5,0.6,0.6,0.7,Grouped,"[90,95)","0.6 (0.6, 0.7)",68395,status
+Excluded,age_category5,0.5,0.4,0.5,Grouped,"[95,100]","0.5 (0.4, 0.5)",68395,status
 Analytic,education,7,6.8,7.3,Grouped,Higher,"7 (6.8, 7.3)",696765,status
 Analytic,education,44.9,44.5,45.3,Grouped,No education,"44.9 (44.5, 45.3)",696765,status
 Analytic,education,18.1,17.9,18.3,Grouped,Primary,"18.1 (17.9, 18.3)",696765,status

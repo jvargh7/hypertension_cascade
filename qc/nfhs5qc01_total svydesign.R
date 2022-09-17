@@ -9,10 +9,7 @@ nfhs5pop_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 ia
   left_join(sdist %>% 
               dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
             by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE) %>% 
-  mutate(htn_disease_cat = case_when(is.na(htn_disease) ~ "Missing",
-                                     htn_disease == 1 ~ "Yes",
-                                     htn_disease == 0 ~ "No"))
+  rename(district_df = D_CODE)
 
 
 
@@ -26,7 +23,7 @@ nfhs5pop_design <- nfhs5pop_df %>%
 
 
 nfhs5_df <- nfhs5pop_df  %>% 
-  dplyr::filter(!is.na(htn_free)) 
+  dplyr::filter(status == "Analytic") 
 
 nfhs5_design <- nfhs5_df %>% 
   as_survey_design(.data = .,

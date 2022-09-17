@@ -10,7 +10,9 @@ nfhs5pop_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 ia
   left_join(sdist %>% 
               dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
             by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE)
+  rename(district_df = D_CODE) %>% 
+  mutate(status_binary = case_when(status == "Excluded" ~ 0,
+                                   TRUE ~ 1))
 
 nfhs5pop_svydesign <- nfhs5pop_df %>% 
   as_survey_design(.data = .,

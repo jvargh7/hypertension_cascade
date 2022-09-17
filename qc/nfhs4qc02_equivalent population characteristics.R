@@ -10,7 +10,7 @@ source("qc/nfhs4qc01_total svydesign.R")
 continuous_vars <- c("bmi","age")
 proportion_vars <- c("highwc","htn","highbp","diaghtn",
                      "htn_screened","htn_disease","htn_diagnosed","htn_treated","htn_controlled")
-grouped_vars <- c("residence","sex","age_category","education",
+grouped_vars <- c("residence","sex","age_category","age_category10","age_category5","education",
                   "caste","religion","wealthq_ur","bmi_category")
 
 id_vars = c(group_vars);
@@ -52,3 +52,8 @@ nfhs4_out %>%
   write_csv(.,file = "qc/nfhs4qc02_equivalent population characteristics.csv")
 
 
+nfhs4_out %>% 
+# read_csv("qc/nfhs4qc02_equivalent population characteristics.csv") %>% 
+  dplyr::select(strata,variable,group,est_ci) %>% 
+  pivot_wider(names_from=c("strata"),values_from="est_ci") %>% 
+  write_csv(.,"qc/nfhs4qc_total population characteristics.csv")
