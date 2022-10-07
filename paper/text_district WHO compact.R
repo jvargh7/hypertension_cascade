@@ -17,7 +17,7 @@ district_met %>%
 
 
 district_met %>% 
-  dplyr::filter(is.na(stratification), n > 50) %>%
+  dplyr::filter(is.na(stratification), n >= 50) %>%
   group_by(variable) %>% 
   summarize(count = sum(estimate > 80),
             prop = sum(estimate > 80)/n(),
