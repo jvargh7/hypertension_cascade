@@ -24,17 +24,9 @@ write_csv(national_summary,"analysis/hca02_national total.csv")
 
 
 # https://stackoverflow.com/questions/40536067/how-to-adjust-future-global-maxsize
-# https://furrr.futureverse.org/articles/progress.html
-require(furrr)
-require(progressr)
-options(future.globals.maxSize= (4*1024*1024)^2) #4GB
 
-plan(multisession, workers = 2)
 
-with_progress({
-  p <- progressor(steps = length(group_vars))
-  
-  nfhs5_svysummary <- future_map_dfr(group_vars,
+  nfhs5_svysummary <- map_dfr(group_vars,
                                      function(g_v){
                                        id_vars = c("residence",g_v);
                                        p();
@@ -74,7 +66,6 @@ with_progress({
                                        
                                      })
   
-})
 
 
 
