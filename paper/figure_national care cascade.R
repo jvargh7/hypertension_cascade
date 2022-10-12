@@ -1,4 +1,4 @@
-national_cascade <- read_csv(file = "age_standardized/hcz01_age standardized care cascade.csv") %>% 
+national_cascade <- read_csv(file = "age_standardized/hcz01_age standardized national care cascade.csv") %>% 
   mutate(cascade = str_replace(variable,"htn_","") %>% str_to_title()) %>% 
   mutate(cascade = factor(cascade,levels=c("Screened","Disease","Diagnosed","Treated","Controlled"),
                           labels=c("Screened","Hypertension","Diagnosed","Taking Medication","Under Control"))) %>% 

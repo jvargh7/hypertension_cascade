@@ -29,7 +29,6 @@ write_csv(national_summary,"analysis/hca02_national total.csv")
   nfhs5_svysummary <- map_dfr(group_vars,
                                      function(g_v){
                                        id_vars = c("residence",g_v);
-                                       p();
                                        n5_sy <- svysummary(nfhs5_svydesign,
                                                            # c_vars = continuous_vars,
                                                            p_vars = proportion_vars,

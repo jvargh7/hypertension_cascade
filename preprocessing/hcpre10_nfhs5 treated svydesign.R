@@ -1,7 +1,7 @@
 
-nfhs5htntreat_df <- bind_rows(readRDS(paste0(path_cascade_folder,"/working/nfhs5 iapr_women.RDS")) %>% 
+nfhs5htntreat_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_women.RDS")) %>% 
                                mutate(sex = "Female"),
-                             readRDS(paste0(path_cascade_folder,"/working/nfhs5 iapr_men.RDS")) %>% 
+                             readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_men.RDS")) %>% 
                                mutate(sex = "Male")) %>%
   dplyr::filter(htn_treated == 1) %>% 
   mutate(residence = case_when(residence == 1 ~ "Urban",
