@@ -71,7 +71,7 @@ shinyServer(function(input, output,session) {
                               "(b) High blood pressure (≥140 mmHg systolic or 90 mmHg diastolic)",
                               "Told had high blood pressure on two or more occasions by a medical provider among those with Hypertension",
                               "Currently taking a prescribed medicine to lower blood pressure among those with Hypertension",
-                              "Blood pressure in non-hypertensive range (<140/90 mmHg) among those with Hypertension")
+                              "Blood pressure in non-hypertensive range (<140/90 mmHg [≤60y] and <150/90 mmHg [>60y]) among those with Hypertension")
     )
   })
   

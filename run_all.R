@@ -88,7 +88,10 @@ source("age_standardized/hcz07_age standardized missing caste stratified.R")
 
 
 
+# SHINY --------
 
+rm(list=ls()); gc(); source(".Rprofile")
+source("hypertension_cascade/code/setup_code.R")
 
 
 
