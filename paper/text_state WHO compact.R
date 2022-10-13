@@ -5,7 +5,7 @@ state_met %>%
   mutate(n_category = case_when(n >= 50 ~ 1,
                                 n %in% c(25:49) ~ 2,
                                 n < 25 ~ 3)) %>% 
-  mutate(n_category = factor(n_category,labels=c(">=50","25-49","<25"))) %>% 
+  mutate(n_category = factor(n_category,labels=c(">=50","25-49"))) %>% 
   group_by(variable,n_category) %>% 
   tally() %>% 
   ggplot(data=.,aes(x = variable,y=n,group=n_category,fill=n_category,label=n)) +
@@ -31,6 +31,43 @@ state_met %>%
             prop = sum(estimate > 80)/n(),
             median = median(estimate),
             n = n()) %>% 
-  dplyr::filter(variable == "dm_treated")
+  dplyr::filter(variable == "htn_treated")
 
+
+state_met %>% 
+  dplyr::filter(is.na(stratification), n >= 50) %>%
+  group_by(residence,zone, variable) %>% 
+  summarize(count = sum(estimate > 80),
+            prop = sum(estimate > 80)/n(),
+            median = median(estimate),
+            n = n()) %>% 
+  dplyr::select(residence,zone,variable,median) %>% 
+  pivot_wider(names_from=residence,values_from=median) %>% 
+  mutate(urb_min_rur = Urban - Rural) %>% View()
+
+
+state_met %>% 
+  dplyr::filter(is.na(stratification), n >= 50) %>%
+  dplyr::select(residence,variable,zone,state,estimate) %>% 
+  pivot_wider(names_from=residence,values_from=estimate) %>% 
+  mutate(urb_min_rur = Urban - Rural,
+         urb_gt_rur = case_when(Urban > Rural ~ 1,
+                                Urban <= Rural ~ 0,
+                                TRUE ~ NA_real_)) %>% 
+  group_by(variable,zone) %>% 
+  summarize(diff = median(urb_min_rur,na.rm=TRUE),
+            sum = sum(urb_gt_rur,na.rm=TRUE)) %>% View()
+
+state_met %>% 
+  dplyr::filter(is.na(stratification), n >= 50) %>%
+  dplyr::select(residence,variable,zone,state,estimate) %>% 
+  pivot_wider(names_from=residence,values_from=estimate) %>% 
+  mutate(urb_min_rur = Urban - Rural,
+         urb_gt_rur = case_when(Urban > Rural ~ 1,
+                                Urban <= Rural ~ 0,
+                                TRUE ~ NA_real_)) %>% 
+  group_by(variable) %>% 
+  summarize(diff = median(urb_min_rur,na.rm=TRUE),
+            sum = sum(urb_gt_rur,na.rm=TRUE),
+            count_diff = sum(!is.na(urb_min_rur)))
 
