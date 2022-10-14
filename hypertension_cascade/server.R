@@ -308,7 +308,7 @@ shinyServer(function(input, output,session) {
       theme_bw() + 
       coord_flip() +
       facet_grid(~variable,scales="free",space="free_y") +
-      scale_y_continuous(limits=c(0,40),breaks=seq(0,40,by=10)) +
+      scale_y_continuous(limits=c(0,50),breaks=seq(0,50,by=10)) +
       facet_grid(~variable,scales="free_y",space="free_y") +
       theme(
         legend.text = element_text(size=12),
