@@ -1,9 +1,12 @@
 national_cascade <- read_csv(file = "age_standardized/hcz01_age standardized national care cascade.csv") %>% 
   mutate(cascade = str_replace(variable,"htn_","") %>% str_to_title()) %>% 
   mutate(cascade = factor(cascade,levels=c("Screened","Disease","Diagnosed","Treated","Controlled"),
-                          labels=c("Screened","Hypertension","Diagnosed","Taking Medication","Under Control"))) %>% 
+                          labels=c("Screened","Hypertension","Diagnosed","Taking Medication","Under Control")))  %>% 
+  mutate(residence = case_when(is.na(residence) ~ "Total",
+                               TRUE ~ residence)) %>% 
+  dplyr::filter(residence != "Total") %>% 
   mutate(group = case_when(is.na(strata) ~ paste0(residence,"\nTotal"),
-                           TRUE ~ paste0(residence,"\n",strata)))
+                           TRUE ~ paste0(residence,"\n",strata)))  
 
 source("C:/code/external/nfhs_cascade/functions/cascade_plot.R")
 

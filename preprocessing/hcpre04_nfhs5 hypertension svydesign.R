@@ -9,9 +9,9 @@ nfhs5htn_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 ia
          htn_unscreened = 1 - htn_screened,
          htn_undiagnosed = 1 - htn_diagnosed) %>% 
   left_join(sdist %>% 
-              dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
-            by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE)
+              dplyr::select(DHSCLUST,REGCODE,DHSREGCO),
+            by= district_matching) %>% 
+  rename(district_df = REGCODE)
 
 nfhs5htn_svydesign <- nfhs5htn_df %>% 
   as_survey_design(.data = .,

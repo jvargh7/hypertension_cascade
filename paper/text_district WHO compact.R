@@ -23,3 +23,27 @@ district_met %>%
             prop = sum(estimate > 80)/n(),
             n = n()) 
 
+district_met %>% 
+  dplyr::filter(is.na(stratification)) %>%
+  group_by(variable) %>% 
+  summarize(count = sum(estimate > 80),
+            prop = sum(estimate > 80)/n(),
+            n = n()) 
+
+# Between district variation --------
+
+require(lme4)
+district_met %>% 
+  dplyr::filter(variable == "htn_diagnosed") %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  performance::icc(.)
+
+district_met %>% 
+  dplyr::filter(variable == "htn_treated") %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  performance::icc(.)
+
+district_met %>% 
+  dplyr::filter(variable == "htn_controlled") %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  performance::icc(.)

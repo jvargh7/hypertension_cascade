@@ -1,45 +1,66 @@
-residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata
-Rural,htn_controlled,52.4,51.4,53.5,Proportion,"52.4 (51.4, 53.5)",62635,,NA
-Urban,htn_controlled,49,47.5,50.5,Proportion,"49 (47.5, 50.5)",35501,,NA
-Rural,htn_controlled,55.6,54.3,56.9,Proportion,"55.6 (54.3, 56.9)",37906,sex,Female
-Rural,htn_controlled,46.8,45.1,48.4,Proportion,"46.8 (45.1, 48.4)",24729,sex,Male
-Urban,htn_controlled,51.5,49.8,53.3,Proportion,"51.5 (49.8, 53.3)",20940,sex,Female
-Urban,htn_controlled,45.3,43,47.7,Proportion,"45.3 (43, 47.7)",14561,sex,Male
-Rural,htn_controlled,62.4,60.6,64.2,Proportion,"62.4 (60.6, 64.2)",5980,age_category,18-39
-Rural,htn_controlled,41.2,40.5,42,Proportion,"41.2 (40.5, 42)",34213,age_category,40-64
-Rural,htn_controlled,40,39.1,40.9,Proportion,"40 (39.1, 40.9)",22442,age_category,65 plus
-Urban,htn_controlled,57.1,54.1,60.1,Proportion,"57.1 (54.1, 60.1)",2513,age_category,18-39
-Urban,htn_controlled,42.6,41.5,43.7,Proportion,"42.6 (41.5, 43.7)",20618,age_category,40-64
-Urban,htn_controlled,43.1,41.7,44.5,Proportion,"43.1 (41.7, 44.5)",12370,age_category,65 plus
-Rural,htn_controlled,61.9,58,65.7,Proportion,"61.9 (58, 65.7)",3285,education,Higher
-Rural,htn_controlled,47,45.7,48.4,Proportion,"47 (45.7, 48.4)",27866,education,No education
-Rural,htn_controlled,51.4,49.2,53.6,Proportion,"51.4 (49.2, 53.6)",12074,education,Primary
-Rural,htn_controlled,54.2,52.5,56,Proportion,"54.2 (52.5, 56)",19410,education,Secondary
-Urban,htn_controlled,57.8,54.4,61.2,Proportion,"57.8 (54.4, 61.2)",5926,education,Higher
-Urban,htn_controlled,43,40.5,45.5,Proportion,"43 (40.5, 45.5)",8389,education,No education
-Urban,htn_controlled,45.2,42.5,47.9,Proportion,"45.2 (42.5, 47.9)",5934,education,Primary
-Urban,htn_controlled,47.5,45.4,49.5,Proportion,"47.5 (45.4, 49.5)",15252,education,Secondary
-Rural,htn_controlled,51.9,49.9,53.8,Proportion,"51.9 (49.9, 53.8)",20239,caste,General
-Rural,htn_controlled,53.4,51.8,55,Proportion,"53.4 (51.8, 55)",23813,caste,OBC
-Rural,htn_controlled,52,49.8,54.2,Proportion,"52 (49.8, 54.2)",10500,caste,Schedule Caste
-Rural,htn_controlled,50.4,47.7,53.1,Proportion,"50.4 (47.7, 53.1)",8083,caste,Schedule Tribe
-Urban,htn_controlled,49.4,47.1,51.8,Proportion,"49.4 (47.1, 51.8)",13899,caste,General
-Urban,htn_controlled,49.5,47.4,51.6,Proportion,"49.5 (47.4, 51.6)",14245,caste,OBC
-Urban,htn_controlled,46.3,43.2,49.3,Proportion,"46.3 (43.2, 49.3)",4872,caste,Schedule Caste
-Urban,htn_controlled,50,41,59,Proportion,"50 (41, 59)",2485,caste,Schedule Tribe
-Rural,htn_controlled,53.5,52.4,54.7,Proportion,"53.5 (52.4, 54.7)",46143,religion,Hindu
-Rural,htn_controlled,49.9,47.2,52.6,Proportion,"49.9 (47.2, 52.6)",7920,religion,Muslim
-Rural,htn_controlled,45.2,41.6,48.8,Proportion,"45.2 (41.6, 48.8)",8572,religion,Other
-Urban,htn_controlled,49.8,48.1,51.6,Proportion,"49.8 (48.1, 51.6)",26193,religion,Hindu
-Urban,htn_controlled,46.5,43.3,49.6,Proportion,"46.5 (43.3, 49.6)",5348,religion,Muslim
-Urban,htn_controlled,45.6,41.1,50.1,Proportion,"45.6 (41.1, 50.1)",3960,religion,Other
-Rural,htn_controlled,57.4,54.7,60.2,Proportion,"57.4 (54.7, 60.2)",5665,wealthq_ur,1
-Rural,htn_controlled,55.1,52.8,57.3,Proportion,"55.1 (52.8, 57.3)",9028,wealthq_ur,2
-Rural,htn_controlled,53.3,51,55.5,Proportion,"53.3 (51, 55.5)",11608,wealthq_ur,3
-Rural,htn_controlled,52,49.9,54.1,Proportion,"52 (49.9, 54.1)",14939,wealthq_ur,4
-Rural,htn_controlled,49.8,47.8,51.7,Proportion,"49.8 (47.8, 51.7)",21395,wealthq_ur,5
-Urban,htn_controlled,49.9,46.7,53.1,Proportion,"49.9 (46.7, 53.1)",4625,wealthq_ur,1
-Urban,htn_controlled,46.6,43.8,49.4,Proportion,"46.6 (43.8, 49.4)",6465,wealthq_ur,2
-Urban,htn_controlled,48.9,45.9,51.9,Proportion,"48.9 (45.9, 51.9)",7365,wealthq_ur,3
-Urban,htn_controlled,48.5,45.6,51.5,Proportion,"48.5 (45.6, 51.5)",7785,wealthq_ur,4
-Urban,htn_controlled,50.8,47.5,54.1,Proportion,"50.8 (47.5, 54.1)",9261,wealthq_ur,5
+strata,variable,estimate,lci,uci,type,est_ci,n,stratification,residence
+Female,htn_controlled,58.6,57.6,59.6,Proportion,"58.6 (57.6, 59.6)",58846,sex,NA
+Male,htn_controlled,51.1,49.8,52.5,Proportion,"51.1 (49.8, 52.5)",39290,sex,NA
+18-39,htn_controlled,64.1,62.5,65.6,Proportion,"64.1 (62.5, 65.6)",8493,age_category,NA
+40-64,htn_controlled,47.7,47,48.3,Proportion,"47.7 (47, 48.3)",54831,age_category,NA
+65 plus,htn_controlled,47.2,46.4,48,Proportion,"47.2 (46.4, 48)",34812,age_category,NA
+Higher,htn_controlled,62.5,60,65,Proportion,"62.5 (60, 65)",9211,education,NA
+No education,htn_controlled,50.7,49.6,51.9,Proportion,"50.7 (49.6, 51.9)",36255,education,NA
+Primary,htn_controlled,53.9,52.2,55.6,Proportion,"53.9 (52.2, 55.6)",18008,education,NA
+Secondary,htn_controlled,56.6,55.3,58,Proportion,"56.6 (55.3, 58)",34662,education,NA
+General,htn_controlled,55.3,53.9,56.8,Proportion,"55.3 (53.9, 56.8)",34138,caste,NA
+OBC,htn_controlled,56.6,55.4,57.9,Proportion,"56.6 (55.4, 57.9)",38058,caste,NA
+Schedule Caste,htn_controlled,54.9,53.2,56.7,Proportion,"54.9 (53.2, 56.7)",15372,caste,NA
+Schedule Tribe,htn_controlled,54.3,51.3,57.3,Proportion,"54.3 (51.3, 57.3)",10568,caste,NA
+Hindu,htn_controlled,56.6,55.7,57.6,Proportion,"56.6 (55.7, 57.6)",72336,religion,NA
+Muslim,htn_controlled,53.3,51.3,55.4,Proportion,"53.3 (51.3, 55.4)",13268,religion,NA
+Other,htn_controlled,51.1,48.4,53.8,Proportion,"51.1 (48.4, 53.8)",12532,religion,NA
+1,htn_controlled,57.7,55.7,59.6,Proportion,"57.7 (55.7, 59.6)",10290,wealthq_ur,NA
+2,htn_controlled,55.1,53.4,56.8,Proportion,"55.1 (53.4, 56.8)",15493,wealthq_ur,NA
+3,htn_controlled,55.9,54.1,57.6,Proportion,"55.9 (54.1, 57.6)",18973,wealthq_ur,NA
+4,htn_controlled,56.1,54.4,57.8,Proportion,"56.1 (54.4, 57.8)",22724,wealthq_ur,NA
+5,htn_controlled,55.1,53.5,56.8,Proportion,"55.1 (53.5, 56.8)",30656,wealthq_ur,NA
+NA,htn_controlled,57,56,58,Proportion,"57 (56, 58)",62635,,Rural
+NA,htn_controlled,54,52.6,55.4,Proportion,"54 (52.6, 55.4)",35501,,Urban
+Female,htn_controlled,60,58.7,61.2,Proportion,"60 (58.7, 61.2)",37906,sex,Rural
+Male,htn_controlled,51.6,49.9,53.2,Proportion,"51.6 (49.9, 53.2)",24729,sex,Rural
+Female,htn_controlled,56.4,54.7,58.1,Proportion,"56.4 (54.7, 58.1)",20940,sex,Urban
+Male,htn_controlled,50.6,48.3,52.8,Proportion,"50.6 (48.3, 52.8)",14561,sex,Urban
+18-39,htn_controlled,65.9,64.1,67.7,Proportion,"65.9 (64.1, 67.7)",5980,age_category,Rural
+40-64,htn_controlled,46.9,46.1,47.7,Proportion,"46.9 (46.1, 47.7)",34213,age_category,Rural
+65 plus,htn_controlled,46,45.1,46.9,Proportion,"46 (45.1, 46.9)",22442,age_category,Rural
+18-39,htn_controlled,60.9,57.9,63.8,Proportion,"60.9 (57.9, 63.8)",2513,age_category,Urban
+40-64,htn_controlled,48.6,47.5,49.7,Proportion,"48.6 (47.5, 49.7)",20618,age_category,Urban
+65 plus,htn_controlled,48.8,47.4,50.2,Proportion,"48.8 (47.4, 50.2)",12370,age_category,Urban
+Higher,htn_controlled,66,62.5,69.6,Proportion,"66 (62.5, 69.6)",3285,education,Rural
+No education,htn_controlled,51.8,50.4,53.1,Proportion,"51.8 (50.4, 53.1)",27866,education,Rural
+Primary,htn_controlled,55.6,53.5,57.7,Proportion,"55.6 (53.5, 57.7)",12074,education,Rural
+Secondary,htn_controlled,58.8,57.1,60.6,Proportion,"58.8 (57.1, 60.6)",19410,education,Rural
+Higher,htn_controlled,60.2,56.9,63.6,Proportion,"60.2 (56.9, 63.6)",5926,education,Urban
+No education,htn_controlled,47.9,45.5,50.3,Proportion,"47.9 (45.5, 50.3)",8389,education,Urban
+Primary,htn_controlled,50.5,47.8,53.2,Proportion,"50.5 (47.8, 53.2)",5934,education,Urban
+Secondary,htn_controlled,53.7,51.7,55.7,Proportion,"53.7 (51.7, 55.7)",15252,education,Urban
+General,htn_controlled,56.1,54.2,58,Proportion,"56.1 (54.2, 58)",20239,caste,Rural
+OBC,htn_controlled,58.1,56.6,59.6,Proportion,"58.1 (56.6, 59.6)",23813,caste,Rural
+Schedule Caste,htn_controlled,56.8,54.7,58.9,Proportion,"56.8 (54.7, 58.9)",10500,caste,Rural
+Schedule Tribe,htn_controlled,54.5,51.8,57.1,Proportion,"54.5 (51.8, 57.1)",8083,caste,Rural
+General,htn_controlled,54.5,52.2,56.7,Proportion,"54.5 (52.2, 56.7)",13899,caste,Urban
+OBC,htn_controlled,54.4,52.3,56.5,Proportion,"54.4 (52.3, 56.5)",14245,caste,Urban
+Schedule Caste,htn_controlled,51.5,48.6,54.4,Proportion,"51.5 (48.6, 54.4)",4872,caste,Urban
+Schedule Tribe,htn_controlled,53.8,44.8,62.8,Proportion,"53.8 (44.8, 62.8)",2485,caste,Urban
+Hindu,htn_controlled,58,56.8,59.1,Proportion,"58 (56.8, 59.1)",46143,religion,Rural
+Muslim,htn_controlled,54.5,51.8,57.3,Proportion,"54.5 (51.8, 57.3)",7920,religion,Rural
+Other,htn_controlled,50.5,46.9,54.1,Proportion,"50.5 (46.9, 54.1)",8572,religion,Rural
+Hindu,htn_controlled,54.6,52.9,56.3,Proportion,"54.6 (52.9, 56.3)",26193,religion,Urban
+Muslim,htn_controlled,51.9,48.7,55.1,Proportion,"51.9 (48.7, 55.1)",5348,religion,Urban
+Other,htn_controlled,51.9,47.7,56.1,Proportion,"51.9 (47.7, 56.1)",3960,religion,Urban
+1,htn_controlled,61.2,58.6,63.9,Proportion,"61.2 (58.6, 63.9)",5665,wealthq_ur,Rural
+2,htn_controlled,58.7,56.5,60.8,Proportion,"58.7 (56.5, 60.8)",9028,wealthq_ur,Rural
+3,htn_controlled,56.8,54.5,59.1,Proportion,"56.8 (54.5, 59.1)",11608,wealthq_ur,Rural
+4,htn_controlled,56.8,54.8,58.8,Proportion,"56.8 (54.8, 58.8)",14939,wealthq_ur,Rural
+5,htn_controlled,55.2,53.3,57.1,Proportion,"55.2 (53.3, 57.1)",21395,wealthq_ur,Rural
+1,htn_controlled,53.2,50.1,56.2,Proportion,"53.2 (50.1, 56.2)",4625,wealthq_ur,Urban
+2,htn_controlled,51.1,48.3,53.8,Proportion,"51.1 (48.3, 53.8)",6465,wealthq_ur,Urban
+3,htn_controlled,54.7,51.9,57.5,Proportion,"54.7 (51.9, 57.5)",7365,wealthq_ur,Urban
+4,htn_controlled,54.9,51.9,57.9,Proportion,"54.9 (51.9, 57.9)",7785,wealthq_ur,Urban
+5,htn_controlled,55,51.7,58.2,Proportion,"55 (51.7, 58.2)",9261,wealthq_ur,Urban

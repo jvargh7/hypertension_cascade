@@ -18,6 +18,9 @@ source("analysis/hca07_analytic sample characteristics.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("analysis/hca09_national unmet need care cascade.R")
 
+rm(list=ls()); gc(); source(".Rprofile")
+source("analysis/hca10_total population characteristics.R")
+
 # AGE STANDARDIZED --------
 rm(list=ls()); gc(); source(".Rprofile")
 source("age_standardized/hcz01_age standardized national care cascade.R")
@@ -35,7 +38,11 @@ source("age_standardized/hcz04_age standardized state unmet care cascade.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("age_standardized/hcz08_age standardized national conditional cascade.R")
 
+rm(list=ls()); gc(); source(".Rprofile")
+source("age_standardized/hcz09_age standardized screening among undiagnosed.R")
 
+rm(list=ls()); gc(); source(".Rprofile")
+source("age_standardized/hcz10_age standardized analytic sample summary.R")
 
 # PAPER -------
 rm(list=ls()); gc(); source(".Rprofile")
@@ -68,7 +75,7 @@ source("paper/text_state WHO compact.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("paper/table_conditional care cascade.R")
 
-# DISTRICT -------
+# ANALYSIS: district ------
 
 rm(list=ls()); gc(); source(".Rprofile")
 source("analysis/hca04_district2018 level care cascade.R")
@@ -76,6 +83,7 @@ source("analysis/hca04_district2018 level care cascade.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("analysis/hca08_district unmet need care cascade.R")
 
+# AGE STANDARDIZED: district --------
 
 rm(list=ls()); gc(); source(".Rprofile")
 source("age_standardized/hcz05_age standardized district unmet care cascade.R")
@@ -83,10 +91,13 @@ source("age_standardized/hcz05_age standardized district unmet care cascade.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("age_standardized/hcz06_age standardized district cascade.R")
 
+
+
 rm(list=ls()); gc(); source(".Rprofile")
-source("age_standardized/hcz07_age standardized missing caste stratified.R")
+source("paper/figure_maps district care cascade.R")
 
-
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/figure_maps district care cascade without 50 obs.R")
 
 # SHINY --------
 

@@ -9,6 +9,10 @@ run_manual = FALSE
 if(run_manual){
   map2016_v024 <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="map2016_v024")
   map2018_sdist <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="map2018_sdist")
+  mapnfhs5_sdist <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="mapnfhs5_sdist")
+  mapnfhs5_v024 <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="mapnfhs5_v024")
+  
+  
   district_shp <- readRDS(file.path("hypertension_cascade/data","district_shp.RDS"))
   state_shp <- readRDS(file.path("hypertension_cascade/data","state_shp.RDS"))
   
@@ -35,6 +39,8 @@ if(run_manual){
 
 map2016_v024 <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="map2016_v024")
 map2018_sdist <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="map2018_sdist")
+mapnfhs5_sdist <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfhs5_sdist")
+mapnfhs5_v024 <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfhs5_v024")
 
 district_shp <- readRDS(file.path("data","district_shp.RDS"))
 state_shp <- readRDS(file.path("data","state_shp.RDS"))
@@ -96,7 +102,7 @@ shinyServer(function(input, output,session) {
   
   # https://stackoverflow.com/questions/64796206/dynamically-update-two-selectinput-boxes-based-on-the-others-selection-in-r-shin
   observe({
-    d_i = map2018_sdist[map2018_sdist$n5_state == n5_state_input(),]$D_NAME
+    d_i = mapnfhs5_sdist[mapnfhs5_sdist$n5_state == n5_state_input(),]$REGNAME
     updateSelectInput(session, "districtinput1", choices = na.omit(d_i)) 
   })  
   
@@ -176,12 +182,12 @@ shinyServer(function(input, output,session) {
       sp::merge(nested_d1() %>%
                   dplyr::filter(variable == input$varinput1,
                                 strata == input$stratainput1)  %>% 
-                  dplyr::select(D_CODE,n5_state,estimate) %>% 
+                  dplyr::select(REGCODE,n5_state,estimate) %>% 
                   rename_at(vars(estimate),~paste0(input$mapinput1," ",input$stratainput1," ",input$varinput1)),
-                by.x="D_CODE",by.y="D_CODE",all.x=TRUE) 
+                by.x="REGCODE",by.y="REGCODE",all.x=TRUE) 
     
     ds@data <- ds@data %>% 
-      dplyr::select(D_NAME,D_CODE,everything())
+      dplyr::select(REGNAME,REGCODE,everything())
     
     # https://stackoverflow.com/questions/52384937/subsetting-spatial-polygon-dataframe
     subset(ds,n5_state == input$stateinput1)
@@ -191,7 +197,7 @@ shinyServer(function(input, output,session) {
   output$statemap <- tmap::renderTmap({
     
     sm <- tmap_mode("view") +
-      tm_shape(sm_merge(),ext=1.2,id="D_NAME") + 
+      tm_shape(sm_merge(),ext=1.2,id="REGNAME") + 
       tm_fill(title= "",
               col=paste0(input$mapinput1," ",input$stratainput1," ",input$varinput1),
               palette = palette_chr(),
@@ -201,7 +207,7 @@ shinyServer(function(input, output,session) {
               textNA="Data not available",
               colorNA = "white")+ 
       tm_borders(col="black") + 
-      tm_text(text="D_NAME",col="black",size=0.5,remove.overlap = TRUE)+
+      tm_text(text="REGNAME",col="black",size=0.5,remove.overlap = TRUE)+
       tm_view(view.legend.position = c("right","top"))
     tm_legend(
       legend.outside=FALSE,
@@ -234,9 +240,9 @@ shinyServer(function(input, output,session) {
     
     dt_df <- nested_d1() %>% 
       dplyr::filter(strata == input$stratainput1,
-                    D_NAME == input$districtinput1) %>% 
-      dplyr::select(variable,strata,D_NAME,est_ci) %>% 
-      rename(residence = D_NAME)  %>% 
+                    REGNAME == input$districtinput1) %>% 
+      dplyr::select(variable,strata,REGNAME,est_ci) %>% 
+      rename(residence = REGNAME)  %>% 
       mutate(residence = paste0(residence," ",strata)) %>% 
       dplyr::select(-strata) %>% 
       pivot_wider(names_from=residence,values_from=est_ci) 
@@ -301,8 +307,8 @@ shinyServer(function(input, output,session) {
     
     fig_prevalence <- district_cm_merge2() %>% 
       dplyr::filter(variable == "Hypertension") %>% 
-      ggplot(data=.,aes(x = D_NAME,y = estimate,ymin = lci,ymax=uci,
-                        group=D_NAME)) +
+      ggplot(data=.,aes(x = REGNAME,y = estimate,ymin = lci,ymax=uci,
+                        group=REGNAME)) +
       geom_col(position=position_dodge(width=0.9),fill="lightblue") +
       geom_errorbar(position = position_dodge(width=0.9),width=0.1) +
       theme_bw() + 
@@ -323,8 +329,8 @@ shinyServer(function(input, output,session) {
     
     fig_uc <- district_cm_merge2() %>% 
       dplyr::filter(!variable %in% c("Hypertension","Screened")) %>% 
-      ggplot(data=.,aes(x = D_NAME,y = estimate,ymin = lci,ymax=uci,
-                        group=D_NAME),fill="lightblue") +
+      ggplot(data=.,aes(x = REGNAME,y = estimate,ymin = lci,ymax=uci,
+                        group=REGNAME),fill="lightblue") +
       geom_col(position=position_dodge(width=0.9)) +
       geom_errorbar(position = position_dodge(width=0.9),width=0.1) +
       theme_bw() + 

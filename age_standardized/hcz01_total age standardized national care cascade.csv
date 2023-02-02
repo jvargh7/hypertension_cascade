@@ -1,0 +1,16 @@
+variable,estimate,lci,uci,type,est_ci,sex
+htn_screened,64.8,64.5,65.1,Proportion,"64.8 (64.5, 65.1)",NA
+htn_disease,28.2,28,28.4,Proportion,"28.2 (28, 28.4)",NA
+htn_diagnosed,11.3,11.1,11.4,Proportion,"11.3 (11.1, 11.4)",NA
+htn_treated,6.6,6.5,6.7,Proportion,"6.6 (6.5, 6.7)",NA
+htn_controlled,6.4,6.3,6.5,Proportion,"6.4 (6.3, 6.5)",NA
+htn_screened,70.5,70.2,70.8,Proportion,"70.5 (70.2, 70.8)",Female
+htn_disease,25.8,25.6,26,Proportion,"25.8 (25.6, 26)",Female
+htn_diagnosed,12,11.8,12.2,Proportion,"12 (11.8, 12.2)",Female
+htn_treated,6.8,6.6,6.9,Proportion,"6.8 (6.6, 6.9)",Female
+htn_controlled,7.3,7.2,7.5,Proportion,"7.3 (7.2, 7.5)",Female
+htn_screened,58.8,58.5,59.2,Proportion,"58.8 (58.5, 59.2)",Male
+htn_disease,30.6,30.4,30.9,Proportion,"30.6 (30.4, 30.9)",Male
+htn_diagnosed,10.4,10.3,10.6,Proportion,"10.4 (10.3, 10.6)",Male
+htn_treated,6.4,6.3,6.6,Proportion,"6.4 (6.3, 6.6)",Male
+htn_controlled,5.4,5.3,5.6,Proportion,"5.4 (5.3, 5.6)",Male

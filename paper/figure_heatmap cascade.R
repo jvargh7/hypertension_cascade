@@ -7,8 +7,9 @@ unmet_cascade <- bind_rows(read_csv(file = "analysis/hca05_state unmet need care
                              dplyr::filter(variable == "Disease") %>% 
                              mutate(variable = "Hypertension")
 ) %>% 
-  dplyr::filter(n >= 50) %>% 
-  mutate(variable = factor(variable,levels=c("Hypertension","Unscreened","Undiagnosed","Untreated","Uncontrolled")))
+  # dplyr::filter(n >= 50) %>% 
+  mutate(variable = factor(variable,levels=c("Hypertension","Unscreened","Undiagnosed","Untreated","Uncontrolled"))) %>% 
+  dplyr::filter(!is.na(variable))
 
 
 figure_urban <- unmet_cascade %>% 

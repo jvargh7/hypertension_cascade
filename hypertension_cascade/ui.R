@@ -6,11 +6,16 @@ run_manual = FALSE
 if(run_manual){
   map2016_v024 <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="map2016_v024")
   map2018_sdist <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="map2018_sdist")
+  mapnfhs5_sdist <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="mapnfhs5_sdist")
+  mapnfhs5_v024 <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="mapnfhs5_v024")
   
 }
 
 map2016_v024 <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="map2016_v024")
 map2018_sdist <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="map2018_sdist")
+mapnfhs5_sdist <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfhs5_sdist")
+mapnfhs5_v024 <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfhs5_v024")
+
 
 sidebar_about <- conditionalPanel(condition = "input.selectedpanel == 1",
                                   h3(""))
@@ -18,7 +23,7 @@ sidebar_about <- conditionalPanel(condition = "input.selectedpanel == 1",
 sidebar_overview <- conditionalPanel(condition="input.selectedpanel==2",
                                      h3(""),
                                      selectInput("zinput1","Age Standardized:",choices = c("Yes","No"),selected = "Yes"),
-                                     selectInput("stateinput1","Select State:",unique(map2016_v024$n5_state),selected = "Kerala"),
+                                     selectInput("stateinput1","Select State:",unique(mapnfhs5_v024$n5_state),selected = "Kerala"),
                                      selectInput("districtinput1","Select District:",c(""),selected = "Kottayam"),
                                      selectInput("varinput1","Select Variable:",c("Screened","Hypertension","Diagnosed","Treated","Controlled"),selected="Diagnosed"),
                                      selectInput("mapinput1","Select Display:",c("Urban","Rural")),
@@ -28,7 +33,7 @@ sidebar_overview <- conditionalPanel(condition="input.selectedpanel==2",
 sidebar_state <- conditionalPanel(condition="input.selectedpanel==3",
                                   h3(""),
                                   selectInput("zinput2","Age Standardized:",choices = c("Yes","No"),selected = "Yes"),
-                                  selectInput("stateinput2","Select State:",unique(map2016_v024$n5_state),selected = "Kerala"),
+                                  selectInput("stateinput2","Select State:",unique(mapnfhs5_v024$n5_state),selected = "Kerala"),
                                   # selectInput("varinput2","Select Variable:",c("Screened","Hypertension","Diagnosed","Treated","Controlled")),
                                   # selectInput("mapinput2","Select Display:",c("Urban","Rural")),
                                   selectInput("stratainput2","Select Strata:",c("Total","Male","Female"),selected = "Female")
@@ -37,7 +42,7 @@ sidebar_state <- conditionalPanel(condition="input.selectedpanel==3",
 sidebar_stratified <- conditionalPanel(condition="input.selectedpanel==4",
                                        h3(""),
                                        selectInput("zinput3","Age Standardized:",choices = c("Yes","No"),selected = "Yes"),
-                                       selectInput("stateinput3","Select State:",unique(map2016_v024$n5_state),selected = "Kerala")
+                                       selectInput("stateinput3","Select State:",unique(mapnfhs5_v024$n5_state),selected = "Kerala")
                                        # selectInput("varinput3","Select Variable:",c("Screened","Hypertension","Diagnosed","Treated","Controlled")),
                                        # selectInput("mapinput3","Select Display:",c("Urban","Rural")),
                                        # selectInput("stratainput3","Select Strata:",c("Total","Male","Female"),selected = "Female")

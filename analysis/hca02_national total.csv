@@ -1,6 +1,6 @@
 variable,estimate,lci,uci,type,est_ci
 htn_screened,63.8,63.5,64.2,Proportion,"63.8 (63.5, 64.2)"
-htn_disease,28.4,28.2,28.6,Proportion,"28.4 (28.2, 28.6)"
+htn_disease,27.8,27.6,28,Proportion,"27.8 (27.6, 28)"
 htn_diagnosed,11,10.8,11.1,Proportion,"11 (10.8, 11.1)"
 htn_treated,6.4,6.3,6.5,Proportion,"6.4 (6.3, 6.5)"
-htn_controlled,5.7,5.6,5.8,Proportion,"5.7 (5.6, 5.8)"
+htn_controlled,6.2,6.1,6.3,Proportion,"6.2 (6.1, 6.3)"

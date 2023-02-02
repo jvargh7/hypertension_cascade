@@ -9,9 +9,9 @@ nfhs5htndiag_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs
          htn_untreated = 1 - htn_treated,
          htn_uncontrolled = 1 - htn_controlled) %>% 
   left_join(sdist %>% 
-              dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
-            by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE)
+              dplyr::select(DHSCLUST,REGCODE,DHSREGCO),
+            by= district_matching) %>% 
+  rename(district_df = REGCODE)
 
 nfhs5htndiag_svydesign <- nfhs5htndiag_df %>% 
   as_survey_design(.data = .,

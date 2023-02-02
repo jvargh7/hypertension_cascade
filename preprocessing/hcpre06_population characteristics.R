@@ -8,9 +8,10 @@ nfhs5pop_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 ia
          status = case_when(is.na(htn_free) ~ "Excluded",
                             !is.na(htn_free) ~ "Analytic")) %>% 
   left_join(sdist %>% 
-              dplyr::select(DHSCLUST,D_CODE,DHSREGCO),
-            by=c("psu" = "DHSCLUST","district" = "DHSREGCO")) %>% 
-  rename(district_df = D_CODE) %>% 
+              dplyr::select(DHSCLUST,REGCODE,DHSREGCO),
+            by= district_matching) %>% 
+  rename(district_df = REGCODE) %>% 
+  # Not there in nfhs_cascade
   mutate(status_binary = case_when(status == "Excluded" ~ 0,
                                    TRUE ~ 1))
 

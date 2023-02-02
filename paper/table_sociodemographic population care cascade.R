@@ -8,6 +8,8 @@ nested <- read_csv(file = "age_standardized/hcz03_national met need care cascade
 
 bind_rows(population,
           nested) %>% 
+  mutate(residence = case_when(is.na(residence) ~ "Total",
+                                    TRUE ~ residence)) %>% 
   dplyr::select(stratification,strata,residence,variable,est_ci) %>% 
   arrange(residence) %>% 
   pivot_wider(names_from=c(residence,variable),values_from=est_ci) %>% 

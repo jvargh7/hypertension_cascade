@@ -17,7 +17,7 @@ state_met %>%
 
 
 state_met %>% 
-  dplyr::filter(is.na(stratification), n >= 50) %>%
+  # dplyr::filter(is.na(stratification), n >= 50) %>%
   group_by(residence,variable) %>% 
   summarize(count = sum(estimate > 80),
             prop = sum(estimate > 80)/n(),
@@ -46,28 +46,4 @@ state_met %>%
   mutate(urb_min_rur = Urban - Rural) %>% View()
 
 
-state_met %>% 
-  dplyr::filter(is.na(stratification), n >= 50) %>%
-  dplyr::select(residence,variable,zone,state,estimate) %>% 
-  pivot_wider(names_from=residence,values_from=estimate) %>% 
-  mutate(urb_min_rur = Urban - Rural,
-         urb_gt_rur = case_when(Urban > Rural ~ 1,
-                                Urban <= Rural ~ 0,
-                                TRUE ~ NA_real_)) %>% 
-  group_by(variable,zone) %>% 
-  summarize(diff = median(urb_min_rur,na.rm=TRUE),
-            sum = sum(urb_gt_rur,na.rm=TRUE)) %>% View()
-
-state_met %>% 
-  dplyr::filter(is.na(stratification), n >= 50) %>%
-  dplyr::select(residence,variable,zone,state,estimate) %>% 
-  pivot_wider(names_from=residence,values_from=estimate) %>% 
-  mutate(urb_min_rur = Urban - Rural,
-         urb_gt_rur = case_when(Urban > Rural ~ 1,
-                                Urban <= Rural ~ 0,
-                                TRUE ~ NA_real_)) %>% 
-  group_by(variable) %>% 
-  summarize(diff = median(urb_min_rur,na.rm=TRUE),
-            sum = sum(urb_gt_rur,na.rm=TRUE),
-            count_diff = sum(!is.na(urb_min_rur)))
 

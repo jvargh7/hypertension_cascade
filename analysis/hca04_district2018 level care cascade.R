@@ -51,13 +51,12 @@ district_svysummary <- future_map_dfr(group_vars,
                                    })
 
 district_svysummary <- district_svysummary %>% 
-  rename(D_CODE = district_df) %>% 
+  rename(REGCODE = district_df) %>% 
   # There are missing values in D_CODE from subsetting on map
-  dplyr::filter(!is.na(D_CODE)) %>% 
-  left_join(readxl::read_excel(paste0(path_dmcascade_repo,"/data/NFHS Cascade Variable List.xlsx"),"map2018_sdist") %>% 
-              dplyr::select(D_CODE,n5_state,v024,D_NAME) %>% 
-              mutate(D_CODE = sprintf("%03d",as.numeric(D_CODE))),
-            by=c("D_CODE"))
+  dplyr::filter(!is.na(REGCODE)) %>% 
+  left_join(readxl::read_excel(paste0(path_dmcascade_repo,"/data/NFHS Cascade Variable List.xlsx"),"mapnfhs5_sdist") %>% 
+              dplyr::select(REGCODE,n5_state,v024,REGNAME),
+            by=c("REGCODE")) 
 
 write_csv(district_svysummary,file = "analysis/hca04_district2018 level care cascade.csv")
 

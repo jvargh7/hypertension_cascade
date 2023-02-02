@@ -41,7 +41,7 @@ n5_out <- left_join(n5_sy,
                     by=c(id_vars[id_vars!=""],"variable")) %>% 
   
   # Restrict to those cells with more than 100 observations
-  dplyr::filter(n > 100) %>% 
+  # dplyr::filter(n > 100) %>% 
   mutate(stratification = group_vars) %>% 
   rename_at(vars(one_of(group_vars)),~c("strata")) %>% 
   mutate_at(vars(one_of("strata")),~as.character(.))
