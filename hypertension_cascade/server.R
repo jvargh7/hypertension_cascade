@@ -76,8 +76,8 @@ shinyServer(function(input, output,session) {
                               "(a) Self-reported hypertension",
                               "(b) High blood pressure (≥140 mmHg systolic or 90 mmHg diastolic)",
                               "Told had high blood pressure on two or more occasions by a medical provider among those with Hypertension",
-                              "Currently taking a prescribed medicine to lower blood pressure among those with Hypertension",
-                              "Blood pressure in non-hypertensive range (<140/90 mmHg [≤60y] and <150/90 mmHg [>60y]) among those with Hypertension")
+                              "Currently taking a prescribed medicine to lower blood pressure among those with Diagnosed Hypertension",
+                              "Blood pressure in non-hypertensive range (<140/90 mmHg [<80y] and <150/90 mmHg [≥80y]) among those with Diagnosed Hypertension")
     )
   })
   
@@ -406,19 +406,19 @@ shinyServer(function(input, output,session) {
     
     figA <- state_cs_merge() %>% 
       dplyr::filter(is.na(stratification)|stratification == "sex") %>% 
-      cascade_plot(.,limits_y = c(0,45))
+      cascade_plot(.,limits_y = c(0,100))
     figB <- state_cs_merge() %>% 
       dplyr::filter(stratification == "age_category") %>% 
-      cascade_plot(.,limits_y = c(0,45))
+      cascade_plot(.,limits_y = c(0,100))
     figC <- state_cs_merge() %>%
       dplyr::filter(stratification == "education") %>%
       mutate(group = factor(group, levels=c("Rural\nNo education","Rural\nPrimary","Rural\nSecondary","Rural\nHigher",
                                             "Urban\nNo education","Urban\nPrimary","Urban\nSecondary","Urban\nHigher"
       ))) %>% 
-      cascade_plot(.,limits_y = c(0,45))
+      cascade_plot(.,limits_y = c(0,100))
     figD <- state_cs_merge() %>%
       dplyr::filter(stratification == "caste") %>%
-      cascade_plot(.,limits_y = c(0,45))
+      cascade_plot(.,limits_y = c(0,100))
     figE <- state_cs_merge() %>%
       dplyr::filter(stratification == "swealthq_ur") %>%
       mutate(group = factor(group,
@@ -427,7 +427,7 @@ shinyServer(function(input, output,session) {
                                             rep(c("Wealth: Lowest","Wealth: Low",
                                                   "Wealth: Medium","Wealth: High",
                                                   "Wealth: Highest"),times=2)),ordered=TRUE)) %>% 
-      cascade_plot(.,limits_y = c(0,45))
+      cascade_plot(.,limits_y = c(0,100))
     
     ggarrange(figA,
               figB,

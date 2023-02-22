@@ -76,8 +76,8 @@ panel_about <- tabPanel("About",value = 1,
                           
                           box(solidHeader=FALSE,status="warning",title = "Citation",
                               p("Please cite as:"),
-                              code(paste0("Varghese JS, Nikhil SV, Jeemon P, Geldsetzer P, Sudharsanan N, Manne-Goehler J, Thirumurthy H, 
-                                      Roy A, Narayan KMV, Reddy S, Prabhakaran D, Ali MK.
+                              code(paste0("Varghese JS, Nikhil SV, Jeemon P, Sudharsanan N, Patel SA, Thirumurthy H, 
+                                      Roy A, Narayan KMV, Prabhakaran D, Ali MK.
                                       Diabetes diagnosis, treatment, and control in India: results from a national survey of 1.65 million adults aged 18 years and older in India, 2019-2021.
                                       2022; Version 1.0. Accessed on ",format(Sys.Date(),"%d %B %Y"),"."))
                           
@@ -90,8 +90,8 @@ panel_about <- tabPanel("About",value = 1,
                               p(""),
                               
                               p("Code available at:"),
-                              tags$a(href="https://github.com/jvargh7/nfhs_cascade", 
-                                     "https://github.com/jvargh7/nfhs_cascade"))
+                              tags$a(href="https://github.com/jvargh7/hypertension_cascade", 
+                                     "https://github.com/jvargh7/hypertension_cascade"))
                           
                           
                         )

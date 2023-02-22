@@ -1,9 +1,9 @@
 
 # All adults who are not eligible but for whom glucose and BP are collected come from the sampled hh if anti_join() of nfhs5_hh is null
 
-nfhs5_df <- bind_rows(readRDS(paste0(path_cascade_folder,"/working/nfhs5 iapr_women.RDS")) %>% 
+nfhs5_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_women.RDS")) %>% 
                         mutate(sex = "Female"),
-                      readRDS(paste0(path_cascade_folder,"/working/nfhs5 iapr_men.RDS")) %>% 
+                      readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_men.RDS")) %>% 
                         mutate(sex = "Male")) %>%
   mutate(residence = case_when(residence == 1 ~ "Urban",
                                residence == 2 ~ "Rural")) %>% 

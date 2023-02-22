@@ -9,7 +9,7 @@ continuous_vars <- c("bmi","age","sbp","dbp")
 proportion_vars <- c("highwc","htn","highbp","diaghtn",
                      "htn_screened","htn_disease","htn_diagnosed","htn_treated","htn_controlled")
 grouped_vars <- c("age_category","age_category10","age_category5","education",
-                  "caste","religion","wealthq_ur","bmi_category")
+                  "caste","religion","wealthq_ur","bmi_category","bp_group")
 
 id_vars = list(c(group_vars),
                c("residence",group_vars));

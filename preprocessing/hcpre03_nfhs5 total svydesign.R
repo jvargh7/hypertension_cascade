@@ -12,7 +12,13 @@ nfhs5_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_
   rename(district_df = REGCODE) %>% 
   mutate(dm_disease_cat = case_when(is.na(dm_disease) ~ "Missing",
                                     dm_disease == 1 ~ "Yes",
-                                    dm_disease == 0 ~ "No"))
+                                    dm_disease == 0 ~ "No")) %>% 
+  mutate(bp_group = case_when(sbp>= 160 | dbp >= 100 ~ 4,
+                              sbp >= 140 | dbp >= 90 ~ 3,
+                              sbp >= 120 | dbp >= 80 ~ 2,
+                              sbp < 120 | dbp < 80 ~ 1,
+                              TRUE ~ NA_real_)) %>% 
+  mutate(bp_group = factor(bp_group,levels=c(1:4),labels=c("<120/80","<140/90","<160/100",">=160/100")))
 
 
 

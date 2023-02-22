@@ -1,22 +1,9 @@
-path_shape_files <- "C:/Cloud/OneDrive - Emory University/data/NFHS/NFHS4 Factsheets/maps"
-state_shp <- rgdal::readOGR(paste0(path_shape_files,"/maps-master/States"),"Admin2")
-saveRDS(state_shp,file="hypertension_cascade/data/state_shp.RDS")
+state_shp <- readRDS(paste0(path_india_shapefiles,"cleaned/smapsmaster_sp.RDS"))
+saveRDS(state_shp,file="diabetes_cascade/data/state_shp.RDS")
 
 
-path_district_files <- "C:/Cloud/OneDrive - Emory University/data/dhs_program/IA/IASHP7C/shps"
-district_shp <- rgdal::readOGR(paste0(path_district_files),"sdr_subnational_boundaries2")
-district_shp@data <- district_shp@data %>% 
-  mutate(REGCODE = case_when(REGNAME == "Hamirpur" & OTHREGNA == "Uttar Pradesh" ~ 168,
-                             REGNAME == "Bijapur" & OTHREGNA == "Karnataka" ~ 557,
-                             REGNAME == "Aurangabad" & OTHREGNA == "Maharashtra" ~ 515,
-                             REGNAME == "Balrampur" & OTHREGNA == "Chhattisgarh" ~ 824,
-                             REGNAME == "Bilaspur" & OTHREGNA == "Chhattisgarh" ~ 827,
-                             REGNAME == "Pratapgarh" & OTHREGNA == "Uttar Pradesh" ~ 173,
-                             REGNAME == "Raigarh" & OTHREGNA == "Maharashtra" ~ 520,
-                             TRUE ~ REGCODE))
-
-
-saveRDS(district_shp,file="hypertension_cascade/data/district_shp.RDS")
+district_shp <- readRDS(paste0(path_india_shapefiles,"cleaned/dnfhs5_sp.RDS"))
+saveRDS(district_shp,file="diabetes_cascade/data/district_shp.RDS")
 
 # hca02_national -------
 hca02_national <- read_csv(file = "analysis/hca02_national level care cascade.csv")  %>% 

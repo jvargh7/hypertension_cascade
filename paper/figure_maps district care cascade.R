@@ -15,7 +15,7 @@ source(paste0(path_dmcascade_repo,"/functions/district_map.R"))
 
 figA <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
-  district_map(.,plot_variable = "Hypertension",plot_title = "A. Hypertension",breaks = seq(0,40,by=10),palette_chr = "-RdYlGn")
+  district_map(.,plot_variable = "Hypertension",plot_title = "A. Hypertension",breaks = c(0,10,20,30,40,60),palette_chr = "-RdYlGn")
 
 figB <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
