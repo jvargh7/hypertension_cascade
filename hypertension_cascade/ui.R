@@ -69,16 +69,17 @@ panel_about <- tabPanel("About",value = 1,
                               tags$img(src = file.path("gdrc combined.png"),height='200',width='400'),
                               # tags$img(src = file.path("Logo 2.jpg"),height='100',width='200'),
                               # tags$img(src = file.path("Logo 3.jpg"),height='100',width='200'),
-                              p("Conceptualization and Development: Jithin Sam Varghese,....,Mohammed K. Ali"))
+                              # p("Conceptualization and Development: Jithin Sam Varghese,....,Mohammed K. Ali")
+                              )
                           
                         ),
                         fluidRow(
                           
                           box(solidHeader=FALSE,status="warning",title = "Citation",
                               p("Please cite as:"),
-                              code(paste0("Varghese JS, Nikhil SV, Jeemon P, Sudharsanan N, Patel SA, Thirumurthy H, 
-                                      Roy A, Narayan KMV, Prabhakaran D, Ali MK.
-                                      Diabetes diagnosis, treatment, and control in India: results from a national survey of 1.65 million adults aged 18 years and older in India, 2019-2021.
+                              code(paste0("Varghese JS, Nikhil SV, Sudharsanan N, Jeemon P, Patel SA, Thirumurthy H, 
+                                      Roy A, Tandon N, Narayan KMV, Prabhakaran D, Ali MK.
+                                      Hypertension diagnosis, treatment, and control in India: results from a national survey of 1.69 million adults aged 18 years and older in India, 2019-2021.
                                       2022; Version 1.0. Accessed on ",format(Sys.Date(),"%d %B %Y"),"."))
                           
                           ),
