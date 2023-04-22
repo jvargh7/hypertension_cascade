@@ -1,21 +1,16 @@
 group,estimate,lci,uci,variable,type,est_ci,g_v,residence,sex
-Treated & Controlled,22.7,22.2,23.1,htn_diagnosis_type,Grouped,"22.7 (22.2, 23.1)",,NA,NA
-Treated & Uncontrolled,21.7,21.3,22.1,htn_diagnosis_type,Grouped,"21.7 (21.3, 22.1)",,NA,NA
-Untreated & Controlled,41.5,40.8,42.1,htn_diagnosis_type,Grouped,"41.5 (40.8, 42.1)",,NA,NA
-Untreated & Uncontrolled,14.2,13.8,14.5,htn_diagnosis_type,Grouped,"14.2 (13.8, 14.5)",,NA,NA
-Treated & Controlled,20,19.4,20.5,htn_diagnosis_type,Grouped,"20 (19.4, 20.5)",residence,Rural,NA
-Treated & Uncontrolled,18.5,18,19,htn_diagnosis_type,Grouped,"18.5 (18, 19)",residence,Rural,NA
-Untreated & Controlled,46.7,45.9,47.6,htn_diagnosis_type,Grouped,"46.7 (45.9, 47.6)",residence,Rural,NA
-Untreated & Uncontrolled,14.8,14.4,15.2,htn_diagnosis_type,Grouped,"14.8 (14.4, 15.2)",residence,Rural,NA
-Treated & Controlled,27.9,27,28.8,htn_diagnosis_type,Grouped,"27.9 (27, 28.8)",residence,Urban,NA
-Treated & Uncontrolled,28,27.1,28.9,htn_diagnosis_type,Grouped,"28 (27.1, 28.9)",residence,Urban,NA
-Untreated & Controlled,31.1,29.7,32.4,htn_diagnosis_type,Grouped,"31.1 (29.7, 32.4)",residence,Urban,NA
-Untreated & Uncontrolled,12.9,12.4,13.5,htn_diagnosis_type,Grouped,"12.9 (12.4, 13.5)",residence,Urban,NA
-Treated & Controlled,22,21.5,22.6,htn_diagnosis_type,Grouped,"22 (21.5, 22.6)",sex,NA,Female
-Treated & Uncontrolled,19.7,19.2,20.1,htn_diagnosis_type,Grouped,"19.7 (19.2, 20.1)",sex,NA,Female
-Untreated & Controlled,46,45.3,46.8,htn_diagnosis_type,Grouped,"46 (45.3, 46.8)",sex,NA,Female
-Untreated & Uncontrolled,12.3,11.9,12.7,htn_diagnosis_type,Grouped,"12.3 (11.9, 12.7)",sex,NA,Female
-Treated & Controlled,23.8,23.2,24.4,htn_diagnosis_type,Grouped,"23.8 (23.2, 24.4)",sex,NA,Male
-Treated & Uncontrolled,25.6,25,26.2,htn_diagnosis_type,Grouped,"25.6 (25, 26.2)",sex,NA,Male
-Untreated & Controlled,33,32.1,33.8,htn_diagnosis_type,Grouped,"33 (32.1, 33.8)",sex,NA,Male
-Untreated & Uncontrolled,17.7,17.1,18.3,htn_diagnosis_type,Grouped,"17.7 (17.1, 18.3)",sex,NA,Male
+Treated & Controlled,21.5,21.1,21.9,htn_diagnosis_type,Grouped,"21.5 (21.1, 21.9)",,NA,NA
+Treated & Uncontrolled,22.6,22.2,23.1,htn_diagnosis_type,Grouped,"22.6 (22.2, 23.1)",,NA,NA
+Untreated,55.9,55.3,56.5,htn_diagnosis_type,Grouped,"55.9 (55.3, 56.5)",,NA,NA
+Treated & Controlled,19,18.5,19.5,htn_diagnosis_type,Grouped,"19 (18.5, 19.5)",residence,Rural,NA
+Treated & Uncontrolled,19.3,18.8,19.8,htn_diagnosis_type,Grouped,"19.3 (18.8, 19.8)",residence,Rural,NA
+Untreated,61.7,60.9,62.5,htn_diagnosis_type,Grouped,"61.7 (60.9, 62.5)",residence,Rural,NA
+Treated & Controlled,26.5,25.6,27.4,htn_diagnosis_type,Grouped,"26.5 (25.6, 27.4)",residence,Urban,NA
+Treated & Uncontrolled,29.3,28.3,30.2,htn_diagnosis_type,Grouped,"29.3 (28.3, 30.2)",residence,Urban,NA
+Untreated,44.3,42.9,45.6,htn_diagnosis_type,Grouped,"44.3 (42.9, 45.6)",residence,Urban,NA
+Treated & Controlled,21.4,20.9,21.9,htn_diagnosis_type,Grouped,"21.4 (20.9, 21.9)",sex,NA,Female
+Treated & Uncontrolled,20.4,19.9,20.8,htn_diagnosis_type,Grouped,"20.4 (19.9, 20.8)",sex,NA,Female
+Untreated,58.3,57.6,59,htn_diagnosis_type,Grouped,"58.3 (57.6, 59)",sex,NA,Female
+Treated & Controlled,21.7,21.1,22.3,htn_diagnosis_type,Grouped,"21.7 (21.1, 22.3)",sex,NA,Male
+Treated & Uncontrolled,27,26.4,27.6,htn_diagnosis_type,Grouped,"27 (26.4, 27.6)",sex,NA,Male
+Untreated,51.3,50.5,52.1,htn_diagnosis_type,Grouped,"51.3 (50.5, 52.1)",sex,NA,Male

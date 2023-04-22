@@ -6,12 +6,12 @@ Excluded,age,38.9,38.8,39,Continuous,NA,"38.9 (38.8, 39)",204188,status
 Analytic,highwc,40,39.7,40.3,Proportion,NA,"40 (39.7, 40.3)",698201,status
 Analytic,htn,27.8,27.6,28,Proportion,NA,"27.8 (27.6, 28)",1691109,status
 Analytic,highbp,22,21.8,22.1,Proportion,NA,"22 (21.8, 22.1)",1691109,status
-Analytic,diaghtn,43.3,42.9,43.8,Proportion,NA,"43.3 (42.9, 43.8)",179328,status
+Analytic,diaghtn,46.8,46.3,47.2,Proportion,NA,"46.8 (46.3, 47.2)",179328,status
 Analytic,htn_screened,63.8,63.5,64.2,Proportion,NA,"63.8 (63.5, 64.2)",1691109,status
 Analytic,htn_disease,27.8,27.6,28,Proportion,NA,"27.8 (27.6, 28)",1691109,status
 Analytic,htn_diagnosed,11,10.8,11.1,Proportion,NA,"11 (10.8, 11.1)",1691109,status
 Analytic,htn_treated,6.4,6.3,6.5,Proportion,NA,"6.4 (6.3, 6.5)",1691109,status
-Analytic,htn_controlled,6.2,6.1,6.3,Proportion,NA,"6.2 (6.1, 6.3)",1691109,status
+Analytic,htn_controlled,2.9,2.9,3,Proportion,NA,"2.9 (2.9, 3)",1691109,status
 Excluded,highwc,41,38,44.1,Proportion,NA,"41 (38, 44.1)",1894,status
 Excluded,htn,NA,NA,NA,Proportion,NA,"NaN (NaN, NaN)",0,status
 Excluded,highbp,NA,NA,NA,Proportion,NA,"NaN (NaN, NaN)",0,status

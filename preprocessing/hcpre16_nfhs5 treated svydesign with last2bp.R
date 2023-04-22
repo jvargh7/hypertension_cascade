@@ -1,12 +1,11 @@
 
-nfhs5htndiag_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_women pre2.RDS")) %>% 
-                               mutate(sex = "Female"),
-                             readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_men pre2.RDS")) %>% 
-                               mutate(sex = "Male")) %>%
-  dplyr::filter(htn_diagnosed == 1) %>% 
+nfhs5htntreat_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_women pre2.RDS")) %>% 
+                                mutate(sex = "Female"),
+                              readRDS(paste0(path_dmcascade_folder,"/working/nfhs5 iapr_men pre2.RDS")) %>% 
+                                mutate(sex = "Male")) %>%
+  dplyr::filter(htn_treated == 1) %>% 
   mutate(residence = case_when(residence == 1 ~ "Urban",
                                residence == 2 ~ "Rural"),
-         htn_untreated = 1 - htn_treated,
          htn_uncontrolled = 1 - htn_controlled) %>% 
   left_join(sdist %>% 
               dplyr::select(DHSCLUST,REGCODE,DHSREGCO),
@@ -24,9 +23,9 @@ nfhs5htndiag_df <- bind_rows(readRDS(paste0(path_dmcascade_folder,"/working/nfhs
                                               # "Untreated & Uncontrolled",
                                               "Untreated"),ordered=TRUE))
 
-nfhs5htndiag_svydesign <- nfhs5htndiag_df %>% 
+nfhs5htntreat_svydesign <- nfhs5htntreat_df %>% 
   as_survey_design(.data = .,
                    ids = psu,strata = state,
                    weight = sampleweight,
-                   nest = TRUE,
+                   nest = FALSE,
                    variance = "YG",pps = "brewer")

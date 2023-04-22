@@ -1,9 +1,9 @@
 state_shp <- readRDS(paste0(path_india_shapefiles,"cleaned/smapsmaster_sp.RDS"))
-saveRDS(state_shp,file="diabetes_cascade/data/state_shp.RDS")
+saveRDS(state_shp,file="hypertension_cascade/data/state_shp.RDS")
 
 
 district_shp <- readRDS(paste0(path_india_shapefiles,"cleaned/dnfhs5_sp.RDS"))
-saveRDS(district_shp,file="diabetes_cascade/data/district_shp.RDS")
+saveRDS(district_shp,file="hypertension_cascade/data/district_shp.RDS")
 
 # hca02_national -------
 hca02_national <- read_csv(file = "analysis/hca02_national level care cascade.csv")  %>% 
@@ -28,7 +28,23 @@ hcz01_national <- read_csv(file = "age_standardized/hcz01_age standardized natio
                                     TRUE ~ stratification))
 saveRDS(hcz01_national,file="hypertension_cascade/data/hcz01_national.RDS")
 
+
 national_nested <- bind_rows(
+  read_csv("analysis/hca02_national level care cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_screened","htn_disease")),
+  read_csv(file = "analysis/hca09_national met need care cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled")))  %>% 
+  mutate(variable = str_replace(variable,"htn_","")) %>% 
+  mutate(variable = factor(variable,levels=c("screened","disease","diagnosed","treated","controlled"),
+                           labels=c("Screened","Hypertension","Diagnosed","Treated","Controlled")),
+         strata = case_when(is.na(strata) & is.na(stratification) ~ "Total",
+                            is.na(strata) ~ "Missing",
+                            TRUE ~ strata),
+         stratification = case_when(is.na(stratification) ~ "",
+                                    TRUE ~ stratification))
+saveRDS(national_nested,file="hypertension_cascade/data/national_nested.RDS")
+
+nationalz_nested <- bind_rows(
   read_csv("age_standardized/hcz01_age standardized national care cascade.csv") %>% 
     dplyr::filter(variable %in% c("htn_screened","htn_disease")),
   read_csv(file = "age_standardized/hcz03_national met need care cascade.csv") %>% 
@@ -41,9 +57,7 @@ national_nested <- bind_rows(
                             TRUE ~ strata),
          stratification = case_when(is.na(stratification) ~ "",
                                     TRUE ~ stratification))
-
-
-saveRDS(national_nested,file="hypertension_cascade/data/national_nested.RDS")
+saveRDS(nationalz_nested,file="hypertension_cascade/data/nationalz_nested.RDS")
 
 
 

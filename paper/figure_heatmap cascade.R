@@ -8,7 +8,9 @@ unmet_cascade <- bind_rows(read_csv(file = "analysis/hca05_state unmet need care
                              mutate(variable = "Hypertension")
 ) %>% 
   dplyr::filter(n >= 25) %>%
-  mutate(variable = factor(variable,levels=c("Hypertension","Unscreened","Undiagnosed","Untreated","Uncontrolled"))) %>% 
+  mutate(variable = factor(variable,levels=c("Hypertension","Unscreened","Undiagnosed","Untreated","Uncontrolled"),
+                           labels=c("Hypertension","Unscreened","Undiagnosed","Untreated \nAmong Diagnosed",
+                                    "Uncontrolled \nAmong Treated"))) %>% 
   dplyr::filter(!is.na(variable)) %>% 
   dplyr::filter(variable !="Unscreened")
 
@@ -25,7 +27,7 @@ figure_urban <- unmet_cascade %>%
   ylab("")  +
   theme(
     legend.text = element_text(size=12),
-    axis.text = element_text(size = 12),
+    axis.text = element_text(size = 10),
     strip.background.y = element_blank(),
     strip.text.x = element_text(size=12),
     strip.text.y = element_text(size=12),
@@ -44,6 +46,7 @@ figure_rural <- unmet_cascade %>%
   ylab("")  +
   theme(
     legend.text = element_text(size=12),
+    axis.text.x = element_text(size = 10),
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank(),
     strip.background.y = element_blank(),

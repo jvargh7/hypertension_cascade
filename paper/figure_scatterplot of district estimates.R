@@ -29,7 +29,7 @@ district_met %>%
   dplyr::select(n5_state,REGNAME,ml_comparison2,variable,estimate) %>% 
   group_by(ml_comparison2,variable) %>% 
   summarize(m = median(estimate),
-            n = n())
+            n = n()) %>% View()
   
 
 district_met %>% 

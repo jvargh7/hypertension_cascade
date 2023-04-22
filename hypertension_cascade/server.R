@@ -16,8 +16,10 @@ if(run_manual){
   district_shp <- readRDS(file.path("hypertension_cascade/data","district_shp.RDS"))
   state_shp <- readRDS(file.path("hypertension_cascade/data","state_shp.RDS"))
   
+  hcz01_national <- readRDS(file.path("hypertension_cascade/data","hcz01_national.RDS"))
   hca02_national <- readRDS(file.path("hypertension_cascade/data","hca02_national.RDS"))
   national_nested <- readRDS(file.path("hypertension_cascade/data","national_nested.RDS"))
+  nationalz_nested <- readRDS(file.path("hypertension_cascade/data","nationalz_nested.RDS"))
   
   
   hca03_state <- readRDS(file.path("hypertension_cascade/data","hca03_state.RDS"))
@@ -47,6 +49,7 @@ state_shp <- readRDS(file.path("data","state_shp.RDS"))
 hcz01_national <- readRDS(file.path("data","hcz01_national.RDS"))
 hca02_national <- readRDS(file.path("data","hca02_national.RDS"))
 national_nested <- readRDS(file.path("data","national_nested.RDS"))
+nationalz_nested <- readRDS(file.path("data","nationalz_nested.RDS"))
 
 hcz02_state <- readRDS(file.path("data","hcz02_state.RDS"))
 hca03_state <- readRDS(file.path("data","hca03_state.RDS"))
@@ -86,6 +89,16 @@ shinyServer(function(input, output,session) {
   
   
   # Panel 2: Overview ----------------
+  nested_n1 <- reactive({
+    if(input$zinput1 == "Yes"){
+      return(nationalz_nested)
+      
+      
+    } else{
+      return(national_nested)
+    }
+  })
+  
   nested_s1 <- reactive({
     if(input$zinput1 == "Yes"){
       return(statez_nested)
@@ -231,9 +244,11 @@ shinyServer(function(input, output,session) {
       dplyr::select(-strata) %>% 
       pivot_wider(names_from=residence,values_from=est_ci) 
     
-    nt_df <- national_nested %>% 
+    nt_df <- nested_n1() %>% 
       dplyr::filter(strata %in% c("Total","Male","Female")) %>% 
       dplyr::select(variable,strata,residence,est_ci) %>% 
+      mutate(residence = case_when(is.na(residence) ~ "",
+                                   TRUE ~ residence)) %>% 
       mutate(residence = paste0("India ",residence," ",strata)) %>% 
       dplyr::select(-strata) %>% 
       pivot_wider(names_from=residence,values_from=est_ci) 

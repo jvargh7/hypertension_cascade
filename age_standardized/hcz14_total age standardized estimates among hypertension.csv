@@ -1,0 +1,10 @@
+variable,estimate,lci,uci,type,est_ci,sex
+htn_diagnosed,36.7,36.3,37.2,Proportion,"36.7 (36.3, 37.2)",NA
+htn_treated,17.7,17.5,17.9,Proportion,"17.7 (17.5, 17.9)",NA
+htn_controlled,9.1,8.9,9.2,Proportion,"9.1 (8.9, 9.2)",NA
+htn_diagnosed,44.4,43.8,44.9,Proportion,"44.4 (43.8, 44.9)",Female
+htn_treated,20.1,19.8,20.4,Proportion,"20.1 (19.8, 20.4)",Female
+htn_controlled,10.7,10.5,11,Proportion,"10.7 (10.5, 11)",Female
+htn_diagnosed,28.3,27.9,28.8,Proportion,"28.3 (27.9, 28.8)",Male
+htn_treated,15,14.8,15.3,Proportion,"15 (14.8, 15.3)",Male
+htn_controlled,7.2,7,7.4,Proportion,"7.2 (7, 7.4)",Male

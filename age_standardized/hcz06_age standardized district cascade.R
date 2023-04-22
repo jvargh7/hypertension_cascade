@@ -15,7 +15,7 @@ pop_age <- read_csv("data/population for age standardization.csv") %>%
 
 # id_vars = c("residence",group_vars[4]);
 
-nfhs5_svystdz <- svystandardize(nfhs5_svydesign,by=~age_category,over = ~education + caste + religion + wealthq_ur,
+nfhs5_svystdz <- svystandardize(nfhs5_svydesign,by=~age_category,over = ~district_df,
                                 population = pop_age)
 rm(nfhs5_svydesign);gc();
 

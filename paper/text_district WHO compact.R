@@ -5,7 +5,7 @@ district_met %>%
   mutate(n_category = case_when(n >= 50 ~ 1,
                                 n %in% c(25:49) ~ 2,
                                 n < 25 ~ 3)) %>% 
-  mutate(n_category = factor(n_category,labels=c(">=50","25-49","<25"))) %>% 
+  mutate(n_category = factor(n_category,levels=c(1:3),labels=c(">=50","25-49","<25"))) %>% 
   group_by(variable,n_category) %>% 
   tally() %>% 
   ggplot(data=.,aes(x = variable,y=n,group=n_category,fill=n_category,label=n)) +
@@ -30,27 +30,39 @@ district_met %>%
             prop = sum(estimate > 80)/n(),
             n = n()) 
 
-district_met %>% 
-  dplyr::filter(is.na(stratification),zone %in% c("West","South")) %>%
-  group_by(variable,zone) %>% 
-  summarize(count = sum(estimate > 80),
-            prop = sum(estimate > 80)/n(),
-            n = n())
 
 # Between district variation --------
 
-require(lme4)
 district_met %>% 
+  dplyr::filter(is.na(stratification)) %>% 
+  group_by(variable) %>% 
+  summarize(min = min(estimate),
+            max = max(estimate))
+
+library(lme4)
+m_diag = district_met %>% 
   dplyr::filter(variable == "htn_diagnosed") %>% 
-  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) 
+
+icc_diag = m_diag %>% 
   performance::icc(.)
 
-district_met %>% 
+1- icc_diag$ICC_adjusted
+
+m_treat = district_met %>% 
   dplyr::filter(variable == "htn_treated") %>% 
-  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) 
+
+icc_treat = m_treat %>% 
   performance::icc(.)
 
-district_met %>% 
+1-icc_treat
+
+m_contr = district_met %>% 
   dplyr::filter(variable == "htn_controlled") %>% 
-  lmer(estimate ~ 1 + (1|n5_state),data=.) %>% 
+  lmer(estimate ~ 1 + (1|n5_state),data=.) 
+
+icc_contr = m_contr %>% 
   performance::icc(.)
+1-icc_contr
+

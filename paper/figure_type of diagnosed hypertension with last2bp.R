@@ -62,7 +62,9 @@ figure_diagnosed = figure_diagnosed_df %>%
   xlab("") +
   ylab("Percentage (%)") +
   theme(legend.position = "bottom") +
-  scale_fill_manual(name="",values=c("darkgreen","orange","lightgreen","red"))
+  scale_fill_manual(name="",values=c("darkgreen","orange",
+                                                # "lightgreen",
+                                                "red"))
 
 figure_diagnosed %>% 
   ggsave(.,filename=paste0(path_cascade_folder,"/figures/figure_type of diagnosed hypertension with last2bp.png"),width=8,height=6)

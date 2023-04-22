@@ -58,6 +58,12 @@ rm(list=ls()); gc(); source(".Rprofile")
 source("paper/figure_national care cascade.R")
 
 rm(list=ls()); gc(); source(".Rprofile")
+source("paper/figure_type of diagnosed hypertension.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/figure_column plot cascade.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
 source("paper/table_analytic sample characteristics.R")
 
 rm(list=ls()); gc(); source(".Rprofile")
@@ -74,6 +80,27 @@ source("paper/text_state WHO compact.R")
 
 rm(list=ls()); gc(); source(".Rprofile")
 source("paper/table_conditional care cascade.R")
+
+# NEW SENSITIVITY ANALYSIS ----------
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("age_standardized/hcz11_age standardized national care cascade with last2bp.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("age_standardized/hcz13_age standardized national unmet care cascade with last2bp.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/table_sociodemographic population care cascade with last2bp.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/abstract_national cascade with last2bp.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/figure_type of diagnosed hypertension with last2bp.R")
+
+rm(list=ls()); gc(); source(".Rprofile")
+source("paper/text_distribution of BP measures.R")
+
 
 # ANALYSIS: district ------
 
@@ -99,10 +126,15 @@ source("paper/figure_maps district care cascade.R")
 rm(list=ls()); gc(); source(".Rprofile")
 source("paper/figure_maps district care cascade without 50 obs.R")
 
+
+
+
 # SHINY --------
 
 rm(list=ls()); gc(); source(".Rprofile")
 source("hypertension_cascade/code/setup_code.R")
+
+
 
 
 
