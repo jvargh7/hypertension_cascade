@@ -5,12 +5,7 @@ names(x_locations) = c("Total","Urban","Rural","Male","Female")
 
 df_single_panel <- function(df,group_title){
   
-  
-  
-  
-  
-  
-  
+ 
   df2 = df  %>% 
     group_by(variable == "htn_disease") %>% 
     mutate(lci_x = max(lci),
@@ -94,11 +89,11 @@ fig_cascade <- bind_rows(total,
   geom_errorbar(width=0.1) +
   theme_bw() +
   xlab("") +
-  ylab("Percentage (%)") +
+  ylab("Prevalence (%)") +
   theme(legend.position = "bottom") +
-  scale_fill_manual(name="",values=c("purple","red",
-                                                "orange",
-                                                "darkgreen")) +
+  scale_fill_manual(name="",values=c("#00A5E3","#FF5768",
+                                                "#FFBF65",
+                                                "#8DD7BF")) +
   scale_x_continuous(breaks=x_locations)
   
 

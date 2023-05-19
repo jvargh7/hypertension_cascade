@@ -1,4 +1,4 @@
-group_vars <- c("","sex","age_category","age_category2","education",
+group_vars <- c("","sex","age_category","education",
                 "caste","religion","swealthq_ur")
 
 
@@ -11,7 +11,7 @@ proportion_vars <- c("htn_screened","htn_disease","htn_diagnosed","htn_treated",
 source("preprocessing/hcp_parallelize.R")
 state_svysummary <- future_map_dfr(group_vars,
                                    function(g_v){
-                                     id_vars = c("state","residence",g_v);
+                                     id_vars = c("state",g_v);
                                      print(g_v);
                                      n5_sy <- svysummary(nfhs5_svydesign,
                                                          # c_vars = continuous_vars,
@@ -50,11 +50,12 @@ state_svysummary <- future_map_dfr(group_vars,
                                    })
 
 state_svysummary %>% 
+  mutate(residence = "Total") %>% 
   left_join(readxl::read_excel(paste0(path_dmcascade_repo,"/data/NFHS Cascade Variable List.xlsx"),sheet="map2020_v024") %>% 
               dplyr::select(v024,n5_state,zone) %>% 
               distinct(v024,n5_state,.keep_all=TRUE),
             by=c("state"="v024")) %>% 
-write_csv(.,file = "analysis/hca03_state level care cascade.csv")
+  write_csv(.,file = "analysis/hca11_total state level care cascade.csv")
 
 
 # df <- read_csv(file="analysis/hca03_state level care cascade.csv") %>%

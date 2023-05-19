@@ -121,7 +121,11 @@ saveRDS(hca05_state,file="hypertension_cascade/data/hca05_state_unmet.RDS")
 state_nested <- bind_rows(
   read_csv("analysis/hca03_state level care cascade.csv") %>% 
     dplyr::filter(variable %in% c("htn_screened","htn_disease")),
+  read_csv("analysis/hca11_total state level care cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_screened","htn_disease")),
   read_csv(file = "analysis/hca05_state met need care cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled")),
+  read_csv(file = "analysis/hca12_total state met need care cascade.csv") %>% 
     dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled")))  %>% 
   mutate(variable = str_replace(variable,"htn_","")) %>% 
   mutate(variable = factor(variable,levels=c("screened","disease","diagnosed","treated","controlled"),
@@ -149,7 +153,11 @@ saveRDS(state_nested,file="hypertension_cascade/data/state_nested.RDS")
 statez_nested <- bind_rows(
   read_csv("age_standardized/hcz02_age standardized state cascade.csv") %>% 
     dplyr::filter(variable %in% c("htn_screened","htn_disease")),
+  read_csv("age_standardized/hcz15_age standardized total state cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_screened","htn_disease")),
   read_csv(file = "age_standardized/hcz04_state met need care cascade.csv") %>% 
+    dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled")),
+  read_csv(file = "age_standardized/hcz16_total state met need care cascade.csv") %>% 
     dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled")))  %>% 
   mutate(variable = str_replace(variable,"htn_","")) %>% 
   mutate(variable = factor(variable,levels=c("screened","disease","diagnosed","treated","controlled"),

@@ -26,8 +26,8 @@ sidebar_overview <- conditionalPanel(condition="input.selectedpanel==2",
                                      selectInput("stateinput1","Select State:",unique(mapnfhs5_v024$n5_state),selected = "Kerala"),
                                      selectInput("districtinput1","Select District:",c(""),selected = "Kottayam"),
                                      selectInput("varinput1","Select Variable:",c("Screened","Hypertension","Diagnosed","Treated","Controlled"),selected="Diagnosed"),
-                                     selectInput("mapinput1","Select Display:",c("Urban","Rural")),
-                                     selectInput("stratainput1","Select Strata:",c("Total","Male","Female"),selected = "Female")
+                                     selectInput("mapinput1","Select Region:",c("Total","Urban","Rural"),selected="Total"),
+                                     selectInput("stratainput1","Select Sex:",c("Total","Male","Female"),selected = "Female")
 )
 
 sidebar_state <- conditionalPanel(condition="input.selectedpanel==3",
@@ -36,7 +36,7 @@ sidebar_state <- conditionalPanel(condition="input.selectedpanel==3",
                                   selectInput("stateinput2","Select State:",unique(mapnfhs5_v024$n5_state),selected = "Kerala"),
                                   # selectInput("varinput2","Select Variable:",c("Screened","Hypertension","Diagnosed","Treated","Controlled")),
                                   # selectInput("mapinput2","Select Display:",c("Urban","Rural")),
-                                  selectInput("stratainput2","Select Strata:",c("Total","Male","Female"),selected = "Female")
+                                  selectInput("stratainput2","Select Sex:",c("Total","Male","Female"),selected = "Female")
 )
 
 sidebar_stratified <- conditionalPanel(condition="input.selectedpanel==4",
@@ -67,9 +67,6 @@ panel_about <- tabPanel("About",value = 1,
                               # https://stackoverflow.com/questions/36182535/how-to-place-an-image-in-an-r-shiny-title
                               # tags$img(src = file.path("Logo 1.jpg"),height='100',width='200'),
                               tags$img(src = file.path("gdrc combined.png"),height='200',width='400'),
-                              # tags$img(src = file.path("Logo 2.jpg"),height='100',width='200'),
-                              # tags$img(src = file.path("Logo 3.jpg"),height='100',width='200'),
-                              # p("Conceptualization and Development: Jithin Sam Varghese,....,Mohammed K. Ali")
                               )
                           
                         ),
@@ -77,10 +74,11 @@ panel_about <- tabPanel("About",value = 1,
                           
                           box(solidHeader=FALSE,status="warning",title = "Citation",
                               p("Please cite as:"),
-                              code(paste0("Varghese JS, Nikhil SV, Sudharsanan N, Jeemon P, Patel SA, Thirumurthy H, 
-                                      Roy A, Tandon N, Narayan KMV, Prabhakaran D, Ali MK.
-                                      Hypertension diagnosis, treatment, and control in India: results from a national survey of 1.69 million adults aged 18 years and older in India, 2019-2021.
-                                      2022; Version 1.0. Accessed on ",format(Sys.Date(),"%d %B %Y"),"."))
+                              code(paste0("Varghese JS, Nikhil SV, Sudharsanan N, 
+                              Jeemon P, Patel SA, Thirumurthy H,
+                              Roy A, Tandon N, Narayan KMV, Prabhakaran D, Ali MK.
+                              Hypertension diagnosis, treatment, and control in India: results from a national survey of 1.69 million adults aged 18 years and older in India, 2019-2021.
+                              2022; Version 1.0. Accessed on ",format(Sys.Date(),"%d %B %Y"),"."))
                           
                           ),
                           

@@ -71,7 +71,7 @@ figB = ggplot() +
   scale_y_continuous(limits=c(0,100),breaks=seq(0,100,by=20))
 
 figC = ggplot() +
-  geom_jitter(data=district_met %>% 
+  geom_violin(data=district_met %>% 
                 dplyr::filter(variable == "Controlled"),aes(x=n5_state,y=estimate,col=zone,fill=zone)) +
   geom_point(data = state_met %>% 
                dplyr::filter(variable == "Controlled"),aes(x=n5_state,y=estimate,shape=residence),col="black") +
@@ -87,5 +87,5 @@ require(ggpubr)
 ggarrange(figA,figB,figC,nrow=3,ncol=1,
           labels = c("A","B","C"),
           common.legend = TRUE) %>% 
-  ggsave(.,filename = paste0(path_cascade_folder,"/figures/figure_violinplot for example states.png"),width=12,height=8)
+  ggsave(.,filename = paste0(path_cascade_folder,"/figures/figure_violinplot for example states.png"),width=12,height=6)
 

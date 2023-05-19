@@ -863,6 +863,294 @@ state,residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata,n5
 37,Urban,htn_undiagnosed,23.2,5.5,40.9,Proportion,"23.2 (5.5, 40.9)",160,age_category,40-64,Ladakh,North
 37,Urban,htn_unscreened,0,0,0,Proportion,"0 (0, 0)",33,age_category,65 plus,Ladakh,North
 37,Urban,htn_undiagnosed,26.2,10.2,42.2,Proportion,"26.2 (10.2, 42.2)",33,age_category,65 plus,Ladakh,North
+1,Rural,htn_unscreened,19.6,17,22.2,Proportion,"19.6 (17, 22.2)",2532,age_category2,18-39,Jammu & Kashmir,North
+1,Rural,htn_undiagnosed,61.8,58,65.6,Proportion,"61.8 (58, 65.6)",2532,age_category2,18-39,Jammu & Kashmir,North
+1,Rural,htn_unscreened,6.7,4.9,8.5,Proportion,"6.7 (4.9, 8.5)",7818,age_category2,40 plus,Jammu & Kashmir,North
+1,Rural,htn_undiagnosed,42.5,39.6,45.5,Proportion,"42.5 (39.6, 45.5)",7818,age_category2,40 plus,Jammu & Kashmir,North
+1,Urban,htn_unscreened,19.2,13.5,24.9,Proportion,"19.2 (13.5, 24.9)",527,age_category2,18-39,Jammu & Kashmir,North
+1,Urban,htn_undiagnosed,51.5,44.1,59,Proportion,"51.5 (44.1, 59)",527,age_category2,18-39,Jammu & Kashmir,North
+1,Urban,htn_unscreened,9.1,5.8,12.5,Proportion,"9.1 (5.8, 12.5)",2023,age_category2,40 plus,Jammu & Kashmir,North
+1,Urban,htn_undiagnosed,32.9,27.8,38,Proportion,"32.9 (27.8, 38)",2023,age_category2,40 plus,Jammu & Kashmir,North
+2,Rural,htn_unscreened,24.9,21.4,28.4,Proportion,"24.9 (21.4, 28.4)",1433,age_category2,18-39,Himachal Pradesh,North
+2,Rural,htn_undiagnosed,65.7,61.5,69.9,Proportion,"65.7 (61.5, 69.9)",1433,age_category2,18-39,Himachal Pradesh,North
+2,Rural,htn_unscreened,10.7,9.4,12.1,Proportion,"10.7 (9.4, 12.1)",5472,age_category2,40 plus,Himachal Pradesh,North
+2,Rural,htn_undiagnosed,47.7,45.1,50.3,Proportion,"47.7 (45.1, 50.3)",5472,age_category2,40 plus,Himachal Pradesh,North
+2,Urban,htn_unscreened,23.3,13,33.5,Proportion,"23.3 (13, 33.5)",150,age_category2,18-39,Himachal Pradesh,North
+2,Urban,htn_undiagnosed,64.3,52.6,76,Proportion,"64.3 (52.6, 76)",150,age_category2,18-39,Himachal Pradesh,North
+2,Urban,htn_unscreened,5.3,2.8,7.8,Proportion,"5.3 (2.8, 7.8)",496,age_category2,40 plus,Himachal Pradesh,North
+2,Urban,htn_undiagnosed,40.9,34.5,47.4,Proportion,"40.9 (34.5, 47.4)",496,age_category2,40 plus,Himachal Pradesh,North
+3,Rural,htn_unscreened,20,18.1,21.9,Proportion,"20 (18.1, 21.9)",4472,age_category2,18-39,Punjab,North
+3,Rural,htn_undiagnosed,61.5,58.6,64.5,Proportion,"61.5 (58.6, 64.5)",4472,age_category2,18-39,Punjab,North
+3,Rural,htn_unscreened,9.4,8.3,10.6,Proportion,"9.4 (8.3, 10.6)",11111,age_category2,40 plus,Punjab,North
+3,Rural,htn_undiagnosed,50.8,48.8,52.7,Proportion,"50.8 (48.8, 52.7)",11111,age_category2,40 plus,Punjab,North
+3,Urban,htn_unscreened,19.6,16.5,22.7,Proportion,"19.6 (16.5, 22.7)",1762,age_category2,18-39,Punjab,North
+3,Urban,htn_undiagnosed,63,58.1,67.9,Proportion,"63 (58.1, 67.9)",1762,age_category2,18-39,Punjab,North
+3,Urban,htn_unscreened,6,4.6,7.4,Proportion,"6 (4.6, 7.4)",4778,age_category2,40 plus,Punjab,North
+3,Urban,htn_undiagnosed,48.7,45.9,51.5,Proportion,"48.7 (45.9, 51.5)",4778,age_category2,40 plus,Punjab,North
+4,Rural,htn_unscreened,0,0,0,Proportion,"0 (0, 0)",7,age_category2,18-39,Chandigarh,North
+4,Rural,htn_undiagnosed,100,100,100,Proportion,"100 (100, 100)",7,age_category2,18-39,Chandigarh,North
+4,Rural,htn_unscreened,0,0,0,Proportion,"0 (0, 0)",11,age_category2,40 plus,Chandigarh,North
+4,Rural,htn_undiagnosed,63.6,63.6,63.6,Proportion,"63.6 (63.6, 63.6)",11,age_category2,40 plus,Chandigarh,North
+4,Urban,htn_unscreened,22.2,14.3,30,Proportion,"22.2 (14.3, 30)",147,age_category2,18-39,Chandigarh,North
+4,Urban,htn_undiagnosed,68.7,54.5,82.9,Proportion,"68.7 (54.5, 82.9)",147,age_category2,18-39,Chandigarh,North
+4,Urban,htn_unscreened,6.5,3.2,9.9,Proportion,"6.5 (3.2, 9.9)",332,age_category2,40 plus,Chandigarh,North
+4,Urban,htn_undiagnosed,52.9,45.9,59.9,Proportion,"52.9 (45.9, 59.9)",332,age_category2,40 plus,Chandigarh,North
+5,Rural,htn_unscreened,28.6,25.4,31.8,Proportion,"28.6 (25.4, 31.8)",1809,age_category2,18-39,Uttarakhand,Central
+5,Rural,htn_undiagnosed,74.4,71.1,77.7,Proportion,"74.4 (71.1, 77.7)",1809,age_category2,18-39,Uttarakhand,Central
+5,Rural,htn_unscreened,21.4,19.7,23.1,Proportion,"21.4 (19.7, 23.1)",5497,age_category2,40 plus,Uttarakhand,Central
+5,Rural,htn_undiagnosed,62.6,60.4,64.9,Proportion,"62.6 (60.4, 64.9)",5497,age_category2,40 plus,Uttarakhand,Central
+5,Urban,htn_unscreened,24.8,19.6,30.1,Proportion,"24.8 (19.6, 30.1)",544,age_category2,18-39,Uttarakhand,Central
+5,Urban,htn_undiagnosed,75.3,69.9,80.7,Proportion,"75.3 (69.9, 80.7)",544,age_category2,18-39,Uttarakhand,Central
+5,Urban,htn_unscreened,9.6,7,12.2,Proportion,"9.6 (7, 12.2)",1302,age_category2,40 plus,Uttarakhand,Central
+5,Urban,htn_undiagnosed,48.8,43.5,54.2,Proportion,"48.8 (43.5, 54.2)",1302,age_category2,40 plus,Uttarakhand,Central
+6,Rural,htn_unscreened,24.8,23,26.7,Proportion,"24.8 (23, 26.7)",3213,age_category2,18-39,Haryana,North
+6,Rural,htn_undiagnosed,63.1,60.2,66,Proportion,"63.1 (60.2, 66)",3213,age_category2,18-39,Haryana,North
+6,Rural,htn_unscreened,15.6,14.3,16.9,Proportion,"15.6 (14.3, 16.9)",7275,age_category2,40 plus,Haryana,North
+6,Rural,htn_undiagnosed,55.4,53.3,57.4,Proportion,"55.4 (53.3, 57.4)",7275,age_category2,40 plus,Haryana,North
+6,Urban,htn_unscreened,23.8,20.9,26.7,Proportion,"23.8 (20.9, 26.7)",1378,age_category2,18-39,Haryana,North
+6,Urban,htn_undiagnosed,65.3,60.7,70,Proportion,"65.3 (60.7, 70)",1378,age_category2,18-39,Haryana,North
+6,Urban,htn_unscreened,10.4,9,11.9,Proportion,"10.4 (9, 11.9)",3662,age_category2,40 plus,Haryana,North
+6,Urban,htn_undiagnosed,49.6,46.4,52.8,Proportion,"49.6 (46.4, 52.8)",3662,age_category2,40 plus,Haryana,North
+7,Rural,htn_unscreened,18.6,9.9,27.2,Proportion,"18.6 (9.9, 27.2)",91,age_category2,18-39,Nct Of Delhi,North
+7,Rural,htn_undiagnosed,69,48.9,89.1,Proportion,"69 (48.9, 89.1)",91,age_category2,18-39,Nct Of Delhi,North
+7,Rural,htn_unscreened,2.8,-0.1,5.8,Proportion,"2.8 (-0.1, 5.8)",167,age_category2,40 plus,Nct Of Delhi,North
+7,Rural,htn_undiagnosed,38.5,22.4,54.6,Proportion,"38.5 (22.4, 54.6)",167,age_category2,40 plus,Nct Of Delhi,North
+7,Urban,htn_unscreened,21.5,19.2,23.8,Proportion,"21.5 (19.2, 23.8)",2306,age_category2,18-39,Nct Of Delhi,North
+7,Urban,htn_undiagnosed,76.8,74.3,79.2,Proportion,"76.8 (74.3, 79.2)",2306,age_category2,18-39,Nct Of Delhi,North
+7,Urban,htn_unscreened,8.7,7.7,9.8,Proportion,"8.7 (7.7, 9.8)",4856,age_category2,40 plus,Nct Of Delhi,North
+7,Urban,htn_undiagnosed,56.6,54.5,58.8,Proportion,"56.6 (54.5, 58.8)",4856,age_category2,40 plus,Nct Of Delhi,North
+8,Rural,htn_unscreened,39.4,36.9,41.8,Proportion,"39.4 (36.9, 41.8)",4485,age_category2,18-39,Rajasthan,North
+8,Rural,htn_undiagnosed,68.5,65.5,71.4,Proportion,"68.5 (65.5, 71.4)",4485,age_category2,18-39,Rajasthan,North
+8,Rural,htn_unscreened,29.7,28.1,31.3,Proportion,"29.7 (28.1, 31.3)",11818,age_category2,40 plus,Rajasthan,North
+8,Rural,htn_undiagnosed,65.4,63.5,67.3,Proportion,"65.4 (63.5, 67.3)",11818,age_category2,40 plus,Rajasthan,North
+8,Urban,htn_unscreened,26.1,22.4,29.8,Proportion,"26.1 (22.4, 29.8)",1526,age_category2,18-39,Rajasthan,North
+8,Urban,htn_undiagnosed,59.7,53.7,65.6,Proportion,"59.7 (53.7, 65.6)",1526,age_category2,18-39,Rajasthan,North
+8,Urban,htn_unscreened,15.7,13.3,18,Proportion,"15.7 (13.3, 18)",3849,age_category2,40 plus,Rajasthan,North
+8,Urban,htn_undiagnosed,51.6,47.9,55.3,Proportion,"51.6 (47.9, 55.3)",3849,age_category2,40 plus,Rajasthan,North
+9,Rural,htn_unscreened,29.3,28,30.6,Proportion,"29.3 (28, 30.6)",13512,age_category2,18-39,Uttar Pradesh,Central
+9,Rural,htn_undiagnosed,61.4,59.5,63.3,Proportion,"61.4 (59.5, 63.3)",13512,age_category2,18-39,Uttar Pradesh,Central
+9,Rural,htn_unscreened,24.3,23.3,25.3,Proportion,"24.3 (23.3, 25.3)",28542,age_category2,40 plus,Uttar Pradesh,Central
+9,Rural,htn_undiagnosed,63.6,62.3,65,Proportion,"63.6 (62.3, 65)",28542,age_category2,40 plus,Uttar Pradesh,Central
+9,Urban,htn_unscreened,27.7,25.3,30.1,Proportion,"27.7 (25.3, 30.1)",3606,age_category2,18-39,Uttar Pradesh,Central
+9,Urban,htn_undiagnosed,68.9,65.4,72.5,Proportion,"68.9 (65.4, 72.5)",3606,age_category2,18-39,Uttar Pradesh,Central
+9,Urban,htn_unscreened,15.2,13.5,16.9,Proportion,"15.2 (13.5, 16.9)",7916,age_category2,40 plus,Uttar Pradesh,Central
+9,Urban,htn_undiagnosed,61.3,58.9,63.6,Proportion,"61.3 (58.9, 63.6)",7916,age_category2,40 plus,Uttar Pradesh,Central
+10,Rural,htn_unscreened,21.3,19.6,22.9,Proportion,"21.3 (19.6, 22.9)",5425,age_category2,18-39,Bihar,East
+10,Rural,htn_undiagnosed,44,41.5,46.5,Proportion,"44 (41.5, 46.5)",5425,age_category2,18-39,Bihar,East
+10,Rural,htn_unscreened,20.7,19.7,21.8,Proportion,"20.7 (19.7, 21.8)",13364,age_category2,40 plus,Bihar,East
+10,Rural,htn_undiagnosed,49.6,47.9,51.3,Proportion,"49.6 (47.9, 51.3)",13364,age_category2,40 plus,Bihar,East
+10,Urban,htn_unscreened,20.4,15.9,24.9,Proportion,"20.4 (15.9, 24.9)",796,age_category2,18-39,Bihar,East
+10,Urban,htn_undiagnosed,41.3,33.4,49.2,Proportion,"41.3 (33.4, 49.2)",796,age_category2,18-39,Bihar,East
+10,Urban,htn_unscreened,10.5,8,13,Proportion,"10.5 (8, 13)",1849,age_category2,40 plus,Bihar,East
+10,Urban,htn_undiagnosed,37.4,32.8,42,Proportion,"37.4 (32.8, 42)",1849,age_category2,40 plus,Bihar,East
+11,Rural,htn_unscreened,29.2,24.6,33.7,Proportion,"29.2 (24.6, 33.7)",1084,age_category2,18-39,Sikkim,North East
+11,Rural,htn_undiagnosed,79,75.2,82.8,Proportion,"79 (75.2, 82.8)",1084,age_category2,18-39,Sikkim,North East
+11,Rural,htn_unscreened,15.2,12.5,17.8,Proportion,"15.2 (12.5, 17.8)",2183,age_category2,40 plus,Sikkim,North East
+11,Rural,htn_undiagnosed,60.6,57,64.2,Proportion,"60.6 (57, 64.2)",2183,age_category2,40 plus,Sikkim,North East
+11,Urban,htn_unscreened,18.8,10.4,27.1,Proportion,"18.8 (10.4, 27.1)",178,age_category2,18-39,Sikkim,North East
+11,Urban,htn_undiagnosed,63.6,53.6,73.6,Proportion,"63.6 (53.6, 73.6)",178,age_category2,18-39,Sikkim,North East
+11,Urban,htn_unscreened,13.9,6.5,21.4,Proportion,"13.9 (6.5, 21.4)",292,age_category2,40 plus,Sikkim,North East
+11,Urban,htn_undiagnosed,49.6,40,59.1,Proportion,"49.6 (40, 59.1)",292,age_category2,40 plus,Sikkim,North East
+12,Rural,htn_unscreened,31,28.3,33.8,Proportion,"31 (28.3, 33.8)",4187,age_category2,18-39,Arunachal Pradesh,North East
+12,Rural,htn_undiagnosed,71.1,68.2,74.1,Proportion,"71.1 (68.2, 74.1)",4187,age_category2,18-39,Arunachal Pradesh,North East
+12,Rural,htn_unscreened,31.7,29.3,34.1,Proportion,"31.7 (29.3, 34.1)",9010,age_category2,40 plus,Arunachal Pradesh,North East
+12,Rural,htn_undiagnosed,71.1,68.8,73.3,Proportion,"71.1 (68.8, 73.3)",9010,age_category2,40 plus,Arunachal Pradesh,North East
+12,Urban,htn_unscreened,25.3,18.1,32.4,Proportion,"25.3 (18.1, 32.4)",1495,age_category2,18-39,Arunachal Pradesh,North East
+12,Urban,htn_undiagnosed,64.6,56.8,72.4,Proportion,"64.6 (56.8, 72.4)",1495,age_category2,18-39,Arunachal Pradesh,North East
+12,Urban,htn_unscreened,17.3,13,21.5,Proportion,"17.3 (13, 21.5)",1842,age_category2,40 plus,Arunachal Pradesh,North East
+12,Urban,htn_undiagnosed,57.5,52.2,62.9,Proportion,"57.5 (52.2, 62.9)",1842,age_category2,40 plus,Arunachal Pradesh,North East
+13,Rural,htn_unscreened,37.3,32.8,41.8,Proportion,"37.3 (32.8, 41.8)",1241,age_category2,18-39,Nagaland,North East
+13,Rural,htn_undiagnosed,72.1,67.8,76.4,Proportion,"72.1 (67.8, 76.4)",1241,age_category2,18-39,Nagaland,North East
+13,Rural,htn_unscreened,32.6,28.9,36.2,Proportion,"32.6 (28.9, 36.2)",4489,age_category2,40 plus,Nagaland,North East
+13,Rural,htn_undiagnosed,64.9,61.2,68.6,Proportion,"64.9 (61.2, 68.6)",4489,age_category2,40 plus,Nagaland,North East
+13,Urban,htn_unscreened,22,16.4,27.5,Proportion,"22 (16.4, 27.5)",512,age_category2,18-39,Nagaland,North East
+13,Urban,htn_undiagnosed,56.2,48.6,63.7,Proportion,"56.2 (48.6, 63.7)",512,age_category2,18-39,Nagaland,North East
+13,Urban,htn_unscreened,16,11.7,20.4,Proportion,"16 (11.7, 20.4)",1375,age_category2,40 plus,Nagaland,North East
+13,Urban,htn_undiagnosed,47.8,41.8,53.8,Proportion,"47.8 (41.8, 53.8)",1375,age_category2,40 plus,Nagaland,North East
+14,Rural,htn_unscreened,17.6,15.1,20.1,Proportion,"17.6 (15.1, 20.1)",1222,age_category2,18-39,Manipur,North East
+14,Rural,htn_undiagnosed,72.6,69.1,76,Proportion,"72.6 (69.1, 76)",1222,age_category2,18-39,Manipur,North East
+14,Rural,htn_unscreened,9.1,7.6,10.5,Proportion,"9.1 (7.6, 10.5)",3265,age_category2,40 plus,Manipur,North East
+14,Rural,htn_undiagnosed,53,50.3,55.7,Proportion,"53 (50.3, 55.7)",3265,age_category2,40 plus,Manipur,North East
+14,Urban,htn_unscreened,15.9,12,19.7,Proportion,"15.9 (12, 19.7)",534,age_category2,18-39,Manipur,North East
+14,Urban,htn_undiagnosed,73.3,68,78.6,Proportion,"73.3 (68, 78.6)",534,age_category2,18-39,Manipur,North East
+14,Urban,htn_unscreened,4.6,3.3,5.9,Proportion,"4.6 (3.3, 5.9)",1447,age_category2,40 plus,Manipur,North East
+14,Urban,htn_undiagnosed,43.3,39.7,46.8,Proportion,"43.3 (39.7, 46.8)",1447,age_category2,40 plus,Manipur,North East
+15,Rural,htn_unscreened,25.5,20.2,30.9,Proportion,"25.5 (20.2, 30.9)",649,age_category2,18-39,Mizoram,North East
+15,Rural,htn_undiagnosed,73.7,67.5,79.8,Proportion,"73.7 (67.5, 79.8)",649,age_category2,18-39,Mizoram,North East
+15,Rural,htn_unscreened,14,10.8,17.2,Proportion,"14 (10.8, 17.2)",1474,age_category2,40 plus,Mizoram,North East
+15,Rural,htn_undiagnosed,56.6,52.1,61.1,Proportion,"56.6 (52.1, 61.1)",1474,age_category2,40 plus,Mizoram,North East
+15,Urban,htn_unscreened,8.9,6.1,11.7,Proportion,"8.9 (6.1, 11.7)",694,age_category2,18-39,Mizoram,North East
+15,Urban,htn_undiagnosed,60.8,54.6,67,Proportion,"60.8 (54.6, 67)",694,age_category2,18-39,Mizoram,North East
+15,Urban,htn_unscreened,4.4,2.8,6,Proportion,"4.4 (2.8, 6)",1419,age_category2,40 plus,Mizoram,North East
+15,Urban,htn_undiagnosed,43.3,37.5,49.1,Proportion,"43.3 (37.5, 49.1)",1419,age_category2,40 plus,Mizoram,North East
+16,Rural,htn_unscreened,25.7,21.8,29.6,Proportion,"25.7 (21.8, 29.6)",1004,age_category2,18-39,Tripura,North East
+16,Rural,htn_undiagnosed,63.9,59.6,68.2,Proportion,"63.9 (59.6, 68.2)",1004,age_category2,18-39,Tripura,North East
+16,Rural,htn_unscreened,15.8,13.3,18.3,Proportion,"15.8 (13.3, 18.3)",2327,age_category2,40 plus,Tripura,North East
+16,Rural,htn_undiagnosed,47.1,43.5,50.7,Proportion,"47.1 (43.5, 50.7)",2327,age_category2,40 plus,Tripura,North East
+16,Urban,htn_unscreened,13.1,8.1,18.1,Proportion,"13.1 (8.1, 18.1)",252,age_category2,18-39,Tripura,North East
+16,Urban,htn_undiagnosed,54.6,47,62.3,Proportion,"54.6 (47, 62.3)",252,age_category2,18-39,Tripura,North East
+16,Urban,htn_unscreened,5.1,3.3,7,Proportion,"5.1 (3.3, 7)",767,age_category2,40 plus,Tripura,North East
+16,Urban,htn_undiagnosed,36,30.3,41.6,Proportion,"36 (30.3, 41.6)",767,age_category2,40 plus,Tripura,North East
+17,Rural,htn_unscreened,45.4,40.2,50.6,Proportion,"45.4 (40.2, 50.6)",1771,age_category2,18-39,Meghalaya,North East
+17,Rural,htn_undiagnosed,75.5,71.9,79.1,Proportion,"75.5 (71.9, 79.1)",1771,age_category2,18-39,Meghalaya,North East
+17,Rural,htn_unscreened,36.3,32.2,40.5,Proportion,"36.3 (32.2, 40.5)",2868,age_category2,40 plus,Meghalaya,North East
+17,Rural,htn_undiagnosed,67.6,63.7,71.5,Proportion,"67.6 (63.7, 71.5)",2868,age_category2,40 plus,Meghalaya,North East
+17,Urban,htn_unscreened,29.3,17.8,40.8,Proportion,"29.3 (17.8, 40.8)",252,age_category2,18-39,Meghalaya,North East
+17,Urban,htn_undiagnosed,76.7,70,83.4,Proportion,"76.7 (70, 83.4)",252,age_category2,18-39,Meghalaya,North East
+17,Urban,htn_unscreened,14.9,9.3,20.6,Proportion,"14.9 (9.3, 20.6)",475,age_category2,40 plus,Meghalaya,North East
+17,Urban,htn_undiagnosed,56.4,50.1,62.6,Proportion,"56.4 (50.1, 62.6)",475,age_category2,40 plus,Meghalaya,North East
+18,Rural,htn_unscreened,26.5,24.6,28.5,Proportion,"26.5 (24.6, 28.5)",4508,age_category2,18-39,Assam,North East
+18,Rural,htn_undiagnosed,65.9,63.4,68.4,Proportion,"65.9 (63.4, 68.4)",4508,age_category2,18-39,Assam,North East
+18,Rural,htn_unscreened,17.4,16,18.8,Proportion,"17.4 (16, 18.8)",11715,age_category2,40 plus,Assam,North East
+18,Rural,htn_undiagnosed,52,50.3,53.8,Proportion,"52 (50.3, 53.8)",11715,age_category2,40 plus,Assam,North East
+18,Urban,htn_unscreened,21.3,17.8,24.8,Proportion,"21.3 (17.8, 24.8)",706,age_category2,18-39,Assam,North East
+18,Urban,htn_undiagnosed,64.1,58.5,69.7,Proportion,"64.1 (58.5, 69.7)",706,age_category2,18-39,Assam,North East
+18,Urban,htn_unscreened,9.5,7.5,11.6,Proportion,"9.5 (7.5, 11.6)",2199,age_category2,40 plus,Assam,North East
+18,Urban,htn_undiagnosed,41.4,38,44.8,Proportion,"41.4 (38, 44.8)",2199,age_category2,40 plus,Assam,North East
+19,Rural,htn_unscreened,33.5,30.6,36.4,Proportion,"33.5 (30.6, 36.4)",1852,age_category2,18-39,West Bengal,East
+19,Rural,htn_undiagnosed,73.4,70.7,76.1,Proportion,"73.4 (70.7, 76.1)",1852,age_category2,18-39,West Bengal,East
+19,Rural,htn_unscreened,21.5,19.5,23.4,Proportion,"21.5 (19.5, 23.4)",5787,age_category2,40 plus,West Bengal,East
+19,Rural,htn_undiagnosed,57.8,55.7,59.9,Proportion,"57.8 (55.7, 59.9)",5787,age_category2,40 plus,West Bengal,East
+19,Urban,htn_unscreened,30.8,25.2,36.5,Proportion,"30.8 (25.2, 36.5)",817,age_category2,18-39,West Bengal,East
+19,Urban,htn_undiagnosed,71.3,67,75.7,Proportion,"71.3 (67, 75.7)",817,age_category2,18-39,West Bengal,East
+19,Urban,htn_unscreened,14.2,11.5,17,Proportion,"14.2 (11.5, 17)",3154,age_category2,40 plus,West Bengal,East
+19,Urban,htn_undiagnosed,49.2,46,52.3,Proportion,"49.2 (46, 52.3)",3154,age_category2,40 plus,West Bengal,East
+20,Rural,htn_unscreened,35.9,32.8,39,Proportion,"35.9 (32.8, 39)",3465,age_category2,18-39,Jharkhand,East
+20,Rural,htn_undiagnosed,63.1,58.9,67.3,Proportion,"63.1 (58.9, 67.3)",3465,age_category2,18-39,Jharkhand,East
+20,Rural,htn_unscreened,35.4,33.4,37.3,Proportion,"35.4 (33.4, 37.3)",8399,age_category2,40 plus,Jharkhand,East
+20,Rural,htn_undiagnosed,68.3,66.1,70.5,Proportion,"68.3 (66.1, 70.5)",8399,age_category2,40 plus,Jharkhand,East
+20,Urban,htn_unscreened,28.3,24.3,32.4,Proportion,"28.3 (24.3, 32.4)",1033,age_category2,18-39,Jharkhand,East
+20,Urban,htn_undiagnosed,62.4,56.1,68.7,Proportion,"62.4 (56.1, 68.7)",1033,age_category2,18-39,Jharkhand,East
+20,Urban,htn_unscreened,17.5,14.6,20.4,Proportion,"17.5 (14.6, 20.4)",2586,age_category2,40 plus,Jharkhand,East
+20,Urban,htn_undiagnosed,55.4,51.8,59.1,Proportion,"55.4 (51.8, 59.1)",2586,age_category2,40 plus,Jharkhand,East
+21,Rural,htn_unscreened,45.1,42.9,47.3,Proportion,"45.1 (42.9, 47.3)",4189,age_category2,18-39,Odisha,East
+21,Rural,htn_undiagnosed,72.7,70.3,75.1,Proportion,"72.7 (70.3, 75.1)",4189,age_category2,18-39,Odisha,East
+21,Rural,htn_unscreened,38.8,37.1,40.4,Proportion,"38.8 (37.1, 40.4)",12098,age_category2,40 plus,Odisha,East
+21,Rural,htn_undiagnosed,63.6,62,65.2,Proportion,"63.6 (62, 65.2)",12098,age_category2,40 plus,Odisha,East
+21,Urban,htn_unscreened,35.5,29.9,41,Proportion,"35.5 (29.9, 41)",689,age_category2,18-39,Odisha,East
+21,Urban,htn_undiagnosed,71.9,64.8,79,Proportion,"71.9 (64.8, 79)",689,age_category2,18-39,Odisha,East
+21,Urban,htn_unscreened,20.9,18,23.8,Proportion,"20.9 (18, 23.8)",2258,age_category2,40 plus,Odisha,East
+21,Urban,htn_undiagnosed,51.9,47.7,56.1,Proportion,"51.9 (47.7, 56.1)",2258,age_category2,40 plus,Odisha,East
+22,Rural,htn_unscreened,42.4,39.8,45,Proportion,"42.4 (39.8, 45)",4579,age_category2,18-39,Chhattisgarh,Central
+22,Rural,htn_undiagnosed,84.4,82.1,86.7,Proportion,"84.4 (82.1, 86.7)",4579,age_category2,18-39,Chhattisgarh,Central
+22,Rural,htn_unscreened,35,32.8,37.2,Proportion,"35 (32.8, 37.2)",10943,age_category2,40 plus,Chhattisgarh,Central
+22,Rural,htn_undiagnosed,79.1,77.5,80.7,Proportion,"79.1 (77.5, 80.7)",10943,age_category2,40 plus,Chhattisgarh,Central
+22,Urban,htn_unscreened,29.2,24.6,33.7,Proportion,"29.2 (24.6, 33.7)",1207,age_category2,18-39,Chhattisgarh,Central
+22,Urban,htn_undiagnosed,77.7,72,83.3,Proportion,"77.7 (72, 83.3)",1207,age_category2,18-39,Chhattisgarh,Central
+22,Urban,htn_unscreened,16.2,13.6,18.8,Proportion,"16.2 (13.6, 18.8)",2852,age_category2,40 plus,Chhattisgarh,Central
+22,Urban,htn_undiagnosed,60.6,56.8,64.5,Proportion,"60.6 (56.8, 64.5)",2852,age_category2,40 plus,Chhattisgarh,Central
+23,Rural,htn_unscreened,45.8,43.9,47.6,Proportion,"45.8 (43.9, 47.6)",6206,age_category2,18-39,Madhya Pradesh,Central
+23,Rural,htn_undiagnosed,80.2,78.4,82,Proportion,"80.2 (78.4, 82)",6206,age_category2,18-39,Madhya Pradesh,Central
+23,Rural,htn_unscreened,41.3,39.7,42.8,Proportion,"41.3 (39.7, 42.8)",16597,age_category2,40 plus,Madhya Pradesh,Central
+23,Rural,htn_undiagnosed,76.8,75.6,78,Proportion,"76.8 (75.6, 78)",16597,age_category2,40 plus,Madhya Pradesh,Central
+23,Urban,htn_unscreened,35.2,31.6,38.7,Proportion,"35.2 (31.6, 38.7)",1878,age_category2,18-39,Madhya Pradesh,Central
+23,Urban,htn_undiagnosed,79.2,75.9,82.6,Proportion,"79.2 (75.9, 82.6)",1878,age_category2,18-39,Madhya Pradesh,Central
+23,Urban,htn_unscreened,22.2,19.9,24.5,Proportion,"22.2 (19.9, 24.5)",5131,age_category2,40 plus,Madhya Pradesh,Central
+23,Urban,htn_undiagnosed,62.1,59.6,64.7,Proportion,"62.1 (59.6, 64.7)",5131,age_category2,40 plus,Madhya Pradesh,Central
+24,Rural,htn_unscreened,47.4,44.8,50.1,Proportion,"47.4 (44.8, 50.1)",3330,age_category2,18-39,Gujarat,West
+24,Rural,htn_undiagnosed,82.3,80.4,84.3,Proportion,"82.3 (80.4, 84.3)",3330,age_category2,18-39,Gujarat,West
+24,Rural,htn_unscreened,34.6,32.5,36.6,Proportion,"34.6 (32.5, 36.6)",10635,age_category2,40 plus,Gujarat,West
+24,Rural,htn_undiagnosed,70.1,68.4,71.7,Proportion,"70.1 (68.4, 71.7)",10635,age_category2,40 plus,Gujarat,West
+24,Urban,htn_unscreened,36.5,31.7,41.3,Proportion,"36.5 (31.7, 41.3)",1370,age_category2,18-39,Gujarat,West
+24,Urban,htn_undiagnosed,79.8,76.2,83.4,Proportion,"79.8 (76.2, 83.4)",1370,age_category2,18-39,Gujarat,West
+24,Urban,htn_unscreened,15.7,13.6,17.7,Proportion,"15.7 (13.6, 17.7)",5019,age_category2,40 plus,Gujarat,West
+24,Urban,htn_undiagnosed,52.6,49.6,55.6,Proportion,"52.6 (49.6, 55.6)",5019,age_category2,40 plus,Gujarat,West
+25,Rural,htn_unscreened,30,19.1,40.9,Proportion,"30 (19.1, 40.9)",119,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Rural,htn_undiagnosed,86.8,76.6,97,Proportion,"86.8 (76.6, 97)",119,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Rural,htn_unscreened,22.4,14.9,29.9,Proportion,"22.4 (14.9, 29.9)",409,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+25,Rural,htn_undiagnosed,67.9,60.5,75.3,Proportion,"67.9 (60.5, 75.3)",409,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_unscreened,35.1,22,48.2,Proportion,"35.1 (22, 48.2)",290,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_undiagnosed,80.2,74.3,86.1,Proportion,"80.2 (74.3, 86.1)",290,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_unscreened,10.7,5.8,15.6,Proportion,"10.7 (5.8, 15.6)",488,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_undiagnosed,48.9,42.4,55.4,Proportion,"48.9 (42.4, 55.4)",488,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+27,Rural,htn_unscreened,42.2,39.4,45,Proportion,"42.2 (39.4, 45)",3484,age_category2,18-39,Maharashtra,West
+27,Rural,htn_undiagnosed,83,80.9,85.1,Proportion,"83 (80.9, 85.1)",3484,age_category2,18-39,Maharashtra,West
+27,Rural,htn_unscreened,28.2,26.5,30,Proportion,"28.2 (26.5, 30)",12484,age_category2,40 plus,Maharashtra,West
+27,Rural,htn_undiagnosed,66.7,65.2,68.1,Proportion,"66.7 (65.2, 68.1)",12484,age_category2,40 plus,Maharashtra,West
+27,Urban,htn_unscreened,32.6,28.4,36.8,Proportion,"32.6 (28.4, 36.8)",1661,age_category2,18-39,Maharashtra,West
+27,Urban,htn_undiagnosed,85.3,82.9,87.8,Proportion,"85.3 (82.9, 87.8)",1661,age_category2,18-39,Maharashtra,West
+27,Urban,htn_unscreened,14.7,12.8,16.5,Proportion,"14.7 (12.8, 16.5)",5706,age_category2,40 plus,Maharashtra,West
+27,Urban,htn_undiagnosed,55.6,53.3,58,Proportion,"55.6 (53.3, 58)",5706,age_category2,40 plus,Maharashtra,West
+28,Rural,htn_unscreened,31.2,27.7,34.7,Proportion,"31.2 (27.7, 34.7)",1123,age_category2,18-39,Andhra Pradesh,South
+28,Rural,htn_undiagnosed,78.6,75.6,81.6,Proportion,"78.6 (75.6, 81.6)",1123,age_category2,18-39,Andhra Pradesh,South
+28,Rural,htn_unscreened,13.6,12.1,15.2,Proportion,"13.6 (12.1, 15.2)",4489,age_category2,40 plus,Andhra Pradesh,South
+28,Rural,htn_undiagnosed,53.3,51,55.5,Proportion,"53.3 (51, 55.5)",4489,age_category2,40 plus,Andhra Pradesh,South
+28,Urban,htn_unscreened,26,20.9,31.1,Proportion,"26 (20.9, 31.1)",535,age_category2,18-39,Andhra Pradesh,South
+28,Urban,htn_undiagnosed,74.4,69.4,79.3,Proportion,"74.4 (69.4, 79.3)",535,age_category2,18-39,Andhra Pradesh,South
+28,Urban,htn_unscreened,8.7,7,10.4,Proportion,"8.7 (7, 10.4)",1937,age_category2,40 plus,Andhra Pradesh,South
+28,Urban,htn_undiagnosed,46,42.4,49.7,Proportion,"46 (42.4, 49.7)",1937,age_category2,40 plus,Andhra Pradesh,South
+29,Rural,htn_unscreened,36.8,33.6,40,Proportion,"36.8 (33.6, 40)",3198,age_category2,18-39,Karnataka,South
+29,Rural,htn_undiagnosed,77.8,74.3,81.3,Proportion,"77.8 (74.3, 81.3)",3198,age_category2,18-39,Karnataka,South
+29,Rural,htn_unscreened,24,22.2,25.7,Proportion,"24 (22.2, 25.7)",11868,age_category2,40 plus,Karnataka,South
+29,Rural,htn_undiagnosed,64.6,63,66.1,Proportion,"64.6 (63, 66.1)",11868,age_category2,40 plus,Karnataka,South
+29,Urban,htn_unscreened,36.6,29.8,43.4,Proportion,"36.6 (29.8, 43.4)",1458,age_category2,18-39,Karnataka,South
+29,Urban,htn_undiagnosed,79.3,74.2,84.4,Proportion,"79.3 (74.2, 84.4)",1458,age_category2,18-39,Karnataka,South
+29,Urban,htn_unscreened,18,14.8,21.2,Proportion,"18 (14.8, 21.2)",4969,age_category2,40 plus,Karnataka,South
+29,Urban,htn_undiagnosed,52.3,49.3,55.4,Proportion,"52.3 (49.3, 55.4)",4969,age_category2,40 plus,Karnataka,South
+30,Rural,htn_unscreened,13.3,6.5,20.1,Proportion,"13.3 (6.5, 20.1)",85,age_category2,18-39,Goa,West
+30,Rural,htn_undiagnosed,74.1,65,83.1,Proportion,"74.1 (65, 83.1)",85,age_category2,18-39,Goa,West
+30,Rural,htn_unscreened,2.1,0.4,3.8,Proportion,"2.1 (0.4, 3.8)",515,age_category2,40 plus,Goa,West
+30,Rural,htn_undiagnosed,33.9,28.3,39.5,Proportion,"33.9 (28.3, 39.5)",515,age_category2,40 plus,Goa,West
+30,Urban,htn_unscreened,15.7,6.6,24.8,Proportion,"15.7 (6.6, 24.8)",128,age_category2,18-39,Goa,West
+30,Urban,htn_undiagnosed,84.4,78.2,90.5,Proportion,"84.4 (78.2, 90.5)",128,age_category2,18-39,Goa,West
+30,Urban,htn_unscreened,3.8,1.7,5.8,Proportion,"3.8 (1.7, 5.8)",763,age_category2,40 plus,Goa,West
+30,Urban,htn_undiagnosed,34,28.6,39.4,Proportion,"34 (28.6, 39.4)",763,age_category2,40 plus,Goa,West
+31,Rural,htn_unscreened,0,0,0,Proportion,"0 (0, 0)",18,age_category2,18-39,Lakshadweep,South
+31,Rural,htn_undiagnosed,84.8,67.1,102.5,Proportion,"84.8 (67.1, 102.5)",18,age_category2,18-39,Lakshadweep,South
+31,Rural,htn_unscreened,0,0,0,Proportion,"0 (0, 0)",127,age_category2,40 plus,Lakshadweep,South
+31,Rural,htn_undiagnosed,47.8,32.2,63.5,Proportion,"47.8 (32.2, 63.5)",127,age_category2,40 plus,Lakshadweep,South
+31,Urban,htn_unscreened,9.8,3.6,16.1,Proportion,"9.8 (3.6, 16.1)",121,age_category2,18-39,Lakshadweep,South
+31,Urban,htn_undiagnosed,82.6,74.5,90.6,Proportion,"82.6 (74.5, 90.6)",121,age_category2,18-39,Lakshadweep,South
+31,Urban,htn_unscreened,0.7,0,1.3,Proportion,"0.7 (0, 1.3)",597,age_category2,40 plus,Lakshadweep,South
+31,Urban,htn_undiagnosed,52.4,46.1,58.6,Proportion,"52.4 (46.1, 58.6)",597,age_category2,40 plus,Lakshadweep,South
+32,Rural,htn_unscreened,15.3,11.9,18.6,Proportion,"15.3 (11.9, 18.6)",748,age_category2,18-39,Kerala,South
+32,Rural,htn_undiagnosed,70.6,66.7,74.5,Proportion,"70.6 (66.7, 74.5)",748,age_category2,18-39,Kerala,South
+32,Rural,htn_unscreened,3.5,2.8,4.1,Proportion,"3.5 (2.8, 4.1)",5901,age_category2,40 plus,Kerala,South
+32,Rural,htn_undiagnosed,38.9,37,40.9,Proportion,"38.9 (37, 40.9)",5901,age_category2,40 plus,Kerala,South
+32,Urban,htn_unscreened,14.5,11.1,17.8,Proportion,"14.5 (11.1, 17.8)",447,age_category2,18-39,Kerala,South
+32,Urban,htn_undiagnosed,74.6,69.5,79.7,Proportion,"74.6 (69.5, 79.7)",447,age_category2,18-39,Kerala,South
+32,Urban,htn_unscreened,2.2,1.7,2.7,Proportion,"2.2 (1.7, 2.7)",4058,age_category2,40 plus,Kerala,South
+32,Urban,htn_undiagnosed,35.3,33.3,37.4,Proportion,"35.3 (33.3, 37.4)",4058,age_category2,40 plus,Kerala,South
+33,Rural,htn_unscreened,19.8,17.6,21.9,Proportion,"19.8 (17.6, 21.9)",2734,age_category2,18-39,Tamil Nadu,South
+33,Rural,htn_undiagnosed,69.1,64.3,73.8,Proportion,"69.1 (64.3, 73.8)",2734,age_category2,18-39,Tamil Nadu,South
+33,Rural,htn_unscreened,9.9,8.9,10.9,Proportion,"9.9 (8.9, 10.9)",9431,age_category2,40 plus,Tamil Nadu,South
+33,Rural,htn_undiagnosed,58.1,55.3,61,Proportion,"58.1 (55.3, 61)",9431,age_category2,40 plus,Tamil Nadu,South
+33,Urban,htn_unscreened,18.4,15.7,21,Proportion,"18.4 (15.7, 21)",2029,age_category2,18-39,Tamil Nadu,South
+33,Urban,htn_undiagnosed,67.4,61.9,72.9,Proportion,"67.4 (61.9, 72.9)",2029,age_category2,18-39,Tamil Nadu,South
+33,Urban,htn_unscreened,6.5,5.6,7.5,Proportion,"6.5 (5.6, 7.5)",7422,age_category2,40 plus,Tamil Nadu,South
+33,Urban,htn_undiagnosed,49.9,47.7,52.1,Proportion,"49.9 (47.7, 52.1)",7422,age_category2,40 plus,Tamil Nadu,South
+34,Rural,htn_unscreened,40.5,23.9,57,Proportion,"40.5 (23.9, 57)",97,age_category2,18-39,Puducherry,South
+34,Rural,htn_undiagnosed,84.7,74.9,94.5,Proportion,"84.7 (74.9, 94.5)",97,age_category2,18-39,Puducherry,South
+34,Rural,htn_unscreened,12.5,7.7,17.3,Proportion,"12.5 (7.7, 17.3)",394,age_category2,40 plus,Puducherry,South
+34,Rural,htn_undiagnosed,53.9,47.6,60.3,Proportion,"53.9 (47.6, 60.3)",394,age_category2,40 plus,Puducherry,South
+34,Urban,htn_unscreened,21.1,10.2,31.9,Proportion,"21.1 (10.2, 31.9)",394,age_category2,18-39,Puducherry,South
+34,Urban,htn_undiagnosed,66.4,54,78.8,Proportion,"66.4 (54, 78.8)",394,age_category2,18-39,Puducherry,South
+34,Urban,htn_unscreened,5.8,3.7,7.9,Proportion,"5.8 (3.7, 7.9)",2241,age_category2,40 plus,Puducherry,South
+34,Urban,htn_undiagnosed,43.5,36.6,50.5,Proportion,"43.5 (36.6, 50.5)",2241,age_category2,40 plus,Puducherry,South
+35,Rural,htn_unscreened,14.9,10.8,19,Proportion,"14.9 (10.8, 19)",468,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Rural,htn_undiagnosed,79.5,73.1,85.9,Proportion,"79.5 (73.1, 85.9)",468,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Rural,htn_unscreened,6,3.7,8.3,Proportion,"6 (3.7, 8.3)",1452,age_category2,40 plus,Andaman & Nicobar Islands,South
+35,Rural,htn_undiagnosed,55.6,50.6,60.7,Proportion,"55.6 (50.6, 60.7)",1452,age_category2,40 plus,Andaman & Nicobar Islands,South
+35,Urban,htn_unscreened,20.8,11.1,30.5,Proportion,"20.8 (11.1, 30.5)",96,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Urban,htn_undiagnosed,69.2,60.3,78.1,Proportion,"69.2 (60.3, 78.1)",96,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Urban,htn_unscreened,6.4,3.1,9.7,Proportion,"6.4 (3.1, 9.7)",280,age_category2,40 plus,Andaman & Nicobar Islands,South
+35,Urban,htn_undiagnosed,42.7,36.6,48.8,Proportion,"42.7 (36.6, 48.8)",280,age_category2,40 plus,Andaman & Nicobar Islands,South
+36,Rural,htn_unscreened,23.9,21.8,26,Proportion,"23.9 (21.8, 26)",3404,age_category2,18-39,Telangana,South
+36,Rural,htn_undiagnosed,79.2,77.4,81,Proportion,"79.2 (77.4, 81)",3404,age_category2,18-39,Telangana,South
+36,Rural,htn_unscreened,13.1,11.9,14.4,Proportion,"13.1 (11.9, 14.4)",10866,age_category2,40 plus,Telangana,South
+36,Rural,htn_undiagnosed,55.4,54,56.8,Proportion,"55.4 (54, 56.8)",10866,age_category2,40 plus,Telangana,South
+36,Urban,htn_unscreened,20.4,16.7,24.2,Proportion,"20.4 (16.7, 24.2)",1441,age_category2,18-39,Telangana,South
+36,Urban,htn_undiagnosed,80.2,77.1,83.4,Proportion,"80.2 (77.1, 83.4)",1441,age_category2,18-39,Telangana,South
+36,Urban,htn_unscreened,7.4,6,8.8,Proportion,"7.4 (6, 8.8)",4107,age_category2,40 plus,Telangana,South
+36,Urban,htn_undiagnosed,41.9,39.3,44.5,Proportion,"41.9 (39.3, 44.5)",4107,age_category2,40 plus,Telangana,South
+37,Rural,htn_unscreened,15.1,7.7,22.6,Proportion,"15.1 (7.7, 22.6)",320,age_category2,18-39,Ladakh,North
+37,Rural,htn_undiagnosed,49.9,33.3,66.5,Proportion,"49.9 (33.3, 66.5)",320,age_category2,18-39,Ladakh,North
+37,Rural,htn_unscreened,4.9,2.4,7.4,Proportion,"4.9 (2.4, 7.4)",790,age_category2,40 plus,Ladakh,North
+37,Rural,htn_undiagnosed,27,20.5,33.4,Proportion,"27 (20.5, 33.4)",790,age_category2,40 plus,Ladakh,North
+37,Urban,htn_unscreened,9,-3.6,21.7,Proportion,"9 (-3.6, 21.7)",101,age_category2,18-39,Ladakh,North
+37,Urban,htn_undiagnosed,30.5,3.1,57.8,Proportion,"30.5 (3.1, 57.8)",101,age_category2,18-39,Ladakh,North
+37,Urban,htn_unscreened,4.3,0.1,8.5,Proportion,"4.3 (0.1, 8.5)",193,age_category2,40 plus,Ladakh,North
+37,Urban,htn_undiagnosed,23.7,6.9,40.5,Proportion,"23.7 (6.9, 40.5)",193,age_category2,40 plus,Ladakh,North
 1,Rural,htn_unscreened,18.8,14.5,23.1,Proportion,"18.8 (14.5, 23.1)",686,education,Higher,Jammu & Kashmir,North
 1,Rural,htn_undiagnosed,58.5,52.6,64.3,Proportion,"58.5 (52.6, 64.3)",686,education,Higher,Jammu & Kashmir,North
 1,Rural,htn_unscreened,5.6,4.6,6.6,Proportion,"5.6 (4.6, 6.6)",5302,education,No education,Jammu & Kashmir,North
@@ -3578,6 +3866,149 @@ state,residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata,n5
 37,Urban,htn_untreated,80.1,62.6,97.7,Proportion,"80.1 (62.6, 97.7)",68,age_category,18-39,Ladakh,North
 37,Urban,htn_untreated,60.7,36.6,84.9,Proportion,"60.7 (36.6, 84.9)",119,age_category,40-64,Ladakh,North
 37,Urban,htn_untreated,29,4.6,53.5,Proportion,"29 (4.6, 53.5)",24,age_category,65 plus,Ladakh,North
+1,Rural,htn_untreated,58.5,52.8,64.2,Proportion,"58.5 (52.8, 64.2)",1025,age_category2,18-39,Jammu & Kashmir,North
+1,Rural,htn_untreated,27.4,24.4,30.3,Proportion,"27.4 (24.4, 30.3)",4495,age_category2,40 plus,Jammu & Kashmir,North
+1,Urban,htn_untreated,63.5,54.2,72.8,Proportion,"63.5 (54.2, 72.8)",239,age_category2,18-39,Jammu & Kashmir,North
+1,Urban,htn_untreated,31.7,25.9,37.4,Proportion,"31.7 (25.9, 37.4)",1278,age_category2,40 plus,Jammu & Kashmir,North
+2,Rural,htn_untreated,73.8,68.7,78.9,Proportion,"73.8 (68.7, 78.9)",509,age_category2,18-39,Himachal Pradesh,North
+2,Rural,htn_untreated,34.3,31.3,37.3,Proportion,"34.3 (31.3, 37.3)",2847,age_category2,40 plus,Himachal Pradesh,North
+2,Urban,htn_untreated,81.9,71.2,92.6,Proportion,"81.9 (71.2, 92.6)",58,age_category2,18-39,Himachal Pradesh,North
+2,Urban,htn_untreated,20.8,12.7,28.9,Proportion,"20.8 (12.7, 28.9)",296,age_category2,40 plus,Himachal Pradesh,North
+3,Rural,htn_untreated,84,81.6,86.5,Proportion,"84 (81.6, 86.5)",1722,age_category2,18-39,Punjab,North
+3,Rural,htn_untreated,49.1,46.9,51.4,Proportion,"49.1 (46.9, 51.4)",5508,age_category2,40 plus,Punjab,North
+3,Urban,htn_untreated,82.5,78.8,86.1,Proportion,"82.5 (78.8, 86.1)",667,age_category2,18-39,Punjab,North
+3,Urban,htn_untreated,43.3,39.6,47.1,Proportion,"43.3 (39.6, 47.1)",2454,age_category2,40 plus,Punjab,North
+4,Rural,htn_untreated,50,50,50,Proportion,"50 (50, 50)",4,age_category2,40 plus,Chandigarh,North
+4,Urban,htn_untreated,86.6,75.9,97.3,Proportion,"86.6 (75.9, 97.3)",43,age_category2,18-39,Chandigarh,North
+4,Urban,htn_untreated,32,20.1,43.9,Proportion,"32 (20.1, 43.9)",154,age_category2,40 plus,Chandigarh,North
+5,Rural,htn_untreated,78.2,73,83.5,Proportion,"78.2 (73, 83.5)",400,age_category2,18-39,Uttarakhand,Central
+5,Rural,htn_untreated,48.2,44.6,51.9,Proportion,"48.2 (44.6, 51.9)",1896,age_category2,40 plus,Uttarakhand,Central
+5,Urban,htn_untreated,67.5,56.9,78,Proportion,"67.5 (56.9, 78)",148,age_category2,18-39,Uttarakhand,Central
+5,Urban,htn_untreated,30.7,26.2,35.3,Proportion,"30.7 (26.2, 35.3)",644,age_category2,40 plus,Uttarakhand,Central
+6,Rural,htn_untreated,81.8,79,84.6,Proportion,"81.8 (79, 84.6)",1130,age_category2,18-39,Haryana,North
+6,Rural,htn_untreated,52.8,50.3,55.3,Proportion,"52.8 (50.3, 55.3)",3204,age_category2,40 plus,Haryana,North
+6,Urban,htn_untreated,87,83.6,90.3,Proportion,"87 (83.6, 90.3)",484,age_category2,18-39,Haryana,North
+6,Urban,htn_untreated,44.3,40.9,47.7,Proportion,"44.3 (40.9, 47.7)",1834,age_category2,40 plus,Haryana,North
+7,Rural,htn_untreated,82.3,71.6,93,Proportion,"82.3 (71.6, 93)",23,age_category2,18-39,Nct Of Delhi,North
+7,Rural,htn_untreated,26.9,15.3,38.6,Proportion,"26.9 (15.3, 38.6)",83,age_category2,40 plus,Nct Of Delhi,North
+7,Urban,htn_untreated,69.1,64.4,73.7,Proportion,"69.1 (64.4, 73.7)",502,age_category2,18-39,Nct Of Delhi,North
+7,Urban,htn_untreated,26.9,24.3,29.5,Proportion,"26.9 (24.3, 29.5)",2103,age_category2,40 plus,Nct Of Delhi,North
+8,Rural,htn_untreated,84.1,81.6,86.5,Proportion,"84.1 (81.6, 86.5)",1413,age_category2,18-39,Rajasthan,North
+8,Rural,htn_untreated,51.4,48.6,54.2,Proportion,"51.4 (48.6, 54.2)",4003,age_category2,40 plus,Rajasthan,North
+8,Urban,htn_untreated,83.6,78.5,88.7,Proportion,"83.6 (78.5, 88.7)",594,age_category2,18-39,Rajasthan,North
+8,Urban,htn_untreated,43.5,38.6,48.4,Proportion,"43.5 (38.6, 48.4)",1817,age_category2,40 plus,Rajasthan,North
+9,Rural,htn_untreated,86.9,85.6,88.2,Proportion,"86.9 (85.6, 88.2)",5152,age_category2,18-39,Uttar Pradesh,Central
+9,Rural,htn_untreated,66,64.4,67.6,Proportion,"66 (64.4, 67.6)",10145,age_category2,40 plus,Uttar Pradesh,Central
+9,Urban,htn_untreated,84,80.2,87.8,Proportion,"84 (80.2, 87.8)",1098,age_category2,18-39,Uttar Pradesh,Central
+9,Urban,htn_untreated,51.4,48.1,54.8,Proportion,"51.4 (48.1, 54.8)",2966,age_category2,40 plus,Uttar Pradesh,Central
+10,Rural,htn_untreated,85.7,83.9,87.4,Proportion,"85.7 (83.9, 87.4)",2960,age_category2,18-39,Bihar,East
+10,Rural,htn_untreated,55.8,53.7,58,Proportion,"55.8 (53.7, 58)",6477,age_category2,40 plus,Bihar,East
+10,Urban,htn_untreated,86.1,81.5,90.6,Proportion,"86.1 (81.5, 90.6)",463,age_category2,18-39,Bihar,East
+10,Urban,htn_untreated,51.5,45.7,57.3,Proportion,"51.5 (45.7, 57.3)",1097,age_category2,40 plus,Bihar,East
+11,Rural,htn_untreated,72.3,64.7,79.9,Proportion,"72.3 (64.7, 79.9)",238,age_category2,18-39,Sikkim,North East
+11,Rural,htn_untreated,41.9,36.5,47.2,Proportion,"41.9 (36.5, 47.2)",813,age_category2,40 plus,Sikkim,North East
+11,Urban,htn_untreated,85.1,75.3,94.8,Proportion,"85.1 (75.3, 94.8)",66,age_category2,18-39,Sikkim,North East
+11,Urban,htn_untreated,32.4,24.5,40.4,Proportion,"32.4 (24.5, 40.4)",148,age_category2,40 plus,Sikkim,North East
+12,Rural,htn_untreated,83.5,80.5,86.4,Proportion,"83.5 (80.5, 86.4)",1149,age_category2,18-39,Arunachal Pradesh,North East
+12,Rural,htn_untreated,66.7,63.3,70.2,Proportion,"66.7 (63.3, 70.2)",2445,age_category2,40 plus,Arunachal Pradesh,North East
+12,Urban,htn_untreated,83.6,79,88.3,Proportion,"83.6 (79, 88.3)",633,age_category2,18-39,Arunachal Pradesh,North East
+12,Urban,htn_untreated,61.9,56.1,67.6,Proportion,"61.9 (56.1, 67.6)",872,age_category2,40 plus,Arunachal Pradesh,North East
+13,Rural,htn_untreated,77,70.2,83.9,Proportion,"77 (70.2, 83.9)",331,age_category2,18-39,Nagaland,North East
+13,Rural,htn_untreated,67,62.8,71.1,Proportion,"67 (62.8, 71.1)",1527,age_category2,40 plus,Nagaland,North East
+13,Urban,htn_untreated,85.7,78.5,92.8,Proportion,"85.7 (78.5, 92.8)",231,age_category2,18-39,Nagaland,North East
+13,Urban,htn_untreated,60.2,52.1,68.2,Proportion,"60.2 (52.1, 68.2)",683,age_category2,40 plus,Nagaland,North East
+14,Rural,htn_untreated,77.2,70.8,83.5,Proportion,"77.2 (70.8, 83.5)",332,age_category2,18-39,Manipur,North East
+14,Rural,htn_untreated,45.3,40.5,50.1,Proportion,"45.3 (40.5, 50.1)",1417,age_category2,40 plus,Manipur,North East
+14,Urban,htn_untreated,67.5,57.4,77.7,Proportion,"67.5 (57.4, 77.7)",140,age_category2,18-39,Manipur,North East
+14,Urban,htn_untreated,27.2,23.3,31,Proportion,"27.2 (23.3, 31)",782,age_category2,40 plus,Manipur,North East
+15,Rural,htn_untreated,86.4,80,92.8,Proportion,"86.4 (80, 92.8)",171,age_category2,18-39,Mizoram,North East
+15,Rural,htn_untreated,55.6,49,62.1,Proportion,"55.6 (49, 62.1)",625,age_category2,40 plus,Mizoram,North East
+15,Urban,htn_untreated,77.3,71.6,83,Proportion,"77.3 (71.6, 83)",260,age_category2,18-39,Mizoram,North East
+15,Urban,htn_untreated,42.1,36.3,47.9,Proportion,"42.1 (36.3, 47.9)",772,age_category2,40 plus,Mizoram,North East
+16,Rural,htn_untreated,69.4,63.3,75.4,Proportion,"69.4 (63.3, 75.4)",367,age_category2,18-39,Tripura,North East
+16,Rural,htn_untreated,31.6,28.1,35.2,Proportion,"31.6 (28.1, 35.2)",1240,age_category2,40 plus,Tripura,North East
+16,Urban,htn_untreated,63.1,51.2,75.1,Proportion,"63.1 (51.2, 75.1)",113,age_category2,18-39,Tripura,North East
+16,Urban,htn_untreated,23.3,17.6,29.1,Proportion,"23.3 (17.6, 29.1)",487,age_category2,40 plus,Tripura,North East
+17,Rural,htn_untreated,54.2,45.2,63.2,Proportion,"54.2 (45.2, 63.2)",378,age_category2,18-39,Meghalaya,North East
+17,Rural,htn_untreated,31,25.6,36.4,Proportion,"31 (25.6, 36.4)",858,age_category2,40 plus,Meghalaya,North East
+17,Urban,htn_untreated,45.5,27.9,63.1,Proportion,"45.5 (27.9, 63.1)",52,age_category2,18-39,Meghalaya,North East
+17,Urban,htn_untreated,21.9,14.1,29.8,Proportion,"21.9 (14.1, 29.8)",175,age_category2,40 plus,Meghalaya,North East
+18,Rural,htn_untreated,66,62,70,Proportion,"66 (62, 70)",1465,age_category2,18-39,Assam,North East
+18,Rural,htn_untreated,37.6,35,40.1,Proportion,"37.6 (35, 40.1)",5378,age_category2,40 plus,Assam,North East
+18,Urban,htn_untreated,62.2,53.6,70.7,Proportion,"62.2 (53.6, 70.7)",232,age_category2,18-39,Assam,North East
+18,Urban,htn_untreated,29.7,25.4,34,Proportion,"29.7 (25.4, 34)",1260,age_category2,40 plus,Assam,North East
+19,Rural,htn_untreated,57.3,51.6,63,Proportion,"57.3 (51.6, 63)",507,age_category2,18-39,West Bengal,East
+19,Rural,htn_untreated,26.4,24,28.9,Proportion,"26.4 (24, 28.9)",2458,age_category2,40 plus,West Bengal,East
+19,Urban,htn_untreated,60.2,52.3,68.1,Proportion,"60.2 (52.3, 68.1)",227,age_category2,18-39,West Bengal,East
+19,Urban,htn_untreated,18.3,14.9,21.8,Proportion,"18.3 (14.9, 21.8)",1612,age_category2,40 plus,West Bengal,East
+20,Rural,htn_untreated,90.9,88.6,93.2,Proportion,"90.9 (88.6, 93.2)",1257,age_category2,18-39,Jharkhand,East
+20,Rural,htn_untreated,61.4,57.8,65,Proportion,"61.4 (57.8, 65)",2580,age_category2,40 plus,Jharkhand,East
+20,Urban,htn_untreated,88.4,84.6,92.2,Proportion,"88.4 (84.6, 92.2)",449,age_category2,18-39,Jharkhand,East
+20,Urban,htn_untreated,42.3,36.7,47.8,Proportion,"42.3 (36.7, 47.8)",1202,age_category2,40 plus,Jharkhand,East
+21,Rural,htn_untreated,72.4,68.6,76.1,Proportion,"72.4 (68.6, 76.1)",1006,age_category2,18-39,Odisha,East
+21,Rural,htn_untreated,33.7,31.3,36.1,Proportion,"33.7 (31.3, 36.1)",4119,age_category2,40 plus,Odisha,East
+21,Urban,htn_untreated,57.2,46,68.4,Proportion,"57.2 (46, 68.4)",178,age_category2,18-39,Odisha,East
+21,Urban,htn_untreated,22.8,18.5,27,Proportion,"22.8 (18.5, 27)",1049,age_category2,40 plus,Odisha,East
+22,Rural,htn_untreated,78.4,73.5,83.3,Proportion,"78.4 (73.5, 83.3)",659,age_category2,18-39,Chhattisgarh,Central
+22,Rural,htn_untreated,44.2,40.3,48.2,Proportion,"44.2 (40.3, 48.2)",2087,age_category2,40 plus,Chhattisgarh,Central
+22,Urban,htn_untreated,81.2,73,89.3,Proportion,"81.2 (73, 89.3)",246,age_category2,18-39,Chhattisgarh,Central
+22,Urban,htn_untreated,36.1,29.8,42.5,Proportion,"36.1 (29.8, 42.5)",1056,age_category2,40 plus,Chhattisgarh,Central
+23,Rural,htn_untreated,78.9,75.8,81.9,Proportion,"78.9 (75.8, 81.9)",1157,age_category2,18-39,Madhya Pradesh,Central
+23,Rural,htn_untreated,43.6,41.1,46.1,Proportion,"43.6 (41.1, 46.1)",3603,age_category2,40 plus,Madhya Pradesh,Central
+23,Urban,htn_untreated,75.5,69.3,81.7,Proportion,"75.5 (69.3, 81.7)",411,age_category2,18-39,Madhya Pradesh,Central
+23,Urban,htn_untreated,30.6,27,34.3,Proportion,"30.6 (27, 34.3)",1919,age_category2,40 plus,Madhya Pradesh,Central
+24,Rural,htn_untreated,73.4,68.4,78.3,Proportion,"73.4 (68.4, 78.3)",564,age_category2,18-39,Gujarat,West
+24,Rural,htn_untreated,24.2,21.7,26.7,Proportion,"24.2 (21.7, 26.7)",2976,age_category2,40 plus,Gujarat,West
+24,Urban,htn_untreated,58.1,49,67.2,Proportion,"58.1 (49, 67.2)",298,age_category2,18-39,Gujarat,West
+24,Urban,htn_untreated,14.9,11.9,17.8,Proportion,"14.9 (11.9, 17.8)",2320,age_category2,40 plus,Gujarat,West
+25,Rural,htn_untreated,39.6,16.2,63.1,Proportion,"39.6 (16.2, 63.1)",22,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Rural,htn_untreated,25.4,14,36.9,Proportion,"25.4 (14, 36.9)",158,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_untreated,65.6,50.5,80.8,Proportion,"65.6 (50.5, 80.8)",61,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_untreated,17.5,10.7,24.2,Proportion,"17.5 (10.7, 24.2)",243,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+27,Rural,htn_untreated,61.1,55.2,67,Proportion,"61.1 (55.2, 67)",560,age_category2,18-39,Maharashtra,West
+27,Rural,htn_untreated,19.8,17.9,21.7,Proportion,"19.8 (17.9, 21.7)",4248,age_category2,40 plus,Maharashtra,West
+27,Urban,htn_untreated,54,45.4,62.7,Proportion,"54 (45.4, 62.7)",288,age_category2,18-39,Maharashtra,West
+27,Urban,htn_untreated,14,11.6,16.5,Proportion,"14 (11.6, 16.5)",2564,age_category2,40 plus,Maharashtra,West
+28,Rural,htn_untreated,56.6,49.8,63.4,Proportion,"56.6 (49.8, 63.4)",235,age_category2,18-39,Andhra Pradesh,South
+28,Rural,htn_untreated,17.9,15.4,20.3,Proportion,"17.9 (15.4, 20.3)",2046,age_category2,40 plus,Andhra Pradesh,South
+28,Urban,htn_untreated,53.7,44.3,63.2,Proportion,"53.7 (44.3, 63.2)",140,age_category2,18-39,Andhra Pradesh,South
+28,Urban,htn_untreated,13.6,10.8,16.4,Proportion,"13.6 (10.8, 16.4)",1042,age_category2,40 plus,Andhra Pradesh,South
+29,Rural,htn_untreated,72,65.7,78.3,Proportion,"72 (65.7, 78.3)",714,age_category2,18-39,Karnataka,South
+29,Rural,htn_untreated,19.2,16.5,21.9,Proportion,"19.2 (16.5, 21.9)",4272,age_category2,40 plus,Karnataka,South
+29,Urban,htn_untreated,62.9,53.4,72.4,Proportion,"62.9 (53.4, 72.4)",325,age_category2,18-39,Karnataka,South
+29,Urban,htn_untreated,9.5,7,12.1,Proportion,"9.5 (7, 12.1)",2330,age_category2,40 plus,Karnataka,South
+30,Rural,htn_untreated,70.1,50.4,89.7,Proportion,"70.1 (50.4, 89.7)",21,age_category2,18-39,Goa,West
+30,Rural,htn_untreated,10.9,5.5,16.2,Proportion,"10.9 (5.5, 16.2)",345,age_category2,40 plus,Goa,West
+30,Urban,htn_untreated,39.3,16.1,62.5,Proportion,"39.3 (16.1, 62.5)",21,age_category2,18-39,Goa,West
+30,Urban,htn_untreated,8,5.6,10.4,Proportion,"8 (5.6, 10.4)",505,age_category2,40 plus,Goa,West
+31,Rural,htn_untreated,100,100,100,Proportion,"100 (100, 100)",3,age_category2,18-39,Lakshadweep,South
+31,Rural,htn_untreated,10.6,1.6,19.5,Proportion,"10.6 (1.6, 19.5)",60,age_category2,40 plus,Lakshadweep,South
+31,Urban,htn_untreated,48.1,23.2,72.9,Proportion,"48.1 (23.2, 72.9)",21,age_category2,18-39,Lakshadweep,South
+31,Urban,htn_untreated,12.4,7.9,17,Proportion,"12.4 (7.9, 17)",284,age_category2,40 plus,Lakshadweep,South
+32,Rural,htn_untreated,60.9,53.6,68.3,Proportion,"60.9 (53.6, 68.3)",219,age_category2,18-39,Kerala,South
+32,Rural,htn_untreated,15.3,13.6,17,Proportion,"15.3 (13.6, 17)",3586,age_category2,40 plus,Kerala,South
+32,Urban,htn_untreated,56.7,47.2,66.2,Proportion,"56.7 (47.2, 66.2)",115,age_category2,18-39,Kerala,South
+32,Urban,htn_untreated,13.2,11.1,15.3,Proportion,"13.2 (11.1, 15.3)",2609,age_category2,40 plus,Kerala,South
+33,Rural,htn_untreated,78.2,72.4,83.9,Proportion,"78.2 (72.4, 83.9)",813,age_category2,18-39,Tamil Nadu,South
+33,Rural,htn_untreated,29.4,25,33.8,Proportion,"29.4 (25, 33.8)",4050,age_category2,40 plus,Tamil Nadu,South
+33,Urban,htn_untreated,79.9,74.7,85.1,Proportion,"79.9 (74.7, 85.1)",661,age_category2,18-39,Tamil Nadu,South
+33,Urban,htn_untreated,22.4,18.6,26.2,Proportion,"22.4 (18.6, 26.2)",3650,age_category2,40 plus,Tamil Nadu,South
+34,Rural,htn_untreated,82.6,58.1,107,Proportion,"82.6 (58.1, 107)",18,age_category2,18-39,Puducherry,South
+34,Rural,htn_untreated,16.2,10.6,21.8,Proportion,"16.2 (10.6, 21.8)",176,age_category2,40 plus,Puducherry,South
+34,Urban,htn_untreated,56.9,39.9,73.9,Proportion,"56.9 (39.9, 73.9)",91,age_category2,18-39,Puducherry,South
+34,Urban,htn_untreated,14.3,9.8,18.8,Proportion,"14.3 (9.8, 18.8)",1287,age_category2,40 plus,Puducherry,South
+35,Rural,htn_untreated,42,27.1,56.9,Proportion,"42 (27.1, 56.9)",86,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Rural,htn_untreated,15.7,10.6,20.7,Proportion,"15.7 (10.6, 20.7)",605,age_category2,40 plus,Andaman & Nicobar Islands,South
+35,Urban,htn_untreated,48,26.6,69.3,Proportion,"48 (26.6, 69.3)",30,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Urban,htn_untreated,17.5,10.2,24.8,Proportion,"17.5 (10.2, 24.8)",161,age_category2,40 plus,Andaman & Nicobar Islands,South
+36,Rural,htn_untreated,60.4,55.6,65.1,Proportion,"60.4 (55.6, 65.1)",720,age_category2,18-39,Telangana,South
+36,Rural,htn_untreated,17.2,15.7,18.8,Proportion,"17.2 (15.7, 18.8)",4833,age_category2,40 plus,Telangana,South
+36,Urban,htn_untreated,45.8,37.1,54.4,Proportion,"45.8 (37.1, 54.4)",296,age_category2,18-39,Telangana,South
+36,Urban,htn_untreated,8.8,7.2,10.4,Proportion,"8.8 (7.2, 10.4)",2353,age_category2,40 plus,Telangana,South
+37,Rural,htn_untreated,74.6,58.4,90.7,Proportion,"74.6 (58.4, 90.7)",158,age_category2,18-39,Ladakh,North
+37,Rural,htn_untreated,47.2,34.2,60.2,Proportion,"47.2 (34.2, 60.2)",577,age_category2,40 plus,Ladakh,North
+37,Urban,htn_untreated,80.1,62.6,97.7,Proportion,"80.1 (62.6, 97.7)",68,age_category2,18-39,Ladakh,North
+37,Urban,htn_untreated,55.7,30.6,80.8,Proportion,"55.7 (30.6, 80.8)",143,age_category2,40 plus,Ladakh,North
 1,Rural,htn_untreated,47.9,39,56.7,Proportion,"47.9 (39, 56.7)",290,education,Higher,Jammu & Kashmir,North
 1,Rural,htn_untreated,26.6,23.5,29.7,Proportion,"26.6 (23.5, 29.7)",3153,education,No education,Jammu & Kashmir,North
 1,Rural,htn_untreated,35.6,28.7,42.4,Proportion,"35.6 (28.7, 42.4)",357,education,Primary,Jammu & Kashmir,North
@@ -5139,6 +5570,148 @@ state,residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata,n5
 37,Urban,htn_uncontrolled,6.3,-5.5,18.2,Proportion,"6.3 (-5.5, 18.2)",14,age_category,18-39,Ladakh,North
 37,Urban,htn_uncontrolled,41.3,23.8,58.8,Proportion,"41.3 (23.8, 58.8)",47,age_category,40-64,Ladakh,North
 37,Urban,htn_uncontrolled,59.5,39.3,79.7,Proportion,"59.5 (39.3, 79.7)",17,age_category,65 plus,Ladakh,North
+1,Rural,htn_uncontrolled,37.5,30.8,44.2,Proportion,"37.5 (30.8, 44.2)",377,age_category2,18-39,Jammu & Kashmir,North
+1,Rural,htn_uncontrolled,59.1,55.2,63.1,Proportion,"59.1 (55.2, 63.1)",3123,age_category2,40 plus,Jammu & Kashmir,North
+1,Urban,htn_uncontrolled,27.9,15.7,40.2,Proportion,"27.9 (15.7, 40.2)",96,age_category2,18-39,Jammu & Kashmir,North
+1,Urban,htn_uncontrolled,50.1,42.7,57.5,Proportion,"50.1 (42.7, 57.5)",896,age_category2,40 plus,Jammu & Kashmir,North
+2,Rural,htn_uncontrolled,24.7,16.7,32.6,Proportion,"24.7 (16.7, 32.6)",125,age_category2,18-39,Himachal Pradesh,North
+2,Rural,htn_uncontrolled,55.3,52.1,58.6,Proportion,"55.3 (52.1, 58.6)",1861,age_category2,40 plus,Himachal Pradesh,North
+2,Urban,htn_uncontrolled,31.4,3.8,59,Proportion,"31.4 (3.8, 59)",12,age_category2,18-39,Himachal Pradesh,North
+2,Urban,htn_uncontrolled,41.9,32.8,51.1,Proportion,"41.9 (32.8, 51.1)",226,age_category2,40 plus,Himachal Pradesh,North
+3,Rural,htn_uncontrolled,47.7,40.6,54.9,Proportion,"47.7 (40.6, 54.9)",276,age_category2,18-39,Punjab,North
+3,Rural,htn_uncontrolled,69.5,67.3,71.8,Proportion,"69.5 (67.3, 71.8)",2791,age_category2,40 plus,Punjab,North
+3,Urban,htn_uncontrolled,46.1,36.8,55.4,Proportion,"46.1 (36.8, 55.4)",117,age_category2,18-39,Punjab,North
+3,Urban,htn_uncontrolled,60.2,55.9,64.5,Proportion,"60.2 (55.9, 64.5)",1397,age_category2,40 plus,Punjab,North
+4,Rural,htn_uncontrolled,0,0,0,Proportion,"0 (0, 0)",2,age_category2,40 plus,Chandigarh,North
+4,Urban,htn_uncontrolled,59.3,12.4,106.1,Proportion,"59.3 (12.4, 106.1)",5,age_category2,18-39,Chandigarh,North
+4,Urban,htn_uncontrolled,56.5,44.1,68.9,Proportion,"56.5 (44.1, 68.9)",103,age_category2,40 plus,Chandigarh,North
+5,Rural,htn_uncontrolled,48.1,34.4,61.9,Proportion,"48.1 (34.4, 61.9)",70,age_category2,18-39,Uttarakhand,Central
+5,Rural,htn_uncontrolled,66.3,62,70.7,Proportion,"66.3 (62, 70.7)",954,age_category2,40 plus,Uttarakhand,Central
+5,Urban,htn_uncontrolled,50.2,34.6,65.8,Proportion,"50.2 (34.6, 65.8)",40,age_category2,18-39,Uttarakhand,Central
+5,Urban,htn_uncontrolled,58.9,52.3,65.5,Proportion,"58.9 (52.3, 65.5)",423,age_category2,40 plus,Uttarakhand,Central
+6,Rural,htn_uncontrolled,39.2,31.4,47,Proportion,"39.2 (31.4, 47)",214,age_category2,18-39,Haryana,North
+6,Rural,htn_uncontrolled,59.8,56.7,62.9,Proportion,"59.8 (56.7, 62.9)",1547,age_category2,40 plus,Haryana,North
+6,Urban,htn_uncontrolled,37.3,24.9,49.7,Proportion,"37.3 (24.9, 49.7)",64,age_category2,18-39,Haryana,North
+6,Urban,htn_uncontrolled,63.5,59.9,67.1,Proportion,"63.5 (59.9, 67.1)",1050,age_category2,40 plus,Haryana,North
+7,Rural,htn_uncontrolled,24.7,-4.4,53.8,Proportion,"24.7 (-4.4, 53.8)",7,age_category2,18-39,Nct Of Delhi,North
+7,Rural,htn_uncontrolled,71.8,64.9,78.8,Proportion,"71.8 (64.9, 78.8)",60,age_category2,40 plus,Nct Of Delhi,North
+7,Urban,htn_uncontrolled,50.9,43,58.8,Proportion,"50.9 (43, 58.8)",163,age_category2,18-39,Nct Of Delhi,North
+7,Urban,htn_uncontrolled,65.4,62.7,68.1,Proportion,"65.4 (62.7, 68.1)",1552,age_category2,40 plus,Nct Of Delhi,North
+8,Rural,htn_uncontrolled,22.6,16.9,28.4,Proportion,"22.6 (16.9, 28.4)",235,age_category2,18-39,Rajasthan,North
+8,Rural,htn_uncontrolled,59.4,56.8,62,Proportion,"59.4 (56.8, 62)",1930,age_category2,40 plus,Rajasthan,North
+8,Urban,htn_uncontrolled,48.1,34.7,61.4,Proportion,"48.1 (34.7, 61.4)",99,age_category2,18-39,Rajasthan,North
+8,Urban,htn_uncontrolled,59.2,55.3,63.2,Proportion,"59.2 (55.3, 63.2)",1030,age_category2,40 plus,Rajasthan,North
+9,Rural,htn_uncontrolled,27.9,24.1,31.6,Proportion,"27.9 (24.1, 31.6)",712,age_category2,18-39,Uttar Pradesh,Central
+9,Rural,htn_uncontrolled,58.6,56.7,60.6,Proportion,"58.6 (56.7, 60.6)",3460,age_category2,40 plus,Uttar Pradesh,Central
+9,Urban,htn_uncontrolled,50.6,39.6,61.6,Proportion,"50.6 (39.6, 61.6)",177,age_category2,18-39,Uttar Pradesh,Central
+9,Urban,htn_uncontrolled,62.9,59.7,66.2,Proportion,"62.9 (59.7, 66.2)",1422,age_category2,40 plus,Uttar Pradesh,Central
+10,Rural,htn_uncontrolled,22.8,17.8,27.7,Proportion,"22.8 (17.8, 27.7)",396,age_category2,18-39,Bihar,East
+10,Rural,htn_uncontrolled,54.2,51.9,56.5,Proportion,"54.2 (51.9, 56.5)",2738,age_category2,40 plus,Bihar,East
+10,Urban,htn_uncontrolled,51.5,35.5,67.4,Proportion,"51.5 (35.5, 67.4)",62,age_category2,18-39,Bihar,East
+10,Urban,htn_uncontrolled,52.4,45.7,59.1,Proportion,"52.4 (45.7, 59.1)",525,age_category2,40 plus,Bihar,East
+11,Rural,htn_uncontrolled,61.9,48.7,75.1,Proportion,"61.9 (48.7, 75.1)",64,age_category2,18-39,Sikkim,North East
+11,Rural,htn_uncontrolled,75.6,69.7,81.6,Proportion,"75.6 (69.7, 81.6)",454,age_category2,40 plus,Sikkim,North East
+11,Urban,htn_uncontrolled,35.3,6.7,63.8,Proportion,"35.3 (6.7, 63.8)",16,age_category2,18-39,Sikkim,North East
+11,Urban,htn_uncontrolled,76.5,64.6,88.4,Proportion,"76.5 (64.6, 88.4)",90,age_category2,40 plus,Sikkim,North East
+12,Rural,htn_uncontrolled,53.8,45.3,62.4,Proportion,"53.8 (45.3, 62.4)",200,age_category2,18-39,Arunachal Pradesh,North East
+12,Rural,htn_uncontrolled,78,73.7,82.3,Proportion,"78 (73.7, 82.3)",787,age_category2,40 plus,Arunachal Pradesh,North East
+12,Urban,htn_uncontrolled,46.9,33.9,59.9,Proportion,"46.9 (33.9, 59.9)",95,age_category2,18-39,Arunachal Pradesh,North East
+12,Urban,htn_uncontrolled,72.8,66.3,79.3,Proportion,"72.8 (66.3, 79.3)",310,age_category2,40 plus,Arunachal Pradesh,North East
+13,Rural,htn_uncontrolled,62.9,44.4,81.3,Proportion,"62.9 (44.4, 81.3)",73,age_category2,18-39,Nagaland,North East
+13,Rural,htn_uncontrolled,84.5,81,88.1,Proportion,"84.5 (81, 88.1)",512,age_category2,40 plus,Nagaland,North East
+13,Urban,htn_uncontrolled,76.2,58.7,93.7,Proportion,"76.2 (58.7, 93.7)",28,age_category2,18-39,Nagaland,North East
+13,Urban,htn_uncontrolled,85.3,78.9,91.6,Proportion,"85.3 (78.9, 91.6)",250,age_category2,40 plus,Nagaland,North East
+14,Rural,htn_uncontrolled,68.2,57.4,79,Proportion,"68.2 (57.4, 79)",68,age_category2,18-39,Manipur,North East
+14,Rural,htn_uncontrolled,57.4,52.2,62.5,Proportion,"57.4 (52.2, 62.5)",655,age_category2,40 plus,Manipur,North East
+14,Urban,htn_uncontrolled,53.1,35.7,70.4,Proportion,"53.1 (35.7, 70.4)",45,age_category2,18-39,Manipur,North East
+14,Urban,htn_uncontrolled,59.3,54.9,63.7,Proportion,"59.3 (54.9, 63.7)",550,age_category2,40 plus,Manipur,North East
+15,Rural,htn_uncontrolled,49.8,30.7,68.9,Proportion,"49.8 (30.7, 68.9)",27,age_category2,18-39,Mizoram,North East
+15,Rural,htn_uncontrolled,58.7,51.5,66,Proportion,"58.7 (51.5, 66)",277,age_category2,40 plus,Mizoram,North East
+15,Urban,htn_uncontrolled,53.1,34.9,71.2,Proportion,"53.1 (34.9, 71.2)",55,age_category2,18-39,Mizoram,North East
+15,Urban,htn_uncontrolled,51.3,44,58.5,Proportion,"51.3 (44, 58.5)",422,age_category2,40 plus,Mizoram,North East
+16,Rural,htn_uncontrolled,41.2,32.1,50.4,Proportion,"41.2 (32.1, 50.4)",116,age_category2,18-39,Tripura,North East
+16,Rural,htn_uncontrolled,51.3,46.7,56,Proportion,"51.3 (46.7, 56)",825,age_category2,40 plus,Tripura,North East
+16,Urban,htn_uncontrolled,38.5,19.1,57.9,Proportion,"38.5 (19.1, 57.9)",47,age_category2,18-39,Tripura,North East
+16,Urban,htn_uncontrolled,51.5,45.2,57.9,Proportion,"51.5 (45.2, 57.9)",368,age_category2,40 plus,Tripura,North East
+17,Rural,htn_uncontrolled,41.3,32.4,50.3,Proportion,"41.3 (32.4, 50.3)",192,age_category2,18-39,Meghalaya,North East
+17,Rural,htn_uncontrolled,63,57.9,68.1,Proportion,"63 (57.9, 68.1)",592,age_category2,40 plus,Meghalaya,North East
+17,Urban,htn_uncontrolled,60.9,35.3,86.5,Proportion,"60.9 (35.3, 86.5)",26,age_category2,18-39,Meghalaya,North East
+17,Urban,htn_uncontrolled,68.8,58.8,78.8,Proportion,"68.8 (58.8, 78.8)",117,age_category2,40 plus,Meghalaya,North East
+18,Rural,htn_uncontrolled,52.8,47,58.6,Proportion,"52.8 (47, 58.6)",467,age_category2,18-39,Assam,North East
+18,Rural,htn_uncontrolled,63.9,61.5,66.3,Proportion,"63.9 (61.5, 66.3)",3227,age_category2,40 plus,Assam,North East
+18,Urban,htn_uncontrolled,47.2,35.2,59.1,Proportion,"47.2 (35.2, 59.1)",92,age_category2,18-39,Assam,North East
+18,Urban,htn_uncontrolled,55.8,51.7,60,Proportion,"55.8 (51.7, 60)",896,age_category2,40 plus,Assam,North East
+19,Rural,htn_uncontrolled,48.7,40.9,56.5,Proportion,"48.7 (40.9, 56.5)",222,age_category2,18-39,West Bengal,East
+19,Rural,htn_uncontrolled,59.6,56.7,62.5,Proportion,"59.6 (56.7, 62.5)",1777,age_category2,40 plus,West Bengal,East
+19,Urban,htn_uncontrolled,48.9,37.1,60.7,Proportion,"48.9 (37.1, 60.7)",92,age_category2,18-39,West Bengal,East
+19,Urban,htn_uncontrolled,60.8,56.7,64.9,Proportion,"60.8 (56.7, 64.9)",1305,age_category2,40 plus,West Bengal,East
+20,Rural,htn_uncontrolled,27.8,18.7,36.8,Proportion,"27.8 (18.7, 36.8)",116,age_category2,18-39,Jharkhand,East
+20,Rural,htn_uncontrolled,65.4,61.8,69.1,Proportion,"65.4 (61.8, 69.1)",969,age_category2,40 plus,Jharkhand,East
+20,Urban,htn_uncontrolled,40.7,22.8,58.5,Proportion,"40.7 (22.8, 58.5)",48,age_category2,18-39,Jharkhand,East
+20,Urban,htn_uncontrolled,63.6,59.1,68.2,Proportion,"63.6 (59.1, 68.2)",631,age_category2,40 plus,Jharkhand,East
+21,Rural,htn_uncontrolled,39.3,32.8,45.8,Proportion,"39.3 (32.8, 45.8)",280,age_category2,18-39,Odisha,East
+21,Rural,htn_uncontrolled,51,48.7,53.2,Proportion,"51 (48.7, 53.2)",2747,age_category2,40 plus,Odisha,East
+21,Urban,htn_uncontrolled,38.3,27.3,49.3,Proportion,"38.3 (27.3, 49.3)",81,age_category2,18-39,Odisha,East
+21,Urban,htn_uncontrolled,51.2,46.7,55.7,Proportion,"51.2 (46.7, 55.7)",828,age_category2,40 plus,Odisha,East
+22,Rural,htn_uncontrolled,38.1,27.5,48.7,Proportion,"38.1 (27.5, 48.7)",156,age_category2,18-39,Chhattisgarh,Central
+22,Rural,htn_uncontrolled,68.8,65.9,71.7,Proportion,"68.8 (65.9, 71.7)",1203,age_category2,40 plus,Chhattisgarh,Central
+22,Urban,htn_uncontrolled,49.3,32.5,66.2,Proportion,"49.3 (32.5, 66.2)",57,age_category2,18-39,Chhattisgarh,Central
+22,Urban,htn_uncontrolled,59,54.1,63.8,Proportion,"59 (54.1, 63.8)",705,age_category2,40 plus,Chhattisgarh,Central
+23,Rural,htn_uncontrolled,36.2,29.1,43.2,Proportion,"36.2 (29.1, 43.2)",249,age_category2,18-39,Madhya Pradesh,Central
+23,Rural,htn_uncontrolled,61,58.5,63.5,Proportion,"61 (58.5, 63.5)",2035,age_category2,40 plus,Madhya Pradesh,Central
+23,Urban,htn_uncontrolled,41.6,29.8,53.5,Proportion,"41.6 (29.8, 53.5)",90,age_category2,18-39,Madhya Pradesh,Central
+23,Urban,htn_uncontrolled,57.5,54.3,60.7,Proportion,"57.5 (54.3, 60.7)",1341,age_category2,40 plus,Madhya Pradesh,Central
+24,Rural,htn_uncontrolled,36.4,28.1,44.6,Proportion,"36.4 (28.1, 44.6)",146,age_category2,18-39,Gujarat,West
+24,Rural,htn_uncontrolled,49.7,47.4,52.1,Proportion,"49.7 (47.4, 52.1)",2243,age_category2,40 plus,Gujarat,West
+24,Urban,htn_uncontrolled,37.9,25.6,50.1,Proportion,"37.9 (25.6, 50.1)",127,age_category2,18-39,Gujarat,West
+24,Urban,htn_uncontrolled,42.7,39.8,45.7,Proportion,"42.7 (39.8, 45.7)",1981,age_category2,40 plus,Gujarat,West
+25,Rural,htn_uncontrolled,16.6,-12.5,45.7,Proportion,"16.6 (-12.5, 45.7)",9,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Rural,htn_uncontrolled,46.1,30.2,62.1,Proportion,"46.1 (30.2, 62.1)",131,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_uncontrolled,55.2,31.7,78.7,Proportion,"55.2 (31.7, 78.7)",22,age_category2,18-39,Dadra & Nagar Haveli And Daman & Diu,West
+25,Urban,htn_uncontrolled,49.5,40.1,59,Proportion,"49.5 (40.1, 59)",202,age_category2,40 plus,Dadra & Nagar Haveli And Daman & Diu,West
+27,Rural,htn_uncontrolled,39.7,31.6,47.8,Proportion,"39.7 (31.6, 47.8)",230,age_category2,18-39,Maharashtra,West
+27,Rural,htn_uncontrolled,52.1,49.8,54.4,Proportion,"52.1 (49.8, 54.4)",3405,age_category2,40 plus,Maharashtra,West
+27,Urban,htn_uncontrolled,37.6,27.4,47.9,Proportion,"37.6 (27.4, 47.9)",144,age_category2,18-39,Maharashtra,West
+27,Urban,htn_uncontrolled,48.1,45.3,50.9,Proportion,"48.1 (45.3, 50.9)",2194,age_category2,40 plus,Maharashtra,West
+28,Rural,htn_uncontrolled,35.2,25.1,45.4,Proportion,"35.2 (25.1, 45.4)",104,age_category2,18-39,Andhra Pradesh,South
+28,Rural,htn_uncontrolled,54.6,51.6,57.5,Proportion,"54.6 (51.6, 57.5)",1667,age_category2,40 plus,Andhra Pradesh,South
+28,Urban,htn_uncontrolled,44.6,32.7,56.4,Proportion,"44.6 (32.7, 56.4)",67,age_category2,18-39,Andhra Pradesh,South
+28,Urban,htn_uncontrolled,50.6,46.3,54.9,Proportion,"50.6 (46.3, 54.9)",902,age_category2,40 plus,Andhra Pradesh,South
+29,Rural,htn_uncontrolled,36.4,27.4,45.5,Proportion,"36.4 (27.4, 45.5)",198,age_category2,18-39,Karnataka,South
+29,Rural,htn_uncontrolled,58.5,56.5,60.5,Proportion,"58.5 (56.5, 60.5)",3459,age_category2,40 plus,Karnataka,South
+29,Urban,htn_uncontrolled,41.3,30.2,52.4,Proportion,"41.3 (30.2, 52.4)",120,age_category2,18-39,Karnataka,South
+29,Urban,htn_uncontrolled,59.7,55.3,64.1,Proportion,"59.7 (55.3, 64.1)",2065,age_category2,40 plus,Karnataka,South
+30,Rural,htn_uncontrolled,12.5,-7.8,32.9,Proportion,"12.5 (-7.8, 32.9)",7,age_category2,18-39,Goa,West
+30,Rural,htn_uncontrolled,37.9,30.9,45,Proportion,"37.9 (30.9, 45)",313,age_category2,40 plus,Goa,West
+30,Urban,htn_uncontrolled,51.8,26.5,77.1,Proportion,"51.8 (26.5, 77.1)",13,age_category2,18-39,Goa,West
+30,Urban,htn_uncontrolled,38.9,33.6,44.2,Proportion,"38.9 (33.6, 44.2)",461,age_category2,40 plus,Goa,West
+31,Rural,htn_uncontrolled,60,42.7,77.4,Proportion,"60 (42.7, 77.4)",53,age_category2,40 plus,Lakshadweep,South
+31,Urban,htn_uncontrolled,44.7,14.5,75,Proportion,"44.7 (14.5, 75)",11,age_category2,18-39,Lakshadweep,South
+31,Urban,htn_uncontrolled,65.8,58.2,73.4,Proportion,"65.8 (58.2, 73.4)",249,age_category2,40 plus,Lakshadweep,South
+32,Rural,htn_uncontrolled,37.9,26.1,49.8,Proportion,"37.9 (26.1, 49.8)",84,age_category2,18-39,Kerala,South
+32,Rural,htn_uncontrolled,53.3,51.1,55.6,Proportion,"53.3 (51.1, 55.6)",3025,age_category2,40 plus,Kerala,South
+32,Urban,htn_uncontrolled,32,18.4,45.5,Proportion,"32 (18.4, 45.5)",48,age_category2,18-39,Kerala,South
+32,Urban,htn_uncontrolled,50.4,48.1,52.7,Proportion,"50.4 (48.1, 52.7)",2263,age_category2,40 plus,Kerala,South
+33,Rural,htn_uncontrolled,43.3,32.7,53.9,Proportion,"43.3 (32.7, 53.9)",173,age_category2,18-39,Tamil Nadu,South
+33,Rural,htn_uncontrolled,58.5,56.3,60.7,Proportion,"58.5 (56.3, 60.7)",2885,age_category2,40 plus,Tamil Nadu,South
+33,Urban,htn_uncontrolled,35.3,26.5,44.1,Proportion,"35.3 (26.5, 44.1)",126,age_category2,18-39,Tamil Nadu,South
+33,Urban,htn_uncontrolled,59,56.5,61.5,Proportion,"59 (56.5, 61.5)",2815,age_category2,40 plus,Tamil Nadu,South
+34,Rural,htn_uncontrolled,12.5,-15.7,40.6,Proportion,"12.5 (-15.7, 40.6)",3,age_category2,18-39,Puducherry,South
+34,Rural,htn_uncontrolled,43.2,32.7,53.8,Proportion,"43.2 (32.7, 53.8)",145,age_category2,40 plus,Puducherry,South
+34,Urban,htn_uncontrolled,35.1,15,55.1,Proportion,"35.1 (15, 55.1)",46,age_category2,18-39,Puducherry,South
+34,Urban,htn_uncontrolled,48.8,41.3,56.3,Proportion,"48.8 (41.3, 56.3)",1087,age_category2,40 plus,Puducherry,South
+35,Rural,htn_uncontrolled,54.8,38.1,71.5,Proportion,"54.8 (38.1, 71.5)",55,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Rural,htn_uncontrolled,61.7,56.9,66.4,Proportion,"61.7 (56.9, 66.4)",519,age_category2,40 plus,Andaman & Nicobar Islands,South
+35,Urban,htn_uncontrolled,75.7,57.6,93.8,Proportion,"75.7 (57.6, 93.8)",16,age_category2,18-39,Andaman & Nicobar Islands,South
+35,Urban,htn_uncontrolled,58.4,53.4,63.4,Proportion,"58.4 (53.4, 63.4)",133,age_category2,40 plus,Andaman & Nicobar Islands,South
+36,Rural,htn_uncontrolled,43.5,37.1,49.9,Proportion,"43.5 (37.1, 49.9)",288,age_category2,18-39,Telangana,South
+36,Rural,htn_uncontrolled,51.3,49.7,53,Proportion,"51.3 (49.7, 53)",3976,age_category2,40 plus,Telangana,South
+36,Urban,htn_uncontrolled,45.2,34.4,55.9,Proportion,"45.2 (34.4, 55.9)",152,age_category2,18-39,Telangana,South
+36,Urban,htn_uncontrolled,48.5,45.4,51.7,Proportion,"48.5 (45.4, 51.7)",2135,age_category2,40 plus,Telangana,South
+37,Rural,htn_uncontrolled,58.5,44.7,72.2,Proportion,"58.5 (44.7, 72.2)",41,age_category2,18-39,Ladakh,North
+37,Rural,htn_uncontrolled,65.9,58.1,73.8,Proportion,"65.9 (58.1, 73.8)",308,age_category2,40 plus,Ladakh,North
+37,Urban,htn_uncontrolled,6.3,-5.5,18.2,Proportion,"6.3 (-5.5, 18.2)",14,age_category2,18-39,Ladakh,North
+37,Urban,htn_uncontrolled,45.9,31.3,60.6,Proportion,"45.9 (31.3, 60.6)",64,age_category2,40 plus,Ladakh,North
 1,Rural,htn_uncontrolled,40.4,30,50.9,Proportion,"40.4 (30, 50.9)",128,education,Higher,Jammu & Kashmir,North
 1,Rural,htn_uncontrolled,60.1,56.5,63.7,Proportion,"60.1 (56.5, 63.7)",2199,education,No education,Jammu & Kashmir,North
 1,Rural,htn_uncontrolled,52.1,42,62.2,Proportion,"52.1 (42, 62.2)",217,education,Primary,Jammu & Kashmir,North

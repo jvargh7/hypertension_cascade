@@ -1,5 +1,5 @@
 
-group_vars = c("","sex","age_category","education",
+group_vars = c("","sex","age_category","age_category2","education",
                "caste","religion","swealthq_ur")
 
 source("C:/code/external/functions/survey/svysummary.R")

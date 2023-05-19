@@ -99,7 +99,7 @@ unmet_svysummary_htntreat <- future_map_dfr(group_vars,
                                            function(g_v){
                                              id_vars = c("district_df",g_v);
                                              print(g_v);
-                                             n5_sy_htndiag <- svysummary(nfhs5htndiag_svydesign,
+                                             n5_sy_htntreat <- svysummary(nfhs5htntreat_svydesign,
                                                                          # c_vars = continuous_vars,
                                                                          p_vars = proportion_vars[7:8],
                                                                          # g_vars = grouped_vars,
@@ -110,7 +110,7 @@ unmet_svysummary_htntreat <- future_map_dfr(group_vars,
                                                                       lci,", ",uci,")"));
                                              
                                              # Count of non-NA values at intersection of id_vars and each variable in proportion_vars
-                                             n5_ct_htndiag <- nfhs5htndiag_df %>% 
+                                             n5_ct_htntreat <- nfhs5htntreat_df %>% 
                                                group_by_at(vars(one_of(id_vars))) %>% 
                                                summarize_at(vars(one_of(c(
                                                  # continuous_vars,
@@ -121,8 +121,8 @@ unmet_svysummary_htntreat <- future_map_dfr(group_vars,
                                                pivot_longer(names_to="variable",values_to="n",cols=-one_of(id_vars)) %>% 
                                                mutate(variable = str_replace(variable,"_n$",""));
                                              
-                                             n5_out_htndiag <- left_join(n5_sy_htndiag,
-                                                                         n5_ct_htndiag,
+                                             n5_out_htntreat <- left_join(n5_sy_htntreat,
+                                                                         n5_ct_htntreat,
                                                                          by=c(id_vars[id_vars!=""],"variable")) %>% 
                                                
                                                # Restrict to those cells with more than 100 observations
@@ -131,7 +131,7 @@ unmet_svysummary_htntreat <- future_map_dfr(group_vars,
                                                rename_at(vars(one_of(g_v)),~c("strata")) %>% 
                                                mutate_at(vars(one_of("strata")),~as.character(.));
                                              gc();
-                                             return(n5_out_htndiag)
+                                             return(n5_out_htntreat)
                                              
                                            })
 

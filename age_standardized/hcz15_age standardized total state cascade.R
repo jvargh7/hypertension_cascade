@@ -1,4 +1,4 @@
-group_vars <- c("","sex","age_category","age_category2","education",
+group_vars <- c("","sex","age_category","education",
                 "caste","religion","swealthq_ur")
 
 
@@ -8,12 +8,26 @@ source("preprocessing/hcpre03_nfhs5 total svydesign.R")
 
 proportion_vars <- c("htn_screened","htn_disease","htn_diagnosed","htn_treated","htn_controlled")
 
+
+pop_age <- read_csv("data/population for age standardization.csv") %>% 
+  dplyr::select(n) %>% 
+  pull()
+
+# id_vars = c("residence",group_vars[4]);
+
+nfhs5_svystdz <- svystandardize(nfhs5_svydesign,by=~age_category,over = ~state + residence,
+                                population = pop_age)
+rm(nfhs5_svydesign);gc();
+
+
 source("preprocessing/hcp_parallelize.R")
+
+
 state_svysummary <- future_map_dfr(group_vars,
                                    function(g_v){
-                                     id_vars = c("state","residence",g_v);
-                                     print(g_v);
-                                     n5_sy <- svysummary(nfhs5_svydesign,
+                                     print(g_v)
+                                     id_vars = c("state",g_v);
+                                     n5_sy <- svysummary(nfhs5_svystdz,
                                                          # c_vars = continuous_vars,
                                                          p_vars = proportion_vars,
                                                          # g_vars = grouped_vars,
@@ -49,18 +63,13 @@ state_svysummary <- future_map_dfr(group_vars,
                                      
                                    })
 
+
 state_svysummary %>% 
+  mutate(residence = "Total") %>% 
   left_join(readxl::read_excel(paste0(path_dmcascade_repo,"/data/NFHS Cascade Variable List.xlsx"),sheet="map2020_v024") %>% 
               dplyr::select(v024,n5_state,zone) %>% 
               distinct(v024,n5_state,.keep_all=TRUE),
             by=c("state"="v024")) %>% 
-write_csv(.,file = "analysis/hca03_state level care cascade.csv")
+  write_csv(.,path = "age_standardized/hcz15_age standardized total state cascade.csv")
 
 
-# df <- read_csv(file="analysis/hca03_state level care cascade.csv") %>%
-#   dplyr::select(-n5_state,-contains("zone")) %>%
-#   left_join(readxl::read_excel(paste0(path_dmcascade_repo,"/data/NFHS Cascade Variable List.xlsx"),sheet="map2020_v024") %>%
-#               dplyr::select(v024,n5_state,zone) %>%
-#               distinct(v024,n5_state,.keep_all=TRUE),
-#             by=c("state"="v024"))
-# write_csv(df,file = "analysis/hca03_state level care cascade.csv")

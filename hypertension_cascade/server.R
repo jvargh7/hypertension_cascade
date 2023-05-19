@@ -80,7 +80,7 @@ shinyServer(function(input, output,session) {
                               "(b) High blood pressure (≥140 mmHg systolic or 90 mmHg diastolic)",
                               "Told had high blood pressure on two or more occasions by a medical provider among those with Hypertension",
                               "Currently taking a prescribed medicine to lower blood pressure among those with Diagnosed Hypertension",
-                              "Blood pressure in non-hypertensive range (<140/90 mmHg [<80y] and <150/90 mmHg [≥80y]) among those with Diagnosed Hypertension")
+                              "Blood pressure in non-hypertensive range (<140/90 mmHg [<80y] and <150/90 mmHg [≥80y]) among those with Treated Hypertension")
     )
   })
   
@@ -430,6 +430,7 @@ shinyServer(function(input, output,session) {
       mutate(group = factor(group, levels=c("Rural\nNo education","Rural\nPrimary","Rural\nSecondary","Rural\nHigher",
                                             "Urban\nNo education","Urban\nPrimary","Urban\nSecondary","Urban\nHigher"
       ))) %>% 
+      dplyr::filter(!is.na(group)) %>% 
       cascade_plot(.,limits_y = c(0,100))
     figD <- state_cs_merge() %>%
       dplyr::filter(stratification == "caste") %>%
@@ -442,6 +443,7 @@ shinyServer(function(input, output,session) {
                                             rep(c("Wealth: Lowest","Wealth: Low",
                                                   "Wealth: Medium","Wealth: High",
                                                   "Wealth: Highest"),times=2)),ordered=TRUE)) %>% 
+      dplyr::filter(!is.na(group)) %>% 
       cascade_plot(.,limits_y = c(0,100))
     
     ggarrange(figA,
