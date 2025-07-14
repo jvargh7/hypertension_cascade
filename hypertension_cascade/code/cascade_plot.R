@@ -12,7 +12,7 @@ cascade_plot <- function(df,limits_y = c(0,65),exclude = "Screened",multiplier =
     ggplot(data=.,aes(x = group,y=estimate*multiplier,ymax = uci*multiplier,ymin = lci*multiplier,fill=cascade)) +
     geom_col(position = position_dodge(width=0.9)) +
     geom_text(aes(y=uci*multiplier + 2,label=round(estimate*multiplier,1)),
-              position = position_dodge(width = 0.9),size = 6) +
+              position = position_dodge(width = 0.9),size = 4) +
     geom_errorbar(width = 0.1, position = position_dodge(width = 0.9)) +
     theme_bw() +
     xlab("") +
@@ -21,7 +21,7 @@ cascade_plot <- function(df,limits_y = c(0,65),exclude = "Screened",multiplier =
     guides(fill = guide_legend(nrow = 1)) +
     scale_fill_manual(name = "",values = fill_values) +
     theme(legend.text = element_text(size = 18),
-          axis.text = element_text(size = 16),
+          axis.text = element_text(size = 11),
           axis.title = element_text(size = 16))
   
   return(fig)

@@ -5,6 +5,8 @@ library(tidyverse)
 library(readxl)
 library(tmap)
 library(ggpubr)
+library(waiter)
+
 run_manual = FALSE
 if(run_manual){
   map2016_v024 <- readxl::read_excel(file.path("hypertension_cascade/data","maps.xlsx"),sheet="map2016_v024")
@@ -16,21 +18,46 @@ if(run_manual){
   district_shp <- readRDS(file.path("hypertension_cascade/data","district_shp.RDS"))
   state_shp <- readRDS(file.path("hypertension_cascade/data","state_shp.RDS"))
   
-  hcz01_national <- readRDS(file.path("hypertension_cascade/data","hcz01_national.RDS"))
-  hca02_national <- readRDS(file.path("hypertension_cascade/data","hca02_national.RDS"))
-  national_nested <- readRDS(file.path("hypertension_cascade/data","national_nested.RDS"))
-  nationalz_nested <- readRDS(file.path("hypertension_cascade/data","nationalz_nested.RDS"))
+  hcz01_national <- bind_rows(
+    readRDS(file.path("hypertension_cascade/data","hcz01_national.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+    readRDS(file.path("hypertension_cascade/cutoff130","hcc130z01_national.RDS")) %>% mutate(cutpoint = "130/80 mmHg")
+    )
+  hca02_national <- bind_rows(
+    readRDS(file.path("hypertension_cascade/data","hca02_national.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+    readRDS(file.path("hypertension_cascade/cutoff130","hcc130a02_national.RDS"))%>% mutate(cutpoint = "130/80 mmHg") 
+    )
+  national_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","national_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                               readRDS(file.path("hypertension_cascade/cutoff130","national_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg")
+                               )
+  nationalz_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","nationalz_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                                readRDS(file.path("hypertension_cascade/cutoff130","nationalz_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg")
+                                )
   
   
-  hca03_state <- readRDS(file.path("hypertension_cascade/data","hca03_state.RDS"))
-  hca05_state_unmet <- readRDS(file.path("hypertension_cascade/data","hca05_state_unmet.RDS"))
-  state_nested <- readRDS(file.path("hypertension_cascade/data","state_nested.RDS"))
-  statez_nested <- readRDS(file.path("hypertension_cascade/data","statez_nested.RDS"))
+  hca03_state <- bind_rows(readRDS(file.path("hypertension_cascade/data","hca03_state.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                           readRDS(file.path("hypertension_cascade/cutoff130","hcc130a03_state.RDS")) %>% mutate(cutpoint = "130/80 mmHg")
+  )
   
-  hca04_district <- readRDS(file.path("hypertension_cascade/data","hca04_district.RDS"))
-  hca08_district_unmet <- readRDS(file.path("hypertension_cascade/data","hca08_district_unmet.RDS"))
-  district_nested <- readRDS(file.path("hypertension_cascade/data","district_nested.RDS"))
-  districtz_nested <- readRDS(file.path("hypertension_cascade/data","districtz_nested.RDS"))
+  hca05_state_unmet <- bind_rows(readRDS(file.path("hypertension_cascade/data","hca05_state_unmet.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                                 readRDS(file.path("hypertension_cascade/cutoff130","hcc130a05_state_unmet.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  state_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","state_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                            readRDS(file.path("hypertension_cascade/cutoff130","state_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  statez_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","statez_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                             readRDS(file.path("hypertension_cascade/cutoff130","statez_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  hca04_district <- bind_rows(readRDS(file.path("hypertension_cascade/data","hca04_district.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                              readRDS(file.path("hypertension_cascade/cutoff130","hcc130a04_district.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  hca08_district_unmet <- bind_rows(readRDS(file.path("hypertension_cascade/data","hca08_district_unmet.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                                    readRDS(file.path("hypertension_cascade/cutoff130","hcc130a08_district_unmet.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  district_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","district_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                               readRDS(file.path("hypertension_cascade/cutoff130","district_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+  
+  districtz_nested <- bind_rows(readRDS(file.path("hypertension_cascade/data","districtz_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                                readRDS(file.path("hypertension_cascade/cutoff130","districtz_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
   
   source("hypertension_cascade/code/cascade_plot.R")
   
@@ -45,22 +72,35 @@ mapnfhs5_sdist <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfh
 mapnfhs5_v024 <- readxl::read_excel(file.path("data","maps.xlsx"),sheet="mapnfhs5_v024")
 
 district_shp <- readRDS(file.path("data","district_shp.RDS"))
-state_shp <- readRDS(file.path("data","state_shp.RDS"))
-hcz01_national <- readRDS(file.path("data","hcz01_national.RDS"))
-hca02_national <- readRDS(file.path("data","hca02_national.RDS"))
-national_nested <- readRDS(file.path("data","national_nested.RDS"))
-nationalz_nested <- readRDS(file.path("data","nationalz_nested.RDS"))
+state_shp <- readRDS(file.path("data","state_shp.RDS")) 
+hcz01_national <- bind_rows(readRDS(file.path("data","hcz01_national.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                            readRDS(file.path("cutoff130","hcc130z01_national.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+hca02_national <- bind_rows(readRDS(file.path("data","hca02_national.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                            readRDS(file.path("cutoff130","hcc130a02_national.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+national_nested <- bind_rows(readRDS(file.path("data","national_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                             readRDS(file.path("cutoff130","national_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+nationalz_nested <- bind_rows(readRDS(file.path("data","nationalz_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                              readRDS(file.path("cutoff130","nationalz_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
 
-hcz02_state <- readRDS(file.path("data","hcz02_state.RDS"))
-hca03_state <- readRDS(file.path("data","hca03_state.RDS"))
-hca05_state_unmet <- readRDS(file.path("data","hca05_state_unmet.RDS"))
-state_nested <- readRDS(file.path("data","state_nested.RDS"))
-statez_nested <- readRDS(file.path("data","statez_nested.RDS"))
+hcz02_state <- bind_rows(readRDS(file.path("data","hcz02_state.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                         readRDS(file.path("cutoff130","hcc130z02_state.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+hca03_state <- bind_rows(readRDS(file.path("data","hca03_state.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                         readRDS(file.path("cutoff130","hcc130a03_state.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+hca05_state_unmet <- bind_rows(readRDS(file.path("data","hca05_state_unmet.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                               readRDS(file.path("cutoff130","hcc130a05_state_unmet.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+state_nested <- bind_rows(readRDS(file.path("data","state_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                          readRDS(file.path("cutoff130","state_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+statez_nested <- bind_rows(readRDS(file.path("data","statez_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                           readRDS(file.path("cutoff130","statez_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
 
-hca04_district <- readRDS(file.path("data","hca04_district.RDS"))
-hca08_district_unmet <- readRDS(file.path("data","hca08_district_unmet.RDS"))
-district_nested <- readRDS(file.path("data","district_nested.RDS"))
-districtz_nested <- readRDS(file.path("data","districtz_nested.RDS"))
+hca04_district <- bind_rows(readRDS(file.path("data","hca04_district.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                            readRDS(file.path("cutoff130","hcc130a04_district.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+hca08_district_unmet <- bind_rows(readRDS(file.path("data","hca08_district_unmet.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                                  readRDS(file.path("cutoff130","hcc130a08_district_unmet.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+district_nested <- bind_rows(readRDS(file.path("data","district_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                             readRDS(file.path("cutoff130","district_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
+districtz_nested <- bind_rows(readRDS(file.path("data","districtz_nested.RDS")) %>% mutate(cutpoint = "140/90 mmHg"),
+                              readRDS(file.path("cutoff130","districtz_nested.RDS")) %>% mutate(cutpoint = "130/80 mmHg"))
 
 source("code/cascade_plot.R")
 
@@ -89,6 +129,9 @@ shinyServer(function(input, output,session) {
   
   
   # Panel 2: Overview ----------------
+  # https://waiter.john-coene.com/#/waiter/examples#on-render -----
+  w <- Waiter$new(id = c("nationalmap", "statemap"))
+  
   nested_n1 <- reactive({
     if(input$zinput1 == "Yes"){
       return(nationalz_nested)
@@ -109,6 +152,11 @@ shinyServer(function(input, output,session) {
     }
   })
 
+  n5_cutpoint_input <- reactive({
+    input$cutoffinput1
+    
+  })
+  
   n5_state_input <- reactive({
     input$stateinput1
   })
@@ -125,12 +173,15 @@ shinyServer(function(input, output,session) {
     ss <- state_shp %>% 
       sp::merge(nested_s1() %>%
                   dplyr::filter(variable == input$varinput1,
+                                cutpoint == input$cutoffinput1,
                                 residence == input$mapinput1,
                                 strata == input$stratainput1)  %>% 
                   dplyr::select(n5_state,ST_NM,estimate) %>% 
                   rename_at(vars(estimate),~paste0(input$mapinput1," ",input$stratainput1," ",input$varinput1)),
                 by.x="ST_NM",by.y="ST_NM",all.x=TRUE)
     
+    # https://waiter.john-coene.com/#/waiter/examples#on-render 
+    w$show()
     ss
   })
   
@@ -194,6 +245,7 @@ shinyServer(function(input, output,session) {
     ds <- district_shp %>% 
       sp::merge(nested_d1() %>%
                   dplyr::filter(variable == input$varinput1,
+                                cutpoint == input$cutoffinput1,
                                 strata == input$stratainput1)  %>% 
                   dplyr::select(REGCODE,n5_state,estimate) %>% 
                   rename_at(vars(estimate),~paste0(input$mapinput1," ",input$stratainput1," ",input$varinput1)),
@@ -234,52 +286,65 @@ shinyServer(function(input, output,session) {
   })
   
   # Table --------
-  tab1 <- reactive({
-    
-    st_df <- nested_s1() %>% 
-      dplyr::filter(strata %in% c("Total","Male","Female")) %>% 
-      dplyr::filter(n5_state == input$stateinput1) %>% 
-      dplyr::select(variable,residence,strata,est_ci) %>% 
-      mutate(residence = paste0(input$stateinput1," ",residence," ",strata))  %>% 
-      dplyr::select(-strata) %>% 
-      pivot_wider(names_from=residence,values_from=est_ci) 
-    
-    nt_df <- nested_n1() %>% 
-      dplyr::filter(strata %in% c("Total","Male","Female")) %>% 
+  tab_national <- reactive({
+    nested_n1() %>% 
+      dplyr::filter(strata %in% c("Total","Male","Female"),cutpoint == input$cutoffinput1) %>% 
       dplyr::select(variable,strata,residence,est_ci) %>% 
       mutate(residence = case_when(is.na(residence) ~ "",
                                    TRUE ~ residence)) %>% 
       mutate(residence = paste0("India ",residence," ",strata)) %>% 
       dplyr::select(-strata) %>% 
-      pivot_wider(names_from=residence,values_from=est_ci) 
+      pivot_wider(names_from=residence,values_from=est_ci) %>% 
+      rename(Variable = variable)
     
-    dt_df <- nested_d1() %>% 
+  })
+    
+  tab_state <- reactive({
+    
+    nested_s1() %>% 
+      dplyr::filter(strata %in% c("Total","Male","Female"),cutpoint == input$cutoffinput1) %>% 
+      dplyr::filter(n5_state == input$stateinput1) %>% 
+      dplyr::select(variable,residence,strata,est_ci) %>% 
+      mutate(residence = paste0(input$stateinput1," ",residence," ",strata))  %>% 
+      dplyr::select(-strata) %>% 
+      pivot_wider(names_from=residence,values_from=est_ci)%>% 
+      rename(Variable = variable)
+    
+  })
+  
+  tab_district <- reactive({
+    nested_d1() %>% 
       dplyr::filter(strata == input$stratainput1,
-                    REGNAME == input$districtinput1) %>% 
+                    REGNAME == input$districtinput1,
+                    cutpoint == input$cutoffinput1) %>% 
       dplyr::select(variable,strata,REGNAME,est_ci) %>% 
       rename(residence = REGNAME)  %>% 
       mutate(residence = paste0(residence," ",strata)) %>% 
       dplyr::select(-strata) %>% 
-      pivot_wider(names_from=residence,values_from=est_ci) 
+      pivot_wider(names_from=residence,values_from=est_ci) %>% 
+      rename(Variable = variable)
     
-    left_join(
-      nt_df ,
-      st_df,
-      by = "variable"
-    ) %>% 
-      left_join(dt_df,
-                by="variable") %>% 
-      mutate_all(function(x) str_replace(x," \\(","<br>\\(")) %>% 
-      rename(Cascade = variable)
   })
+    
   
   # output$tableoutput -----------
-  output$tableoutput <- renderTable({
+  output$tableoutput1 <- renderTable({
     
-    tab1()
+    tab_national()
     
   },bordered = TRUE, sanitize.text.function=identity,align = "c")
   
+  output$tableoutput2 <- renderTable({
+    
+    tab_state()
+    
+  },bordered = TRUE, sanitize.text.function=identity,align = "c")
+  
+  output$tableoutput3 <- renderTable({
+    
+    tab_district()
+    
+  },bordered = TRUE, sanitize.text.function=identity,align = "c")
   # Panel 3: State ------------------
   
   
@@ -302,6 +367,11 @@ shinyServer(function(input, output,session) {
   
   
   
+  panel2_n5_cutpoint <- reactive({
+    input$cutoffinput2
+    
+  })
+  
   panel2_n5_state <- reactive({
     input$stateinput2
   })
@@ -309,6 +379,7 @@ shinyServer(function(input, output,session) {
   district_cm_merge2 <- reactive({
     dcm2 <- unmet_d2() %>% 
       dplyr::filter(strata == input$stratainput2,
+                    cutpoint == input$cutoffinput2,
                     n5_state == panel2_n5_state())
     
     
@@ -329,7 +400,7 @@ shinyServer(function(input, output,session) {
       theme_bw() + 
       coord_flip() +
       facet_grid(~variable,scales="free",space="free_y") +
-      scale_y_continuous(limits=c(0,50),breaks=seq(0,50,by=10)) +
+      scale_y_continuous(limits=c(0,100),breaks=c(0,25,50,75,100)) +
       facet_grid(~variable,scales="free_y",space="free_y") +
       theme(
         legend.text = element_text(size=12),
@@ -396,6 +467,7 @@ shinyServer(function(input, output,session) {
   district_cm_merge3 <- reactive({
     dcm3 <- unmet_d3() %>% 
       dplyr::filter(strata == input$stratainput3,
+                    cutpoint == input$cutoffinput3,
                     n5_state == panel3_n5_state())
     
     dcm3
@@ -407,7 +479,7 @@ shinyServer(function(input, output,session) {
   state_cs_merge <- reactive({
     # panel2_n5_state = "Kerala"
     scm <- unmet_s3() %>% 
-      dplyr::filter(n5_state == panel3_n5_state()) %>% 
+      dplyr::filter(n5_state == panel3_n5_state(),cutpoint == input$cutoffinput3) %>% 
       # mutate(cascade = str_replace(variable,"dm_","") %>% str_to_title()) %>% 
       mutate(cascade = factor(variable,levels=c("Screened","Hypertension","Diagnosed","Treated","Controlled"),
                               labels=c("Screened","Hypertension","Diagnosed","Taking Medication","Under Control"))) %>% 

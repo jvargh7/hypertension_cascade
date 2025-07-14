@@ -29,6 +29,10 @@ district_met %>%
   dplyr::select(n5_state,REGNAME,ml_comparison2,variable,estimate) %>% 
   group_by(ml_comparison2,variable) %>% 
   summarize(m = median(estimate),
+            q25 = quantile(estimate,0.25),
+            q75 = quantile(estimate,0.75),
+            min = min(estimate),
+            max = max(estimate),
             n = n()) %>% View()
   
 

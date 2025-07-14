@@ -1,0 +1,2 @@
+vpc_state_diagnosed,vpc_district_diagnosed,vpc_state_treated,vpc_district_treated,vpc_state_controlled,vpc_district_controlled,vpc_below_state_diagnosed,vpc_below_state_treated,vpc_below_state_controlled
+0.052759817793144724,0.03931246332259724,0.06352084385415933,0.11751020731664936,0.026472956815225265,0.03891238329785723,0.9472401822068552,0.9364791561458407,0.9735270431847748

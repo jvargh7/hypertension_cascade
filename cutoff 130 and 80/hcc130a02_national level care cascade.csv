@@ -1,0 +1,326 @@
+residence,variable,estimate,lci,uci,type,est_ci,n,stratification,strata
+Rural,htn_screened,60.2,59.9,60.6,Proportion,"60.2 (59.9, 60.6)",1273546,,NA
+Rural,htn_disease,58.8,58.6,59,Proportion,"58.8 (58.6, 59)",1273546,,NA
+Rural,htn_diagnosed,10,9.8,10.1,Proportion,"10 (9.8, 10.1)",1273546,,NA
+Rural,htn_treated,5.3,5.2,5.3,Proportion,"5.3 (5.2, 5.3)",1273546,,NA
+Rural,htn_controlled,2.4,2.3,2.4,Proportion,"2.4 (2.3, 2.4)",1273546,,NA
+Urban,htn_screened,71.5,70.8,72.2,Proportion,"71.5 (70.8, 72.2)",417490,,NA
+Urban,htn_disease,62.4,62,62.7,Proportion,"62.4 (62, 62.7)",417490,,NA
+Urban,htn_diagnosed,13.2,12.9,13.5,Proportion,"13.2 (12.9, 13.5)",417490,,NA
+Urban,htn_treated,8.9,8.7,9.1,Proportion,"8.9 (8.7, 9.1)",417490,,NA
+Urban,htn_controlled,4.1,3.9,4.2,Proportion,"4.1 (3.9, 4.2)",417490,,NA
+Rural,htn_screened,66.9,66.5,67.3,Proportion,"66.9 (66.5, 67.3)",670881,sex,Female
+Rural,htn_disease,55.2,55,55.5,Proportion,"55.2 (55, 55.5)",670881,sex,Female
+Rural,htn_diagnosed,11.6,11.4,11.8,Proportion,"11.6 (11.4, 11.8)",670881,sex,Female
+Rural,htn_treated,6.1,6,6.2,Proportion,"6.1 (6, 6.2)",670881,sex,Female
+Rural,htn_controlled,2.8,2.7,2.8,Proportion,"2.8 (2.7, 2.8)",670881,sex,Female
+Rural,htn_screened,52.6,52.2,53.1,Proportion,"52.6 (52.2, 53.1)",602665,sex,Male
+Rural,htn_disease,62.8,62.5,63.2,Proportion,"62.8 (62.5, 63.2)",602665,sex,Male
+Rural,htn_diagnosed,8.1,8,8.3,Proportion,"8.1 (8, 8.3)",602665,sex,Male
+Rural,htn_treated,4.3,4.2,4.4,Proportion,"4.3 (4.2, 4.4)",602665,sex,Male
+Rural,htn_controlled,1.9,1.8,2,Proportion,"1.9 (1.8, 2)",602665,sex,Male
+Urban,htn_screened,77.3,76.6,78,Proportion,"77.3 (76.6, 78)",218587,sex,Female
+Urban,htn_disease,58.1,57.7,58.5,Proportion,"58.1 (57.7, 58.5)",218587,sex,Female
+Urban,htn_diagnosed,15,14.6,15.3,Proportion,"15 (14.6, 15.3)",218587,sex,Female
+Urban,htn_treated,10,9.8,10.3,Proportion,"10 (9.8, 10.3)",218587,sex,Female
+Urban,htn_controlled,4.7,4.6,4.9,Proportion,"4.7 (4.6, 4.9)",218587,sex,Female
+Urban,htn_screened,65,64.2,65.7,Proportion,"65 (64.2, 65.7)",198903,sex,Male
+Urban,htn_disease,67.1,66.6,67.6,Proportion,"67.1 (66.6, 67.6)",198903,sex,Male
+Urban,htn_diagnosed,11.2,10.9,11.5,Proportion,"11.2 (10.9, 11.5)",198903,sex,Male
+Urban,htn_treated,7.6,7.3,7.8,Proportion,"7.6 (7.3, 7.8)",198903,sex,Male
+Urban,htn_controlled,3.3,3.2,3.5,Proportion,"3.3 (3.2, 3.5)",198903,sex,Male
+Rural,htn_screened,53.5,53.1,53.9,Proportion,"53.5 (53.1, 53.9)",634537,age_category,18-39
+Rural,htn_disease,46.3,46,46.5,Proportion,"46.3 (46, 46.5)",634537,age_category,18-39
+Rural,htn_diagnosed,4.4,4.3,4.6,Proportion,"4.4 (4.3, 4.6)",634537,age_category,18-39
+Rural,htn_treated,0.9,0.9,1,Proportion,"0.9 (0.9, 1)",634537,age_category,18-39
+Rural,htn_controlled,0.6,0.6,0.6,Proportion,"0.6 (0.6, 0.6)",634537,age_category,18-39
+Rural,htn_screened,65.7,65.3,66.1,Proportion,"65.7 (65.3, 66.1)",495644,age_category,40-64
+Rural,htn_disease,69.9,69.7,70.2,Proportion,"69.9 (69.7, 70.2)",495644,age_category,40-64
+Rural,htn_diagnosed,13.1,12.9,13.3,Proportion,"13.1 (12.9, 13.3)",495644,age_category,40-64
+Rural,htn_treated,7.3,7.2,7.5,Proportion,"7.3 (7.2, 7.5)",495644,age_category,40-64
+Rural,htn_controlled,3.2,3.1,3.2,Proportion,"3.2 (3.1, 3.2)",495644,age_category,40-64
+Rural,htn_screened,71,70.5,71.5,Proportion,"71 (70.5, 71.5)",143365,age_category,65 plus
+Rural,htn_disease,75.2,74.8,75.5,Proportion,"75.2 (74.8, 75.5)",143365,age_category,65 plus
+Rural,htn_diagnosed,23.1,22.7,23.5,Proportion,"23.1 (22.7, 23.5)",143365,age_category,65 plus
+Rural,htn_treated,16.7,16.3,17,Proportion,"16.7 (16.3, 17)",143365,age_category,65 plus
+Rural,htn_controlled,7.3,7.1,7.5,Proportion,"7.3 (7.1, 7.5)",143365,age_category,65 plus
+Urban,htn_screened,61.8,61.1,62.6,Proportion,"61.8 (61.1, 62.6)",209547,age_category,18-39
+Urban,htn_disease,48.2,47.7,48.6,Proportion,"48.2 (47.7, 48.6)",209547,age_category,18-39
+Urban,htn_diagnosed,4.2,4,4.5,Proportion,"4.2 (4, 4.5)",209547,age_category,18-39
+Urban,htn_treated,1.1,1,1.2,Proportion,"1.1 (1, 1.2)",209547,age_category,18-39
+Urban,htn_controlled,0.6,0.6,0.7,Proportion,"0.6 (0.6, 0.7)",209547,age_category,18-39
+Urban,htn_screened,79.7,79,80.4,Proportion,"79.7 (79, 80.4)",165408,age_category,40-64
+Urban,htn_disease,74.8,74.4,75.3,Proportion,"74.8 (74.4, 75.3)",165408,age_category,40-64
+Urban,htn_diagnosed,18.3,17.8,18.7,Proportion,"18.3 (17.8, 18.7)",165408,age_category,40-64
+Urban,htn_treated,12.8,12.5,13.1,Proportion,"12.8 (12.5, 13.1)",165408,age_category,40-64
+Urban,htn_controlled,5.7,5.5,5.9,Proportion,"5.7 (5.5, 5.9)",165408,age_category,40-64
+Urban,htn_screened,85.6,84.8,86.3,Proportion,"85.6 (84.8, 86.3)",42535,age_category,65 plus
+Urban,htn_disease,81.8,81.2,82.3,Proportion,"81.8 (81.2, 82.3)",42535,age_category,65 plus
+Urban,htn_diagnosed,35.7,34.9,36.6,Proportion,"35.7 (34.9, 36.6)",42535,age_category,65 plus
+Urban,htn_treated,30,29.2,30.8,Proportion,"30 (29.2, 30.8)",42535,age_category,65 plus
+Urban,htn_controlled,13.8,13.3,14.4,Proportion,"13.8 (13.3, 14.4)",42535,age_category,65 plus
+Rural,htn_screened,57.6,57,58.2,Proportion,"57.6 (57, 58.2)",127886,education,Higher
+Rural,htn_disease,50.1,49.2,51,Proportion,"50.1 (49.2, 51)",127886,education,Higher
+Rural,htn_diagnosed,6.6,6.4,6.9,Proportion,"6.6 (6.4, 6.9)",127886,education,Higher
+Rural,htn_treated,2.7,2.6,2.9,Proportion,"2.7 (2.6, 2.9)",127886,education,Higher
+Rural,htn_controlled,1.4,1.3,1.5,Proportion,"1.4 (1.3, 1.5)",127886,education,Higher
+Rural,htn_screened,61.4,61,61.9,Proportion,"61.4 (61, 61.9)",421648,education,No education
+Rural,htn_disease,64.8,64.6,65.1,Proportion,"64.8 (64.6, 65.1)",421648,education,No education
+Rural,htn_diagnosed,12.4,12.2,12.6,Proportion,"12.4 (12.2, 12.6)",421648,education,No education
+Rural,htn_treated,6.9,6.7,7,Proportion,"6.9 (6.7, 7)",421648,education,No education
+Rural,htn_controlled,2.9,2.8,3,Proportion,"2.9 (2.8, 3)",421648,education,No education
+Rural,htn_screened,62.8,62.3,63.3,Proportion,"62.8 (62.3, 63.3)",192021,education,Primary
+Rural,htn_disease,62.7,62.3,63.1,Proportion,"62.7 (62.3, 63.1)",192021,education,Primary
+Rural,htn_diagnosed,11.6,11.3,11.9,Proportion,"11.6 (11.3, 11.9)",192021,education,Primary
+Rural,htn_treated,6.9,6.7,7.1,Proportion,"6.9 (6.7, 7.1)",192021,education,Primary
+Rural,htn_controlled,3.1,3,3.3,Proportion,"3.1 (3, 3.3)",192021,education,Primary
+Rural,htn_screened,58.9,58.5,59.3,Proportion,"58.9 (58.5, 59.3)",531991,education,Secondary
+Rural,htn_disease,54.6,54.3,54.8,Proportion,"54.6 (54.3, 54.8)",531991,education,Secondary
+Rural,htn_diagnosed,8.2,8,8.3,Proportion,"8.2 (8, 8.3)",531991,education,Secondary
+Rural,htn_treated,4,3.9,4.1,Proportion,"4 (3.9, 4.1)",531991,education,Secondary
+Rural,htn_controlled,1.9,1.8,1.9,Proportion,"1.9 (1.8, 1.9)",531991,education,Secondary
+Urban,htn_screened,70.7,69.8,71.7,Proportion,"70.7 (69.8, 71.7)",101675,education,Higher
+Urban,htn_disease,56,55.4,56.6,Proportion,"56 (55.4, 56.6)",101675,education,Higher
+Urban,htn_diagnosed,9.8,9.4,10.2,Proportion,"9.8 (9.4, 10.2)",101675,education,Higher
+Urban,htn_treated,6.1,5.8,6.4,Proportion,"6.1 (5.8, 6.4)",101675,education,Higher
+Urban,htn_controlled,3.1,2.9,3.3,Proportion,"3.1 (2.9, 3.3)",101675,education,Higher
+Urban,htn_screened,73.4,72.4,74.3,Proportion,"73.4 (72.4, 74.3)",68464,education,No education
+Urban,htn_disease,70.7,70.1,71.4,Proportion,"70.7 (70.1, 71.4)",68464,education,No education
+Urban,htn_diagnosed,18.2,17.6,18.8,Proportion,"18.2 (17.6, 18.8)",68464,education,No education
+Urban,htn_treated,12.4,12,12.9,Proportion,"12.4 (12, 12.9)",68464,education,No education
+Urban,htn_controlled,5.2,5,5.5,Proportion,"5.2 (5, 5.5)",68464,education,No education
+Urban,htn_screened,73.8,72.8,74.8,Proportion,"73.8 (72.8, 74.8)",48282,education,Primary
+Urban,htn_disease,69,68.3,69.7,Proportion,"69 (68.3, 69.7)",48282,education,Primary
+Urban,htn_diagnosed,17.1,16.5,17.8,Proportion,"17.1 (16.5, 17.8)",48282,education,Primary
+Urban,htn_treated,12.5,12,13,Proportion,"12.5 (12, 13)",48282,education,Primary
+Urban,htn_controlled,5.7,5.3,6,Proportion,"5.7 (5.3, 6)",48282,education,Primary
+Urban,htn_screened,70.6,69.9,71.3,Proportion,"70.6 (69.9, 71.3)",199069,education,Secondary
+Urban,htn_disease,61.1,60.7,61.6,Proportion,"61.1 (60.7, 61.6)",199069,education,Secondary
+Urban,htn_diagnosed,12.2,11.9,12.5,Proportion,"12.2 (11.9, 12.5)",199069,education,Secondary
+Urban,htn_treated,8.2,7.9,8.4,Proportion,"8.2 (7.9, 8.4)",199069,education,Secondary
+Urban,htn_controlled,3.8,3.6,3.9,Proportion,"3.8 (3.6, 3.9)",199069,education,Secondary
+Rural,htn_screened,64.2,63.6,64.8,Proportion,"64.2 (63.6, 64.8)",283087,caste,General
+Rural,htn_disease,60.1,59.5,60.6,Proportion,"60.1 (59.5, 60.6)",283087,caste,General
+Rural,htn_diagnosed,12.4,12.2,12.7,Proportion,"12.4 (12.2, 12.7)",283087,caste,General
+Rural,htn_treated,7.4,7.2,7.6,Proportion,"7.4 (7.2, 7.6)",283087,caste,General
+Rural,htn_controlled,3.4,3.3,3.5,Proportion,"3.4 (3.3, 3.5)",283087,caste,General
+Rural,htn_screened,61.7,61.2,62.1,Proportion,"61.7 (61.2, 62.1)",465932,caste,OBC
+Rural,htn_disease,58.6,58.3,58.8,Proportion,"58.6 (58.3, 58.8)",465932,caste,OBC
+Rural,htn_diagnosed,10.2,10,10.5,Proportion,"10.2 (10, 10.5)",465932,caste,OBC
+Rural,htn_treated,5.3,5.2,5.4,Proportion,"5.3 (5.2, 5.4)",465932,caste,OBC
+Rural,htn_controlled,2.4,2.3,2.5,Proportion,"2.4 (2.3, 2.5)",465932,caste,OBC
+Rural,htn_screened,59.8,59.2,60.4,Proportion,"59.8 (59.2, 60.4)",248339,caste,Schedule Caste
+Rural,htn_disease,57.8,57.5,58.2,Proportion,"57.8 (57.5, 58.2)",248339,caste,Schedule Caste
+Rural,htn_diagnosed,9.1,8.9,9.4,Proportion,"9.1 (8.9, 9.4)",248339,caste,Schedule Caste
+Rural,htn_treated,4.3,4.2,4.4,Proportion,"4.3 (4.2, 4.4)",248339,caste,Schedule Caste
+Rural,htn_controlled,1.9,1.8,1.9,Proportion,"1.9 (1.8, 1.9)",248339,caste,Schedule Caste
+Rural,htn_screened,48.2,47.3,49,Proportion,"48.2 (47.3, 49)",276188,caste,Schedule Tribe
+Rural,htn_disease,59,58.5,59.4,Proportion,"59 (58.5, 59.4)",276188,caste,Schedule Tribe
+Rural,htn_diagnosed,5.7,5.5,6,Proportion,"5.7 (5.5, 6)",276188,caste,Schedule Tribe
+Rural,htn_treated,2.7,2.6,2.9,Proportion,"2.7 (2.6, 2.9)",276188,caste,Schedule Tribe
+Rural,htn_controlled,1.1,1.1,1.2,Proportion,"1.1 (1.1, 1.2)",276188,caste,Schedule Tribe
+Urban,htn_screened,73.9,72.9,74.8,Proportion,"73.9 (72.9, 74.8)",137423,caste,General
+Urban,htn_disease,63.8,63.2,64.3,Proportion,"63.8 (63.2, 64.3)",137423,caste,General
+Urban,htn_diagnosed,14.4,13.9,14.8,Proportion,"14.4 (13.9, 14.8)",137423,caste,General
+Urban,htn_treated,10.2,9.8,10.5,Proportion,"10.2 (9.8, 10.5)",137423,caste,General
+Urban,htn_controlled,4.8,4.6,5.1,Proportion,"4.8 (4.6, 5.1)",137423,caste,General
+Urban,htn_screened,71.8,70.9,72.5,Proportion,"71.8 (70.9, 72.5)",163429,caste,OBC
+Urban,htn_disease,62,61.5,62.5,Proportion,"62 (61.5, 62.5)",163429,caste,OBC
+Urban,htn_diagnosed,13.3,12.9,13.8,Proportion,"13.3 (12.9, 13.8)",163429,caste,OBC
+Urban,htn_treated,8.9,8.7,9.2,Proportion,"8.9 (8.7, 9.2)",163429,caste,OBC
+Urban,htn_controlled,4.1,3.9,4.2,Proportion,"4.1 (3.9, 4.2)",163429,caste,OBC
+Urban,htn_screened,68.4,67.3,69.5,Proportion,"68.4 (67.3, 69.5)",73930,caste,Schedule Caste
+Urban,htn_disease,60.8,60.1,61.5,Proportion,"60.8 (60.1, 61.5)",73930,caste,Schedule Caste
+Urban,htn_diagnosed,11.2,10.7,11.7,Proportion,"11.2 (10.7, 11.7)",73930,caste,Schedule Caste
+Urban,htn_treated,6.8,6.5,7.1,Proportion,"6.8 (6.5, 7.1)",73930,caste,Schedule Caste
+Urban,htn_controlled,2.9,2.7,3.1,Proportion,"2.9 (2.7, 3.1)",73930,caste,Schedule Caste
+Urban,htn_screened,62.1,59.7,64.4,Proportion,"62.1 (59.7, 64.4)",42708,caste,Schedule Tribe
+Urban,htn_disease,61.4,60.2,62.6,Proportion,"61.4 (60.2, 62.6)",42708,caste,Schedule Tribe
+Urban,htn_diagnosed,10.5,9.7,11.3,Proportion,"10.5 (9.7, 11.3)",42708,caste,Schedule Tribe
+Urban,htn_treated,6.6,6,7.3,Proportion,"6.6 (6, 7.3)",42708,caste,Schedule Tribe
+Urban,htn_controlled,2.9,2.5,3.4,Proportion,"2.9 (2.5, 3.4)",42708,caste,Schedule Tribe
+Rural,htn_screened,59.3,58.9,59.7,Proportion,"59.3 (58.9, 59.7)",981459,religion,Hindu
+Rural,htn_disease,58.6,58.4,58.9,Proportion,"58.6 (58.4, 58.9)",981459,religion,Hindu
+Rural,htn_diagnosed,9.5,9.4,9.7,Proportion,"9.5 (9.4, 9.7)",981459,religion,Hindu
+Rural,htn_treated,5,4.9,5.1,Proportion,"5 (4.9, 5.1)",981459,religion,Hindu
+Rural,htn_controlled,2.3,2.2,2.3,Proportion,"2.3 (2.2, 2.3)",981459,religion,Hindu
+Rural,htn_screened,63.5,62.6,64.4,Proportion,"63.5 (62.6, 64.4)",127977,religion,Muslim
+Rural,htn_disease,57.6,56.9,58.2,Proportion,"57.6 (56.9, 58.2)",127977,religion,Muslim
+Rural,htn_diagnosed,11,10.5,11.4,Proportion,"11 (10.5, 11.4)",127977,religion,Muslim
+Rural,htn_treated,6,5.8,6.3,Proportion,"6 (5.8, 6.3)",127977,religion,Muslim
+Rural,htn_controlled,2.7,2.5,2.8,Proportion,"2.7 (2.5, 2.8)",127977,religion,Muslim
+Rural,htn_screened,68.7,67.6,69.7,Proportion,"68.7 (67.6, 69.7)",164110,religion,Other
+Rural,htn_disease,64.3,63.7,65,Proportion,"64.3 (63.7, 65)",164110,religion,Other
+Rural,htn_diagnosed,14.4,13.8,15,Proportion,"14.4 (13.8, 15)",164110,religion,Other
+Rural,htn_treated,7.9,7.5,8.3,Proportion,"7.9 (7.5, 8.3)",164110,religion,Other
+Rural,htn_controlled,3.3,3,3.5,Proportion,"3.3 (3, 3.5)",164110,religion,Other
+Urban,htn_screened,71.6,70.9,72.3,Proportion,"71.6 (70.9, 72.3)",305644,religion,Hindu
+Urban,htn_disease,62.4,61.9,62.8,Proportion,"62.4 (61.9, 62.8)",305644,religion,Hindu
+Urban,htn_diagnosed,13,12.7,13.4,Proportion,"13 (12.7, 13.4)",305644,religion,Hindu
+Urban,htn_treated,8.8,8.5,9,Proportion,"8.8 (8.5, 9)",305644,religion,Hindu
+Urban,htn_controlled,4,3.9,4.2,Proportion,"4 (3.9, 4.2)",305644,religion,Hindu
+Urban,htn_screened,68.4,66.9,69.8,Proportion,"68.4 (66.9, 69.8)",64943,religion,Muslim
+Urban,htn_disease,61.5,60.7,62.3,Proportion,"61.5 (60.7, 62.3)",64943,religion,Muslim
+Urban,htn_diagnosed,12.2,11.6,12.9,Proportion,"12.2 (11.6, 12.9)",64943,religion,Muslim
+Urban,htn_treated,8.1,7.7,8.6,Proportion,"8.1 (7.7, 8.6)",64943,religion,Muslim
+Urban,htn_controlled,3.6,3.3,3.9,Proportion,"3.6 (3.3, 3.9)",64943,religion,Muslim
+Urban,htn_screened,77.8,76.2,79.3,Proportion,"77.8 (76.2, 79.3)",46903,religion,Other
+Urban,htn_disease,64.4,63.3,65.5,Proportion,"64.4 (63.3, 65.5)",46903,religion,Other
+Urban,htn_diagnosed,17.4,16.4,18.3,Proportion,"17.4 (16.4, 18.3)",46903,religion,Other
+Urban,htn_treated,12,11.3,12.8,Proportion,"12 (11.3, 12.8)",46903,religion,Other
+Urban,htn_controlled,5.7,5.2,6.2,Proportion,"5.7 (5.2, 6.2)",46903,religion,Other
+Rural,htn_screened,48.2,47.6,48.8,Proportion,"48.2 (47.6, 48.8)",232575,wealthq_ur,1
+Rural,htn_disease,56.4,56,56.8,Proportion,"56.4 (56, 56.8)",232575,wealthq_ur,1
+Rural,htn_diagnosed,7,6.8,7.3,Proportion,"7 (6.8, 7.3)",232575,wealthq_ur,1
+Rural,htn_treated,2.9,2.7,3,Proportion,"2.9 (2.7, 3)",232575,wealthq_ur,1
+Rural,htn_controlled,1.3,1.2,1.4,Proportion,"1.3 (1.2, 1.4)",232575,wealthq_ur,1
+Rural,htn_screened,55.2,54.7,55.7,Proportion,"55.2 (54.7, 55.7)",256504,wealthq_ur,2
+Rural,htn_disease,56.4,56,56.7,Proportion,"56.4 (56, 56.7)",256504,wealthq_ur,2
+Rural,htn_diagnosed,8.3,8.1,8.6,Proportion,"8.3 (8.1, 8.6)",256504,wealthq_ur,2
+Rural,htn_treated,3.7,3.6,3.8,Proportion,"3.7 (3.6, 3.8)",256504,wealthq_ur,2
+Rural,htn_controlled,1.6,1.6,1.7,Proportion,"1.6 (1.6, 1.7)",256504,wealthq_ur,2
+Rural,htn_screened,59.9,59.4,60.4,Proportion,"59.9 (59.4, 60.4)",258812,wealthq_ur,3
+Rural,htn_disease,58,57.6,58.3,Proportion,"58 (57.6, 58.3)",258812,wealthq_ur,3
+Rural,htn_diagnosed,9.4,9.2,9.6,Proportion,"9.4 (9.2, 9.6)",258812,wealthq_ur,3
+Rural,htn_treated,4.7,4.6,4.9,Proportion,"4.7 (4.6, 4.9)",258812,wealthq_ur,3
+Rural,htn_controlled,2,2,2.1,Proportion,"2 (2, 2.1)",258812,wealthq_ur,3
+Rural,htn_screened,64.5,64,65.1,Proportion,"64.5 (64, 65.1)",257025,wealthq_ur,4
+Rural,htn_disease,59.8,59.4,60.2,Proportion,"59.8 (59.4, 60.2)",257025,wealthq_ur,4
+Rural,htn_diagnosed,10.7,10.5,11,Proportion,"10.7 (10.5, 11)",257025,wealthq_ur,4
+Rural,htn_treated,6.2,6,6.4,Proportion,"6.2 (6, 6.4)",257025,wealthq_ur,4
+Rural,htn_controlled,2.8,2.7,2.9,Proportion,"2.8 (2.7, 2.9)",257025,wealthq_ur,4
+Rural,htn_screened,70.7,70.2,71.2,Proportion,"70.7 (70.2, 71.2)",268630,wealthq_ur,5
+Rural,htn_disease,62.8,62.3,63.2,Proportion,"62.8 (62.3, 63.2)",268630,wealthq_ur,5
+Rural,htn_diagnosed,13.6,13.3,13.9,Proportion,"13.6 (13.3, 13.9)",268630,wealthq_ur,5
+Rural,htn_treated,8.2,8,8.4,Proportion,"8.2 (8, 8.4)",268630,wealthq_ur,5
+Rural,htn_controlled,3.8,3.6,3.9,Proportion,"3.8 (3.6, 3.9)",268630,wealthq_ur,5
+Urban,htn_screened,62.9,61.7,64,Proportion,"62.9 (61.7, 64)",86352,wealthq_ur,1
+Urban,htn_disease,59,58.3,59.7,Proportion,"59 (58.3, 59.7)",86352,wealthq_ur,1
+Urban,htn_diagnosed,10,9.5,10.5,Proportion,"10 (9.5, 10.5)",86352,wealthq_ur,1
+Urban,htn_treated,5.6,5.3,5.9,Proportion,"5.6 (5.3, 5.9)",86352,wealthq_ur,1
+Urban,htn_controlled,2.3,2.2,2.5,Proportion,"2.3 (2.2, 2.5)",86352,wealthq_ur,1
+Urban,htn_screened,68.9,67.9,69.8,Proportion,"68.9 (67.9, 69.8)",86652,wealthq_ur,2
+Urban,htn_disease,61.2,60.6,61.8,Proportion,"61.2 (60.6, 61.8)",86652,wealthq_ur,2
+Urban,htn_diagnosed,11.9,11.5,12.4,Proportion,"11.9 (11.5, 12.4)",86652,wealthq_ur,2
+Urban,htn_treated,7.7,7.4,8,Proportion,"7.7 (7.4, 8)",86652,wealthq_ur,2
+Urban,htn_controlled,3.4,3.2,3.6,Proportion,"3.4 (3.2, 3.6)",86652,wealthq_ur,2
+Urban,htn_screened,71.7,70.8,72.6,Proportion,"71.7 (70.8, 72.6)",83416,wealthq_ur,3
+Urban,htn_disease,62.5,62,63.1,Proportion,"62.5 (62, 63.1)",83416,wealthq_ur,3
+Urban,htn_diagnosed,13.1,12.7,13.6,Proportion,"13.1 (12.7, 13.6)",83416,wealthq_ur,3
+Urban,htn_treated,9.1,8.8,9.5,Proportion,"9.1 (8.8, 9.5)",83416,wealthq_ur,3
+Urban,htn_controlled,4.1,3.8,4.3,Proportion,"4.1 (3.8, 4.3)",83416,wealthq_ur,3
+Urban,htn_screened,74.4,73.4,75.3,Proportion,"74.4 (73.4, 75.3)",81186,wealthq_ur,4
+Urban,htn_disease,63.6,63,64.1,Proportion,"63.6 (63, 64.1)",81186,wealthq_ur,4
+Urban,htn_diagnosed,14.2,13.7,14.7,Proportion,"14.2 (13.7, 14.7)",81186,wealthq_ur,4
+Urban,htn_treated,10,9.6,10.4,Proportion,"10 (9.6, 10.4)",81186,wealthq_ur,4
+Urban,htn_controlled,4.7,4.5,5,Proportion,"4.7 (4.5, 5)",81186,wealthq_ur,4
+Urban,htn_screened,79.4,78.3,80.5,Proportion,"79.4 (78.3, 80.5)",79884,wealthq_ur,5
+Urban,htn_disease,65.4,64.7,66.1,Proportion,"65.4 (64.7, 66.1)",79884,wealthq_ur,5
+Urban,htn_diagnosed,16.5,16,17.1,Proportion,"16.5 (16, 17.1)",79884,wealthq_ur,5
+Urban,htn_treated,11.8,11.4,12.2,Proportion,"11.8 (11.4, 12.2)",79884,wealthq_ur,5
+Urban,htn_controlled,5.8,5.5,6.1,Proportion,"5.8 (5.5, 6.1)",79884,wealthq_ur,5
+NA,htn_screened,70.2,69.9,70.6,Proportion,"70.2 (69.9, 70.6)",889468,sex,Female
+NA,htn_disease,56.1,55.9,56.3,Proportion,"56.1 (55.9, 56.3)",889468,sex,Female
+NA,htn_diagnosed,12.6,12.5,12.8,Proportion,"12.6 (12.5, 12.8)",889468,sex,Female
+NA,htn_treated,7.3,7.2,7.4,Proportion,"7.3 (7.2, 7.4)",889468,sex,Female
+NA,htn_controlled,3.4,3.3,3.5,Proportion,"3.4 (3.3, 3.5)",889468,sex,Female
+NA,htn_screened,56.6,56.3,57,Proportion,"56.6 (56.3, 57)",801568,sex,Male
+NA,htn_disease,64.2,64,64.5,Proportion,"64.2 (64, 64.5)",801568,sex,Male
+NA,htn_diagnosed,9.1,9,9.3,Proportion,"9.1 (9, 9.3)",801568,sex,Male
+NA,htn_treated,5.4,5.3,5.5,Proportion,"5.4 (5.3, 5.5)",801568,sex,Male
+NA,htn_controlled,2.4,2.3,2.4,Proportion,"2.4 (2.3, 2.4)",801568,sex,Male
+NA,htn_screened,56.1,55.8,56.5,Proportion,"56.1 (55.8, 56.5)",844084,age_category,18-39
+NA,htn_disease,46.9,46.6,47.1,Proportion,"46.9 (46.6, 47.1)",844084,age_category,18-39
+NA,htn_diagnosed,4.4,4.2,4.5,Proportion,"4.4 (4.2, 4.5)",844084,age_category,18-39
+NA,htn_treated,1,1,1,Proportion,"1 (1, 1)",844084,age_category,18-39
+NA,htn_controlled,0.6,0.6,0.6,Proportion,"0.6 (0.6, 0.6)",844084,age_category,18-39
+NA,htn_screened,70.3,69.9,70.6,Proportion,"70.3 (69.9, 70.6)",661052,age_category,40-64
+NA,htn_disease,71.5,71.3,71.8,Proportion,"71.5 (71.3, 71.8)",661052,age_category,40-64
+NA,htn_diagnosed,14.8,14.6,15,Proportion,"14.8 (14.6, 15)",661052,age_category,40-64
+NA,htn_treated,9.1,9,9.3,Proportion,"9.1 (9, 9.3)",661052,age_category,40-64
+NA,htn_controlled,4,3.9,4.1,Proportion,"4 (3.9, 4.1)",661052,age_category,40-64
+NA,htn_screened,75.4,75,75.8,Proportion,"75.4 (75, 75.8)",185900,age_category,65 plus
+NA,htn_disease,77.2,76.9,77.5,Proportion,"77.2 (76.9, 77.5)",185900,age_category,65 plus
+NA,htn_diagnosed,26.9,26.5,27.3,Proportion,"26.9 (26.5, 27.3)",185900,age_category,65 plus
+NA,htn_treated,20.7,20.4,21,Proportion,"20.7 (20.4, 21)",185900,age_category,65 plus
+NA,htn_controlled,9.2,9,9.5,Proportion,"9.2 (9, 9.5)",185900,age_category,65 plus
+NA,htn_screened,64.6,64,65.2,Proportion,"64.6 (64, 65.2)",229561,education,Higher
+NA,htn_disease,53.2,52.7,53.8,Proportion,"53.2 (52.7, 53.8)",229561,education,Higher
+NA,htn_diagnosed,8.3,8.1,8.6,Proportion,"8.3 (8.1, 8.6)",229561,education,Higher
+NA,htn_treated,4.5,4.3,4.7,Proportion,"4.5 (4.3, 4.7)",229561,education,Higher
+NA,htn_controlled,2.3,2.2,2.4,Proportion,"2.3 (2.2, 2.4)",229561,education,Higher
+NA,htn_screened,63.7,63.3,64.1,Proportion,"63.7 (63.3, 64.1)",490112,education,No education
+NA,htn_disease,65.9,65.7,66.2,Proportion,"65.9 (65.7, 66.2)",490112,education,No education
+NA,htn_diagnosed,13.5,13.2,13.7,Proportion,"13.5 (13.2, 13.7)",490112,education,No education
+NA,htn_treated,7.9,7.8,8.1,Proportion,"7.9 (7.8, 8.1)",490112,education,No education
+NA,htn_controlled,3.3,3.3,3.4,Proportion,"3.3 (3.3, 3.4)",490112,education,No education
+NA,htn_screened,65.8,65.3,66.2,Proportion,"65.8 (65.3, 66.2)",240303,education,Primary
+NA,htn_disease,64.4,64.1,64.7,Proportion,"64.4 (64.1, 64.7)",240303,education,Primary
+NA,htn_diagnosed,13.1,12.8,13.3,Proportion,"13.1 (12.8, 13.3)",240303,education,Primary
+NA,htn_treated,8.4,8.2,8.6,Proportion,"8.4 (8.2, 8.6)",240303,education,Primary
+NA,htn_controlled,3.8,3.7,3.9,Proportion,"3.8 (3.7, 3.9)",240303,education,Primary
+NA,htn_screened,63,62.7,63.4,Proportion,"63 (62.7, 63.4)",731060,education,Secondary
+NA,htn_disease,56.9,56.6,57.1,Proportion,"56.9 (56.6, 57.1)",731060,education,Secondary
+NA,htn_diagnosed,9.6,9.4,9.8,Proportion,"9.6 (9.4, 9.8)",731060,education,Secondary
+NA,htn_treated,5.4,5.3,5.5,Proportion,"5.4 (5.3, 5.5)",731060,education,Secondary
+NA,htn_controlled,2.5,2.5,2.6,Proportion,"2.5 (2.5, 2.6)",731060,education,Secondary
+NA,htn_screened,68.2,67.7,68.8,Proportion,"68.2 (67.7, 68.8)",420510,caste,General
+NA,htn_disease,61.6,61.2,62,Proportion,"61.6 (61.2, 62)",420510,caste,General
+NA,htn_diagnosed,13.2,13,13.5,Proportion,"13.2 (13, 13.5)",420510,caste,General
+NA,htn_treated,8.5,8.4,8.7,Proportion,"8.5 (8.4, 8.7)",420510,caste,General
+NA,htn_controlled,4,3.9,4.1,Proportion,"4 (3.9, 4.1)",420510,caste,General
+NA,htn_screened,64.9,64.5,65.3,Proportion,"64.9 (64.5, 65.3)",629361,caste,OBC
+NA,htn_disease,59.7,59.4,59.9,Proportion,"59.7 (59.4, 59.9)",629361,caste,OBC
+NA,htn_diagnosed,11.2,11,11.4,Proportion,"11.2 (11, 11.4)",629361,caste,OBC
+NA,htn_treated,6.5,6.3,6.6,Proportion,"6.5 (6.3, 6.6)",629361,caste,OBC
+NA,htn_controlled,2.9,2.9,3,Proportion,"2.9 (2.9, 3)",629361,caste,OBC
+NA,htn_screened,62.2,61.7,62.8,Proportion,"62.2 (61.7, 62.8)",322269,caste,Schedule Caste
+NA,htn_disease,58.7,58.3,59,Proportion,"58.7 (58.3, 59)",322269,caste,Schedule Caste
+NA,htn_diagnosed,9.7,9.5,9.9,Proportion,"9.7 (9.5, 9.9)",322269,caste,Schedule Caste
+NA,htn_treated,5,4.9,5.1,Proportion,"5 (4.9, 5.1)",322269,caste,Schedule Caste
+NA,htn_controlled,2.2,2.1,2.2,Proportion,"2.2 (2.1, 2.2)",322269,caste,Schedule Caste
+NA,htn_screened,50.1,49.3,50.9,Proportion,"50.1 (49.3, 50.9)",318896,caste,Schedule Tribe
+NA,htn_disease,59.3,58.9,59.7,Proportion,"59.3 (58.9, 59.7)",318896,caste,Schedule Tribe
+NA,htn_diagnosed,6.4,6.2,6.6,Proportion,"6.4 (6.2, 6.6)",318896,caste,Schedule Tribe
+NA,htn_treated,3.3,3.1,3.4,Proportion,"3.3 (3.1, 3.4)",318896,caste,Schedule Tribe
+NA,htn_controlled,1.4,1.3,1.5,Proportion,"1.4 (1.3, 1.5)",318896,caste,Schedule Tribe
+NA,htn_screened,63.1,62.7,63.4,Proportion,"63.1 (62.7, 63.4)",1287103,religion,Hindu
+NA,htn_disease,59.8,59.5,60,Proportion,"59.8 (59.5, 60)",1287103,religion,Hindu
+NA,htn_diagnosed,10.6,10.5,10.8,Proportion,"10.6 (10.5, 10.8)",1287103,religion,Hindu
+NA,htn_treated,6.1,6.1,6.2,Proportion,"6.1 (6.1, 6.2)",1287103,religion,Hindu
+NA,htn_controlled,2.8,2.8,2.9,Proportion,"2.8 (2.8, 2.9)",1287103,religion,Hindu
+NA,htn_screened,65.5,64.7,66.3,Proportion,"65.5 (64.7, 66.3)",192920,religion,Muslim
+NA,htn_disease,59.2,58.7,59.7,Proportion,"59.2 (58.7, 59.7)",192920,religion,Muslim
+NA,htn_diagnosed,11.5,11.1,11.8,Proportion,"11.5 (11.1, 11.8)",192920,religion,Muslim
+NA,htn_treated,6.9,6.7,7.1,Proportion,"6.9 (6.7, 7.1)",192920,religion,Muslim
+NA,htn_controlled,3,2.9,3.2,Proportion,"3 (2.9, 3.2)",192920,religion,Muslim
+NA,htn_screened,71.9,71,72.7,Proportion,"71.9 (71, 72.7)",211013,religion,Other
+NA,htn_disease,64.4,63.8,64.9,Proportion,"64.4 (63.8, 64.9)",211013,religion,Other
+NA,htn_diagnosed,15.4,14.9,15.9,Proportion,"15.4 (14.9, 15.9)",211013,religion,Other
+NA,htn_treated,9.3,9,9.7,Proportion,"9.3 (9, 9.7)",211013,religion,Other
+NA,htn_controlled,4.1,3.9,4.4,Proportion,"4.1 (3.9, 4.4)",211013,religion,Other
+NA,htn_screened,53.2,52.6,53.8,Proportion,"53.2 (52.6, 53.8)",318927,wealthq_ur,1
+NA,htn_disease,57.3,56.9,57.6,Proportion,"57.3 (56.9, 57.6)",318927,wealthq_ur,1
+NA,htn_diagnosed,8,7.8,8.3,Proportion,"8 (7.8, 8.3)",318927,wealthq_ur,1
+NA,htn_treated,3.8,3.7,3.9,Proportion,"3.8 (3.7, 3.9)",318927,wealthq_ur,1
+NA,htn_controlled,1.7,1.6,1.7,Proportion,"1.7 (1.6, 1.7)",318927,wealthq_ur,1
+NA,htn_screened,59.8,59.3,60.2,Proportion,"59.8 (59.3, 60.2)",343156,wealthq_ur,2
+NA,htn_disease,58,57.7,58.3,Proportion,"58 (57.7, 58.3)",343156,wealthq_ur,2
+NA,htn_diagnosed,9.5,9.3,9.7,Proportion,"9.5 (9.3, 9.7)",343156,wealthq_ur,2
+NA,htn_treated,5.1,4.9,5.2,Proportion,"5.1 (4.9, 5.2)",343156,wealthq_ur,2
+NA,htn_controlled,2.2,2.2,2.3,Proportion,"2.2 (2.2, 2.3)",343156,wealthq_ur,2
+NA,htn_screened,63.7,63.2,64.1,Proportion,"63.7 (63.2, 64.1)",342228,wealthq_ur,3
+NA,htn_disease,59.4,59.1,59.7,Proportion,"59.4 (59.1, 59.7)",342228,wealthq_ur,3
+NA,htn_diagnosed,10.6,10.4,10.8,Proportion,"10.6 (10.4, 10.8)",342228,wealthq_ur,3
+NA,htn_treated,6.1,6,6.3,Proportion,"6.1 (6, 6.3)",342228,wealthq_ur,3
+NA,htn_controlled,2.7,2.6,2.8,Proportion,"2.7 (2.6, 2.8)",342228,wealthq_ur,3
+NA,htn_screened,67.6,67.1,68.1,Proportion,"67.6 (67.1, 68.1)",338211,wealthq_ur,4
+NA,htn_disease,60.9,60.6,61.3,Proportion,"60.9 (60.6, 61.3)",338211,wealthq_ur,4
+NA,htn_diagnosed,11.8,11.6,12,Proportion,"11.8 (11.6, 12)",338211,wealthq_ur,4
+NA,htn_treated,7.4,7.2,7.5,Proportion,"7.4 (7.2, 7.5)",338211,wealthq_ur,4
+NA,htn_controlled,3.4,3.3,3.5,Proportion,"3.4 (3.3, 3.5)",338211,wealthq_ur,4
+NA,htn_screened,73.3,72.8,73.8,Proportion,"73.3 (72.8, 73.8)",348514,wealthq_ur,5
+NA,htn_disease,63.6,63.2,63.9,Proportion,"63.6 (63.2, 63.9)",348514,wealthq_ur,5
+NA,htn_diagnosed,14.5,14.2,14.7,Proportion,"14.5 (14.2, 14.7)",348514,wealthq_ur,5
+NA,htn_treated,9.3,9.1,9.5,Proportion,"9.3 (9.1, 9.5)",348514,wealthq_ur,5
+NA,htn_controlled,4.4,4.2,4.5,Proportion,"4.4 (4.2, 4.5)",348514,wealthq_ur,5

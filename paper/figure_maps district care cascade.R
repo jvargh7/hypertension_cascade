@@ -15,22 +15,27 @@ source(paste0(path_dmcascade_repo,"/functions/district_map.R"))
 
 figA <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
-  district_map(.,plot_variable = "Hypertension",plot_title = "A. Hypertension",breaks = c(0,10,20,30,40,60),palette_chr = "-RdYlGn")
+  district_map(.,plot_variable = "Hypertension",plot_title = "A. Hypertension",breaks = c(0,10,20,30,40,60),palette_chr = "-RdYlGn",include_state_names=FALSE)
 
 figB <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
-  district_map(.,plot_variable = "Undiagnosed",plot_title = "B. Undiagnosed",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn")
+  district_map(.,plot_variable = "Undiagnosed",plot_title = "B. Undiagnosed",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn",include_state_names=FALSE)
 
 figC <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
-  district_map(.,plot_variable = "Untreated",plot_title = "C. Unreated",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn")
+  district_map(.,plot_variable = "Untreated",plot_title = "C. Untreated",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn",include_state_names=FALSE)
 
 figD <- unmet_cascade %>% 
   dplyr::filter(is.na(stratification)) %>% 
-  district_map(.,plot_variable = "Uncontrolled",plot_title = "D. Uncontrolled",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn")
+  district_map(.,plot_variable = "Uncontrolled",plot_title = "D. Uncontrolled",breaks = seq(0,100,by=20),palette_chr = "-RdYlGn",include_state_names=FALSE)
 
 
 tmap_arrange(
   figA,figB,figC,figD,
   ncol = 2,nrow=2) %>% 
   tmap_save(.,filename=paste0(path_cascade_folder,"/figures/figure_district care cascade.png"),height=14,width=14)
+
+tmap_arrange(
+  figA,figB,figC,figD,
+  ncol = 2,nrow=2) %>% 
+  tmap_save(.,filename=paste0(path_cascade_folder,"/writing/JAMA Network Open R1/Figure 3.pdf"),height=14,width=14)

@@ -5,9 +5,7 @@ account: egdrc-precision-medicine
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7033451
-bundleId: 7189031
+bundleId: 7629938
 url: https://egdrc-precision-medicine.shinyapps.io/hypertension_cascade/
-when: 1683554657.54878
-lastSyncTime: 1683554657.54879
 asMultiple: FALSE
 asStatic: FALSE

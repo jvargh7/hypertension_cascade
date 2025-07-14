@@ -1,8 +1,8 @@
 # nfhs5_svysummary <- read_csv("analysis/hca02_national level care cascade.csv")
-population <- read_csv("age_standardized/hcz11_age standardized national care cascade with last2bp.csv") %>% 
+population <- read_csv("sensitivity last2bp/hcz11_age standardized national care cascade with last2bp.csv") %>% 
   dplyr::filter(variable %in% c("htn_screened","htn_disease"))
 
-nested <- read_csv(file = "age_standardized/hcz13_national met need care cascade with last2bp.csv") %>% 
+nested <- read_csv(file = "sensitivity last2bp/hcz13_national met need care cascade with last2bp.csv") %>% 
   dplyr::filter(variable %in% c("htn_diagnosed","htn_treated","htn_controlled"))
 
 

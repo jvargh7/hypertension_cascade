@@ -16,4 +16,6 @@ state_htn <- read_csv(file="analysis/hca11_total state level care cascade.csv") 
 
 state_htn %>% 
   group_by(zone=="South"|n5_state == "Goa") %>% 
-  summarize(median = median(estimate))
+  summarize(median = median(estimate),
+            q25 = quantile(estimate,0.25),
+            q75 = quantile(estimate,0.75))
